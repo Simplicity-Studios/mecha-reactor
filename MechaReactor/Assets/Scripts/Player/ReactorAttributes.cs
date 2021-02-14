@@ -5,5 +5,4 @@ using UnityEngine;
 public class ReactorAttributes : MonoBehaviour
 {
     public float movementSpeed;
-
 }
