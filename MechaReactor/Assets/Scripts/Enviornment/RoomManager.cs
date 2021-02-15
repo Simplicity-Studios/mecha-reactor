@@ -25,6 +25,7 @@ public class RoomManager : MonoBehaviour
         {
             gameManager.quitGame();
         }
+        //Tell the game manager to set the player's position to the next room's spawn point
         gameManager.setPlayerTransform(rooms[currentRoom].GetComponent<Room>().spawnLocation);
         rooms[currentRoom].SetActive(true);
     }
