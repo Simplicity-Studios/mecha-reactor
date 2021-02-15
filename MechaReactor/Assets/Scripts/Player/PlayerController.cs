@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
     private ReactorAttributes stats;
 
     //MOVEMENT
@@ -23,7 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         //Movement
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVelocity = moveInput.normalized * stats.movementSpeed;
+        moveVelocity = moveInput.normalized * stats["movementSpeed"];
         //Look at mouse
         var direction = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
         var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
