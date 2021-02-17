@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class EnemyController : MonoBehaviour
 {
     // Health
-    public int currentHealth = 100;
+    public float currentHealth = 100.0f;
     public RectTransform healthBar; 
     // Attack
-    public float attackRange = 3.0f;
+    public float attackRange = 1.0f;
+    public float attackSpeed = 1.0f;
+    bool allowedAttack = true;
     // Movement 
     public float acceleration = 1.0f;
     public Rigidbody2D rigidbody;
@@ -20,6 +22,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -50,22 +53,39 @@ public class EnemyController : MonoBehaviour
             }
         }
 
+        // try to attack player
+        // if within range of player
+        // and not currently on attack cooldown
+        if (Vector2.Distance(player.transform.position, transform.position) <= attackRange
+          && allowedAttack)
+        {
+            StartCoroutine(Attack());
+        }
+
         // adjust healthbar 
         // healthbar is 200 wide so *2 converts to out of 200
-        healthBar.sizeDelta = new Vector2(currentHealth * 2, healthBar.sizeDelta.y);
+        float barLevel = currentHealth * 2;
+        healthBar.sizeDelta = new Vector2(barLevel, healthBar.sizeDelta.y);
         
     }
 
     // reduces the health of this enemy by a given amount
-    void TakeDamage(int damage)
+    void TakeDamage(float damage)
     {
-        currentHealth -= damage;
+        // enemy health cannot go lower than 0
+        currentHealth = Mathf.Max(currentHealth - damage, 0.0f);
     }
 
     // Initiates enemy's attack 
     // If player is within range, player will be hurt
-    void Attack()
+    IEnumerator Attack()
     {
-
+        // prevent from attacking again until this is done
+        allowedAttack = false;
+        // Attack the player
+        Debug.Log("Hiyah! You ded (enemy attacks)");
+        // wait until allowed to attack again
+        yield return new WaitForSeconds(attackSpeed);
+        allowedAttack = true;
     }
 }
