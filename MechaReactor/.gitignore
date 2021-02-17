@@ -2,14 +2,15 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
-/[Mm]emoryCaptures/
+
+MechaReactor/[Ll]ibrary/
+MechaReactor/[Tt]emp/
+MechaReactor/[Oo]bj/
+MechaReactor/[Bb]uild/
+MechaReactor/[Bb]uilds/
+MechaReactor/[Ll]ogs/
+MechaReactor/[Uu]ser[Ss]ettings/
+MechaReactor/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -65,7 +66,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+MechaReactor/[Aa]ssets/[Ss]treamingAssets/aa.meta
+MechaReactor/[Aa]ssets/[Ss]treamingAssets/aa/*
 
 
