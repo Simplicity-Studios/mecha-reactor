@@ -6,6 +6,7 @@ public class ReactorButton : MonoBehaviour, IPointerClickHandler
 {
     public GameObject player;
     public Sprite[] fillBarSprites;
+    public GameObject totalPointsObject;
 
     public string attributeName;
     public float minValue, maxValue;
@@ -26,22 +27,30 @@ public class ReactorButton : MonoBehaviour, IPointerClickHandler
         stats[attributeName] = Mathf.Clamp(stats[attributeName], minValue, maxValue);
     }
 
+    public int GetPointsAllocated()
+    {
+        return pointsAllocated;
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (eventData.button == PointerEventData.InputButton.Left) 
+        if (totalPointsObject.GetComponent<PointsLeftoverBar>().GetLevel() > 0)
         {
-            stats[attributeName] += step;
-            pointsAllocated += 1;
-        }
-        if (eventData.button == PointerEventData.InputButton.Right) 
-        {
-            stats[attributeName] -= step;
-            pointsAllocated -= 1;
-        }
-        
-        stats[attributeName] = Mathf.Clamp(stats[attributeName], minValue, maxValue);
-        pointsAllocated = (int) Mathf.Clamp(pointsAllocated, 0, maxLevel);
+            if (eventData.button == PointerEventData.InputButton.Left) 
+            {
+                stats[attributeName] += step;
+                pointsAllocated += 1;
+            }
+            if (eventData.button == PointerEventData.InputButton.Right) 
+            {
+                stats[attributeName] -= step;
+                pointsAllocated -= 1;
+            }
+            
+            stats[attributeName] = Mathf.Clamp(stats[attributeName], minValue, maxValue);
+            pointsAllocated = (int) Mathf.Clamp(pointsAllocated, 0, maxLevel);
 
-        fillBar.sprite = fillBarSprites[pointsAllocated];
+            fillBar.sprite = fillBarSprites[pointsAllocated];
+        }
     }
 }
