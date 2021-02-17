@@ -69,4 +69,4 @@ crashlytics-build.properties
 MechaReactor/[Aa]ssets/[Ss]treamingAssets/aa.meta
 MechaReactor/[Aa]ssets/[Ss]treamingAssets/aa/*
 
-
+*.Library/
