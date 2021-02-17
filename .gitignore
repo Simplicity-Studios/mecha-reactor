@@ -69,6 +69,7 @@ crashlytics-build.properties
 MechaReactor/[Aa]ssets/[Ss]treamingAssets/aa.meta
 MechaReactor/[Aa]ssets/[Ss]treamingAssets/aa/*
 
+MechaReactor/Library/
 
 MechaReactor/Library/ArtifactDB
 MechaReactor/Library/CurrentLayout-default.dwlt
@@ -77,3 +78,9 @@ MechaReactor/Library/SceneVisibilityState.asset
 MechaReactor/Library/shadercompiler-UnityShaderCompiler.exe0.log
 MechaReactor/Library/SourceAssetDB
 MechaReactor/Library/StateCache/SceneView/50822d-mainStage.json
+MechaReactor/Library/
+MechaReactor/Library/ArtifactDB
+MechaReactor/Library/CurrentLayout-default.dwlt
+MechaReactor/Library/LastSceneManagerSetup.txt
+MechaReactor/Library/shadercompiler-UnityShaderCompiler.exe0.log
+MechaReactor/Library/SourceAssetDB
