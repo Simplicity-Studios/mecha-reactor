@@ -29,6 +29,9 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Death check
+        if(currentHealth <= 0.0f)
+            die();
 
         Vector3 directionToPlayer = player.transform.position - transform.position;
 
@@ -70,10 +73,17 @@ public class EnemyController : MonoBehaviour
     }
 
     // reduces the health of this enemy by a given amount
-    void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         // enemy health cannot go lower than 0
         currentHealth = Mathf.Max(currentHealth - damage, 0.0f);
+    }
+
+    // Put any logic about this unit being destroyed in here
+    // i.e sound fxs, particles, whatever
+    public void die()
+    {
+        Destroy(gameObject);
     }
 
     // Initiates enemy's attack 
