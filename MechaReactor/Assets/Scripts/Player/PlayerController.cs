@@ -20,17 +20,23 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     private float lastShot = 0.0f;
 
+    private float maxHealth = 300.0f;
+    private float currHealth;
+    private float currDamage;
+
     void Start()
     {
         stats = this.GetComponent<ReactorAttributes>();
         r = GetComponent<Rigidbody2D>();
+        currHealth = maxHealth;
+        currDamage = 0.0f;
     }
 
     void Update()
     {
         //Movement
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVelocity = moveInput.normalized * 5;
+        moveVelocity = stats["movementSpeed"] * moveInput.normalized * 5;
 
         //Look at mouse
         var direction = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
@@ -43,6 +49,9 @@ public class PlayerController : MonoBehaviour
             Shoot();
             lastShot = Time.time;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            currHealth -= 1;
     }
 
     void FixedUpdate()
@@ -57,5 +66,15 @@ public class PlayerController : MonoBehaviour
         
         Rigidbody2D bulletrigid = bullet.GetComponent<Rigidbody2D>();
         bulletrigid.AddForce(bulletSpawnLocation.up * bulletForce, ForceMode2D.Impulse);
+    }
+
+    public float GetHealth()
+    {
+        return currHealth;
+    }
+
+    public float GetMaxHealth()
+    {
+        return maxHealth;
     }
 }
