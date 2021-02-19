@@ -1,0 +1,1592 @@
+fileFormatVersion: 2
+guid: 4f681fc14650d4546adcbf3e102c6bef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4852447241722825888
+    second: mech_walk_0
+  - first:
+      213: -977297861817109365
+    second: mech_walk_1
+  - first:
+      213: -844861896873370074
+    second: mech_walk_2
+  - first:
+      213: 5513295585423754387
+    second: mech_walk_3
+  - first:
+      213: 4854913278664511837
+    second: mech_walk_4
+  - first:
+      213: -8736778169262326159
+    second: mech_walk_5
+  - first:
+      213: -7456273318113740024
+    second: mech_walk_6
+  - first:
+      213: -4138830430946293156
+    second: mech_walk_7
+  - first:
+      213: -5419968861963438790
+    second: mech_walk_8
+  - first:
+      213: -7345251688168555963
+    second: mech_walk_9
+  - first:
+      213: -3388250813597824939
+    second: mech_walk_10
+  - first:
+      213: 7841432595919077846
+    second: mech_walk_11
+  - first:
+      213: -3956249925670548688
+    second: mech_walk_12
+  - first:
+      213: 6420291097452456364
+    second: mech_walk_13
+  - first:
+      213: 8471085762632429961
+    second: mech_walk_14
+  - first:
+      213: 8898065942003024552
+    second: mech_walk_15
+  - first:
+      213: 4758370414124350543
+    second: mech_walk_16
+  - first:
+      213: 4772497215322432348
+    second: mech_walk_17
+  - first:
+      213: -6637772442797007049
+    second: mech_walk_18
+  - first:
+      213: 934391294635110673
+    second: mech_walk_19
+  - first:
+      213: -510282513850579051
+    second: mech_walk_20
+  - first:
+      213: 7524329240073270417
+    second: mech_walk_21
+  - first:
+      213: -151081108699572091
+    second: mech_walk_22
+  - first:
+      213: 3926997947573972923
+    second: mech_walk_23
+  - first:
+      213: -8111142900927891329
+    second: mech_walk_24
+  - first:
+      213: 717560478985704943
+    second: mech_walk_25
+  - first:
+      213: 936138165819674275
+    second: mech_walk_26
+  - first:
+      213: -6689035542525994946
+    second: mech_walk_27
+  - first:
+      213: 6690579379040985632
+    second: mech_walk_28
+  - first:
+      213: -5538047849648368916
+    second: mech_walk_29
+  - first:
+      213: -8154668671102853430
+    second: mech_walk_30
+  - first:
+      213: -5287153265382468009
+    second: mech_walk_31
+  - first:
+      213: -5908127243903203673
+    second: mech_walk_32
+  - first:
+      213: 1394223699685421765
+    second: mech_walk_33
+  - first:
+      213: 7116321811061999098
+    second: mech_walk_34
+  - first:
+      213: 415577217457638082
+    second: mech_walk_35
+  - first:
+      213: -7844903538740061908
+    second: mech_walk_36
+  - first:
+      213: 2521183415865030889
+    second: mech_walk_37
+  - first:
+      213: 8160276227882919466
+    second: mech_walk_38
+  - first:
+      213: 6330218622117879614
+    second: mech_walk_39
+  - first:
+      213: 7083487198340196467
+    second: mech_walk_40
+  - first:
+      213: -7784375858373109582
+    second: mech_walk_41
+  - first:
+      213: 1049595210837564886
+    second: mech_walk_42
+  - first:
+      213: 213771456819189920
+    second: mech_walk_43
+  - first:
+      213: 7459423018272866547
+    second: mech_walk_44
+  - first:
+      213: -7287146053452874058
+    second: mech_walk_45
+  - first:
+      213: 6068590239769929703
+    second: mech_walk_46
+  - first:
+      213: -9124406976278707487
+    second: mech_walk_47
+  - first:
+      213: 7269953960340099655
+    second: mech_walk_48
+  - first:
+      213: -5686665583040057903
+    second: mech_walk_49
+  - first:
+      213: 7170147818723916279
+    second: mech_walk_50
+  - first:
+      213: -7312743701372450657
+    second: mech_walk_51
+  - first:
+      213: 3709070262598390676
+    second: mech_walk_52
+  - first:
+      213: -6908940818901879352
+    second: mech_walk_53
+  - first:
+      213: -9026470242097886799
+    second: mech_walk_54
+  - first:
+      213: 7149415598218066470
+    second: mech_walk_55
+  - first:
+      213: 5386572743026139379
+    second: mech_walk_56
+  - first:
+      213: 161361787335806826
+    second: mech_walk_57
+  - first:
+      213: 7856847117535379446
+    second: mech_walk_58
+  - first:
+      213: -1503014405391919039
+    second: mech_walk_59
+  - first:
+      213: -6693363609626427993
+    second: mech_walk_60
+  - first:
+      213: -7756691657614452776
+    second: mech_walk_61
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mech_walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1160
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac86369e0b575340800000000000000
+      internalID: 4852447241722825888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1160
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8474aac5c0ff62f0800000000000000
+      internalID: -977297861817109365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1160
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e9990c4927644f0800000000000000
+      internalID: -844861896873370074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1102
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39489eecf19238c40800000000000000
+      internalID: 5513295585423754387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1102
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51102e87ed106340800000000000000
+      internalID: 4854913278664511837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1102
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e3bb36b8ab0c680800000000000000
+      internalID: -8736778169262326159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1044
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b7b951ceef58890800000000000000
+      internalID: -7456273318113740024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1044
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a8ed9c6abef86c0800000000000000
+      internalID: -4138830430946293156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_8
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1044
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35bdf8490768c4b0800000000000000
+      internalID: -5419968861963438790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 986
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54affd4a18c601a90800000000000000
+      internalID: -7345251688168555963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 986
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558c29536d38af0d0800000000000000
+      internalID: -3388250813597824939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 986
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d10de9766d52dc60800000000000000
+      internalID: 7841432595919077846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 928
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bcdb957a39819c0800000000000000
+      internalID: -3956249925670548688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 928
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9a14aacb4791950800000000000000
+      internalID: 6420291097452456364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_14
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 928
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981339f8e975f8570800000000000000
+      internalID: 8471085762632429961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 870
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2871d84d74c7b70800000000000000
+      internalID: 8898065942003024552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_16
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 870
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c3c934ea0290240800000000000000
+      internalID: 4758370414124350543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_17
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 870
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53a5da7ee05b3240800000000000000
+      internalID: 4772497215322432348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 812
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f1537b125e1e3a0800000000000000
+      internalID: -6637772442797007049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_19
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 812
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11171fd8eef97fc00800000000000000
+      internalID: 934391294635110673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 812
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597c7dad1cc1be8f0800000000000000
+      internalID: -510282513850579051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 754
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194f6a70499cb6860800000000000000
+      internalID: 7524329240073270417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_22
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 754
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58890b7388047edf0800000000000000
+      internalID: -151081108699572091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_23
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 754
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfa5d2c3df7f7630800000000000000
+      internalID: 3926997947573972923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 696
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78f2cb918e6f6f80800000000000000
+      internalID: -8111142900927891329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_25
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 696
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe55dce247945f900800000000000000
+      internalID: 717560478985704943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_26
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 696
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae0e52b3b4ddfc00800000000000000
+      internalID: 936138165819674275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 638
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3896c53d95cb23a0800000000000000
+      internalID: -6689035542525994946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_28
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 638
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022aa4d3f76b9dc50800000000000000
+      internalID: 6690579379040985632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_29
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 638
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2d79492d6e423b0800000000000000
+      internalID: -5538047849648368916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace58e58c0cc4de80800000000000000
+      internalID: -8154668671102853430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_31
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 580
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756d4df1e1240a6b0800000000000000
+      internalID: -5287153265382468009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_32
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 580
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a68753039d120ea0800000000000000
+      internalID: -5908127243903203673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 522
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c23e256117495310800000000000000
+      internalID: 1394223699685421765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_34
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 522
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af507b7bbf042c260800000000000000
+      internalID: 7116321811061999098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_35
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 522
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cace47074d64c500800000000000000
+      internalID: 415577217457638082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 464
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29913cabcd412390800000000000000
+      internalID: -7844903538740061908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_37
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 464
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8bd3c75fa0df220800000000000000
+      internalID: 2521183415865030889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_38
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 464
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26a6088eff1f3170800000000000000
+      internalID: 8160276227882919466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 406
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f16e14c4479d750800000000000000
+      internalID: 6330218622117879614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_40
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 406
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3782814b31a9d4260800000000000000
+      internalID: 7083487198340196467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_41
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 406
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b85b83766758f390800000000000000
+      internalID: -7784375858373109582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 348
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd9ce38849e09e00800000000000000
+      internalID: 1049595210837564886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_43
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 348
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a853d2e10877f200800000000000000
+      internalID: 213771456819189920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_44
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 348
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0c681a6b1358760800000000000000
+      internalID: 7459423018272866547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 290
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be3d89f54bdeda90800000000000000
+      internalID: -7287146053452874058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_46
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 290
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7a3e89ba6f73450800000000000000
+      internalID: 6068590239769929703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_47
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 290
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2cfc0c2389f5180800000000000000
+      internalID: -9124406976278707487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742148beb9014e460800000000000000
+      internalID: 7269953960340099655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_49
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 232
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd257e08c7e411b0800000000000000
+      internalID: -5686665583040057903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_50
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 232
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9b41ab37b718360800000000000000
+      internalID: 7170147818723916279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 174
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f984832295ae38a90800000000000000
+      internalID: -7312743701372450657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_52
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 174
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493542990c3497330800000000000000
+      internalID: 3709070262598390676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_53
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 174
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5382b2ee28e10a0800000000000000
+      internalID: -6908940818901879352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b90f1c93298bb280800000000000000
+      internalID: -9026470242097886799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_55
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 116
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62abc6b7b93d73360800000000000000
+      internalID: 7149415598218066470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_56
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 116
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0efd8de53f0ca40800000000000000
+      internalID: 5386572743026139379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 58
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f097ec0b54d3200800000000000000
+      internalID: 161361787335806826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_58
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 58
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff7f3773d0290d60800000000000000
+      internalID: 7856847117535379446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_59
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 58
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148d1529c58342be0800000000000000
+      internalID: -1503014405391919039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adb0bf82456c13a0800000000000000
+      internalID: -6693363609626427993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_61
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d797abb802ba5490800000000000000
+      internalID: -7756691657614452776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

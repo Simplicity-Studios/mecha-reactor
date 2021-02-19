@@ -12,29 +12,42 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D r;
     private Vector2 moveVelocity;
 
+    //ANIMTOR
+    private Animator anim;
+
+    //SHOOTING
     [Header( "Shooting" )]
     [Range(0.0f, 2.0f)]
     public float baseAttackTime;
     public float bulletForce;
-    public Transform bulletSpawnLocation;
+    public Transform bulletSpawnLocationLeft;
+    public Transform bulletSpawnLocationRight;
     public GameObject bulletPrefab;
     private float lastShot = 0.0f;
 
     private float maxHealth = 300.0f;
     private float currHealth;
 
+    private bool lastFiredLeft = false;
+    private bool lastFiredRight = true;
+
     void Start()
     {
         stats = this.GetComponent<ReactorAttributes>();
         r = GetComponent<Rigidbody2D>();
         currHealth = maxHealth;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
         //Movement
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVelocity = stats["movementSpeed"] * moveInput.normalized * 5;
+        moveVelocity = stats["movementSpeed"] * moveInput.normalized * 3.0f;
+
+        //Animation
+        anim.SetBool("isMoving", moveInput != Vector2.zero);
+        anim.SetFloat("walkMultiplier", stats["movementSpeed"]);
 
         //Look at mouse
         var direction = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
@@ -44,7 +57,18 @@ public class PlayerController : MonoBehaviour
         //Input for Shooting
         if (Input.GetButton("Fire1") && Time.time > (baseAttackTime - stats["attackSpeed"]) + lastShot)
         {
-            Shoot();
+            if(lastFiredLeft)
+            {
+                Shoot(bulletSpawnLocationRight);
+                lastFiredLeft = false;
+                lastFiredRight = true;
+            }
+            else if(lastFiredRight)
+            {
+                Shoot(bulletSpawnLocationLeft);
+                lastFiredRight = false;
+                lastFiredLeft = true;
+            }
             lastShot = Time.time;
         }
 
@@ -57,7 +81,7 @@ public class PlayerController : MonoBehaviour
         r.MovePosition(r.position + moveVelocity * Time.fixedDeltaTime);
     }
 
-    void Shoot()
+    void Shoot(Transform bulletSpawnLocation)
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnLocation.position, bulletSpawnLocation.rotation);
         bullet.GetComponent<Bullet>().setBulletDamage(stats["attack"]);
