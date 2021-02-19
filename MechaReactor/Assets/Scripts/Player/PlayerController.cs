@@ -22,14 +22,12 @@ public class PlayerController : MonoBehaviour
 
     private float maxHealth = 300.0f;
     private float currHealth;
-    private float currDamage;
 
     void Start()
     {
         stats = this.GetComponent<ReactorAttributes>();
         r = GetComponent<Rigidbody2D>();
         currHealth = maxHealth;
-        currDamage = 0.0f;
     }
 
     void Update()
@@ -44,7 +42,7 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         //Input for Shooting
-        if(Input.GetButton("Fire1") && Time.time > (baseAttackTime - stats["attackSpeed"]) + lastShot)
+        if (Input.GetButton("Fire1") && Time.time > (baseAttackTime - stats["attackSpeed"]) + lastShot)
         {
             Shoot();
             lastShot = Time.time;

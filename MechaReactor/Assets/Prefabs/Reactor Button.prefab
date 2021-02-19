@@ -111,7 +111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 18.5, y: 18.8}
+  m_AnchoredPosition: {x: 18.5, y: 39.4}
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &8160523823321832926
@@ -206,12 +206,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f7d3c997167a4409509aaaef97b17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6447998740629227336, guid: 7088455ec26740d4cb3edf243dab2c0b, type: 3}
-  fillBarSprites:
+  player: {fileID: 0}
+  overallReactorBar: {fileID: 0}
+  pointsbarSprites:
   - {fileID: 21300000, guid: e628430a147607442be7057a5577f9c4, type: 3}
   - {fileID: 21300000, guid: 0d6743d10c2086e4fb9fb942c8696e6c, type: 3}
   - {fileID: 21300000, guid: 482810e21e92a42468f8b3a5c088bad3, type: 3}
   - {fileID: 21300000, guid: a087200ba811979478a1c0288394caba, type: 3}
   attributeName: 
-  minValue: 4
-  maxValue: 20
+  minScaleValue: 0
+  maxScaleValue: 0
