@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class PointsLeftoverBar : MonoBehaviour
+public class ReactorBar : MonoBehaviour
 {
     public GameObject[] reactorButtons;
     public Sprite[] sprites;
 
-    private int level;
+    private int points;
     private Image barSprite;
 
     void Start()
     {
-        level = reactorButtons.Length - 1;
+        points = reactorButtons.Length - 1;
         barSprite = gameObject.GetComponent<Image>();
     }
 
@@ -20,13 +20,18 @@ public class PointsLeftoverBar : MonoBehaviour
         int tempMax = sprites.Length - 1;
         foreach (GameObject rButton in reactorButtons)
             tempMax -= rButton.GetComponent<ReactorButton>().GetPointsAllocated();
-        level = tempMax;
+        points = tempMax;
 
-        barSprite.sprite = sprites[level];
+        barSprite.sprite = sprites[points];
     }
 
-    public int GetLevel()
+    public int GetCurrPoints()
     {
-        return level;
+        return points;
+    }
+
+    public int GetMaxPoints()
+    {
+        return sprites.Length - 1;
     }
 }

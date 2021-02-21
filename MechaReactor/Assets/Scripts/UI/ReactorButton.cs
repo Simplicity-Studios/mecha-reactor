@@ -4,27 +4,29 @@ using UnityEngine.UI;
 
 public class ReactorButton : MonoBehaviour, IPointerClickHandler
 {
-    public GameObject player;
-    public Sprite[] fillBarSprites;
-    public GameObject totalPointsObject;
-
+    public GameObject player, overallReactorBar;
+    public Sprite[] pointsbarSprites;
     public string attributeName;
-    public float minValue, maxValue;
+    public float minScaleValue, maxScaleValue;
 
     private int pointsAllocated;
-    private float step, maxLevel;
+    private float step, maxAllocated, maxOverall;
     private ReactorAttributes stats;
     private Image fillBar;
 
     void Start()
     {
-        maxLevel = fillBarSprites.Length - 1;
         pointsAllocated = 0;
-        step = (maxValue - minValue) / maxLevel;
-
+        // Max possible points one button can allocate to an attribute
+        maxAllocated = pointsbarSprites.Length - 1;
+        maxOverall = overallReactorBar.GetComponent<ReactorBar>().GetMaxPoints();
+        // Amount to scale by for each additional point allocated
+        step = (maxScaleValue - minScaleValue) / maxAllocated;
+        // Image component of the bar that shows the user how many points have been allocated
         fillBar = gameObject.transform.GetChild(0).gameObject.GetComponent<Image>();
         stats = player.GetComponent<ReactorAttributes>();
-        stats[attributeName] = Mathf.Clamp(stats[attributeName], minValue, maxValue);
+        // Initializing statistic to lowest possible value
+        stats[attributeName] = minScaleValue;
     }
 
     public int GetPointsAllocated()
@@ -32,25 +34,24 @@ public class ReactorButton : MonoBehaviour, IPointerClickHandler
         return pointsAllocated;
     }
 
+    // Handling allocating points when user clicks the button. Does bounds checking to
+    // make sure points aren't over/under distributed, and changes sprite as necessary.
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (totalPointsObject.GetComponent<PointsLeftoverBar>().GetLevel() > 0)
-        {
-            if (eventData.button == PointerEventData.InputButton.Left) 
-            {
-                stats[attributeName] += step;
-                pointsAllocated += 1;
-            }
-            if (eventData.button == PointerEventData.InputButton.Right) 
-            {
-                stats[attributeName] -= step;
-                pointsAllocated -= 1;
-            }
-            
-            stats[attributeName] = Mathf.Clamp(stats[attributeName], minValue, maxValue);
-            pointsAllocated = (int) Mathf.Clamp(pointsAllocated, 0, maxLevel);
+        float pointsRemaining = overallReactorBar.GetComponent<ReactorBar>().GetCurrPoints();
 
-            fillBar.sprite = fillBarSprites[pointsAllocated];
+        if (eventData.button == PointerEventData.InputButton.Left 
+            && pointsRemaining > 0 && pointsAllocated < maxAllocated)
+        {
+            stats[attributeName] += step;
+            pointsAllocated += 1;
         }
+        else if (eventData.button == PointerEventData.InputButton.Right && pointsAllocated > 0)
+        {
+            stats[attributeName] -= step;
+            pointsAllocated -= 1;
+        }
+        
+        fillBar.sprite = pointsbarSprites[pointsAllocated];
     }
 }
