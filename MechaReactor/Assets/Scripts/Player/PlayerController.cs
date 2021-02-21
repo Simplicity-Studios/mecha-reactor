@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     private float lastShot = 0.0f;
 
-    private float maxHealth = 300.0f;
-    private float currHealth;
+    public float maxHealth = 300.0f;
+    public float currHealth;
     private float currDamage;
 
     void Start()
@@ -77,4 +77,10 @@ public class PlayerController : MonoBehaviour
     {
         return maxHealth;
     }
+
+    public void TakeDamage(float damage)
+    {
+        currHealth = Mathf.Max(currHealth - damage, 0);
+    }
+
 }

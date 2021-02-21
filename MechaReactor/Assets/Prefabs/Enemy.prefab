@@ -111,9 +111,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4343953099511740132}
   - component: {fileID: 4343953099511740135}
+  - component: {fileID: 4343953099511740128}
   - component: {fileID: 4343953099511740134}
   - component: {fileID: 4343953099511740129}
-  - component: {fileID: 4343953099511740128}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -186,6 +186,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4343953099511740128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4343953099511740131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e117723b8d2bd81e7b70bc8906181624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  healthBar: {fileID: 4343953099564874006}
+  enemyType: 0
+  attackRange: 1.25
+  attackSpeed: 1
+  baseAttackTime: 0
+  bulletForce: 0
+  bulletSpawnLocation: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+  rangedAttackDamage: 10
+  speed: 2
+  rigidbody: {fileID: 4343953099511740134}
+  player: {fileID: 0}
 --- !u!50 &4343953099511740134
 Rigidbody2D:
   serializedVersion: 4
@@ -223,25 +248,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.28
---- !u!114 &4343953099511740128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4343953099511740131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e117723b8d2bd81e7b70bc8906181624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 100
-  healthBar: {fileID: 4343953099564874006}
-  attackRange: 1.25
-  attackSpeed: 1
-  acceleration: 5
-  rigidbody: {fileID: 4343953099511740134}
-  player: {fileID: 0}
 --- !u!1 &4343953099564874001
 GameObject:
   m_ObjectHideFlags: 0
