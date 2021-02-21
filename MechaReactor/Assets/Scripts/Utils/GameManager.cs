@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject player;
 
+    public GameObject mainCamera;
+
     public Transform getPlayerTransform()
     {
         return player.transform;
@@ -21,5 +23,10 @@ public class GameManager : MonoBehaviour
     public void quitGame()
     {
         Application.Quit();
+    }
+
+    public void setCameraBounds(float x, float y)
+    {
+        mainCamera.GetComponent<CamFollow>().setBounds(x, y);
     }
 }
