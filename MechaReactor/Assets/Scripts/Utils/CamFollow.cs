@@ -32,13 +32,14 @@ public class CamFollow : MonoBehaviour
 
     void Follow()
     {
-        Vector3 targetPosition = ((target.position + offset) + Camera.main.ScreenToWorldPoint(Input.mousePosition)) / 2;
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, targetPosition, smoothFactor*Time.fixedDeltaTime);
-        smoothedPosition = new Vector3(
-            Mathf.Clamp(smoothedPosition.x, -boundsX, boundsX),
-            Mathf.Clamp(smoothedPosition.y, -boundsY, boundsY),
-            smoothedPosition.z
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition = new Vector3(
+            Mathf.Clamp(mousePosition.x, -boundsX, boundsX),
+            Mathf.Clamp(mousePosition.y, -boundsY, boundsY),
+            mousePosition.z
         );
+        Vector3 targetPosition = ((target.position + offset) + mousePosition) / 2;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, targetPosition, smoothFactor*Time.fixedDeltaTime);
         transform.position = smoothedPosition;
     }
 }
