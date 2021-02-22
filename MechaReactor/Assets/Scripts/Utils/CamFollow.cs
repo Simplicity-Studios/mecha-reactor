@@ -38,7 +38,15 @@ public class CamFollow : MonoBehaviour
             Mathf.Clamp(mousePosition.y, -boundsY, boundsY),
             mousePosition.z
         );
-        Vector3 targetPosition = ((target.position + offset) + mousePosition) / 2;
+        
+        Vector3 playerPosition = target.position + offset;
+        playerPosition = new Vector3(
+            Mathf.Clamp(playerPosition.x, -boundsX, boundsX),
+            Mathf.Clamp(playerPosition.y, -boundsY, boundsY),
+            playerPosition.z
+        );
+
+        Vector3 targetPosition = (playerPosition + mousePosition) / 2;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, targetPosition, smoothFactor*Time.fixedDeltaTime);
         transform.position = smoothedPosition;
     }
