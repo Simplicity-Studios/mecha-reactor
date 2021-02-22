@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     private float lastShot = 0.0f;
 
     public float maxHealth = 300.0f;
-    public float currHealth;
+    private float currHealth;
 
     private bool lastFiredLeft = false;
     private bool lastFiredRight = true;
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         //Input for Shooting
-        if (Input.GetButton("Fire1") && Time.time > (baseAttackTime - stats["attackSpeed"]) + lastShot)
+        if (!MouseOverReactorButton() && Input.GetButton("Fire1")  && Time.time > (baseAttackTime - stats["attackSpeed"]) + lastShot)
         {
             if(lastFiredLeft)
             {
@@ -103,6 +103,21 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currHealth = Mathf.Max(currHealth - damage, 0);
+    }
+
+    public bool MouseOverReactorButton()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Input.mousePosition;
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        
+        foreach (RaycastResult r in results)
+        {
+            if (r.gameObject.CompareTag("ReactorButton"))
+                return true;
+        }
+        return false;
     }
 
 }

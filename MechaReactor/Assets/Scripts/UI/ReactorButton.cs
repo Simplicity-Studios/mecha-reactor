@@ -38,20 +38,23 @@ public class ReactorButton : MonoBehaviour, IPointerClickHandler
     // make sure points aren't over/under distributed, and changes sprite as necessary.
     public void OnPointerClick(PointerEventData eventData)
     {
-        float pointsRemaining = overallReactorBar.GetComponent<ReactorBar>().GetCurrPoints();
+        if (eventData.pointerPressRaycast.gameObject.CompareTag("ReactorButton"))
+        {
+            float pointsRemaining = overallReactorBar.GetComponent<ReactorBar>().GetCurrPoints();
 
-        if (eventData.button == PointerEventData.InputButton.Left 
-            && pointsRemaining > 0 && pointsAllocated < maxAllocated)
-        {
-            stats[attributeName] += step;
-            pointsAllocated += 1;
+            if (eventData.button == PointerEventData.InputButton.Left 
+                && pointsRemaining > 0 && pointsAllocated < maxAllocated)
+            {
+                stats[attributeName] += step;
+                pointsAllocated += 1;
+            }
+            else if (eventData.button == PointerEventData.InputButton.Right && pointsAllocated > 0)
+            {
+                stats[attributeName] -= step;
+                pointsAllocated -= 1;
+            }
+            
+            fillBar.sprite = pointsbarSprites[pointsAllocated];
         }
-        else if (eventData.button == PointerEventData.InputButton.Right && pointsAllocated > 0)
-        {
-            stats[attributeName] -= step;
-            pointsAllocated -= 1;
-        }
-        
-        fillBar.sprite = pointsbarSprites[pointsAllocated];
     }
 }
