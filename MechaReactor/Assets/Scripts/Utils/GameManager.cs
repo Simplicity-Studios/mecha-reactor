@@ -9,6 +9,22 @@ public class GameManager : MonoBehaviour
     public GameObject mainCamera;
 
     private Vector3 offset = new Vector3(0f, 0f, -10f);
+    private PlayerController playerController;
+    private RoomManager roomManager;
+
+    void Start()
+    {
+        playerController = player.GetComponent<PlayerController>();
+        roomManager = FindObjectOfType<RoomManager>();
+    }
+
+    void Update()
+    {
+        if(playerController.GetHealth() <= 0.0f)
+        {
+            killPlayer();
+        } 
+    }
 
     public Transform getPlayerTransform()
     {
@@ -35,5 +51,11 @@ public class GameManager : MonoBehaviour
     public void moveCameraToPosition(Transform pos)
     {
         mainCamera.GetComponent<Transform>().position = pos.position + offset;
+    }
+
+    public void killPlayer()
+    {
+        Camera cam = mainCamera.GetComponent<Camera>();
+        playerController.gameObject.SetActive(false);
     }
 }
