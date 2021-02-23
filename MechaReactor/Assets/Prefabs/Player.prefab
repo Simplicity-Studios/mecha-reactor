@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f2ab7c512920f409e30ec600f6317e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxElectricity: 300
+  electricityDecreaseRate: 1
   initialAttributes:
   - name: movementSpeed
     minValue: 1
@@ -230,6 +232,7 @@ MonoBehaviour:
   - name: attackSpeed
     minValue: 0.2
     maxValue: 0.8
+  m_electricity: 0
 --- !u!114 &6447998740629227341
 MonoBehaviour:
   m_ObjectHideFlags: 0

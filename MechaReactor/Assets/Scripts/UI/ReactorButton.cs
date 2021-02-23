@@ -18,18 +18,13 @@ public class ReactorButton : MonoBehaviour, IPointerClickHandler
         stats = player.GetComponent<ReactorAttributes>();
     }
 
-    public int GetPointsAllocated()
-    {
-        return stats[attributeName].pointsAllocated;
-    }
-
     // Handling allocating points when user clicks the button. Does bounds checking to
     // make sure points aren't over/under distributed, and changes sprite as necessary.
     public void OnPointerClick(PointerEventData eventData)
     {
         if (eventData.pointerPressRaycast.gameObject.CompareTag("ReactorButton"))
         {
-            float pointsRemaining = overallReactorBar.GetComponent<ReactorBar>().GetCurrPoints();
+            float pointsRemaining = stats.GetMaxPoints() - stats.GetTotalPointsAllocated() - 1;
 
             if (eventData.button == PointerEventData.InputButton.Left && pointsRemaining > 0)
                 stats[attributeName].pointsAllocated += 1;
