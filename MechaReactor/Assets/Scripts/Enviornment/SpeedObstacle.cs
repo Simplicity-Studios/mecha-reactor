@@ -12,7 +12,7 @@ public class SpeedObstacle : MonoBehaviour
         if(col.transform.CompareTag("Player"))
         {
             ReactorAttributes stats = col.transform.GetComponent<ReactorAttributes>();
-            if(stats["movementSpeed"] >= speedRequirement)
+            if(stats["movementSpeed"].GetValue() >= speedRequirement)
             {
                 breakTile();
             }

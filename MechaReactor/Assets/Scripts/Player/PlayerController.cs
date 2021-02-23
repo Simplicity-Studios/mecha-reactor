@@ -43,11 +43,11 @@ public class PlayerController : MonoBehaviour
     {
         //Movement
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVelocity = stats["movementSpeed"] * moveInput.normalized * 3.0f;
+        moveVelocity = stats["movementSpeed"].GetValue() * moveInput.normalized * 3.0f;
 
         //Animation
         anim.SetBool("isMoving", moveInput != Vector2.zero);
-        anim.SetFloat("walkMultiplier", stats["movementSpeed"]);
+        anim.SetFloat("walkMultiplier", stats["movementSpeed"].GetValue());
 
         //Look at mouse
         var direction = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         //Input for Shooting
-        if (!MouseOverReactorButton() && Input.GetButton("Fire1")  && Time.time > (baseAttackTime - stats["attackSpeed"]) + lastShot)
+        if (!MouseOverReactorButton() && Input.GetButton("Fire1")  && Time.time > (baseAttackTime - stats["attackSpeed"].GetValue()) + lastShot)
         {
             if(lastFiredLeft)
             {
@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
     void Shoot(Transform bulletSpawnLocation)
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnLocation.position, bulletSpawnLocation.rotation);
-        bullet.GetComponent<Bullet>().setBulletDamage(stats["attack"]);
+        bullet.GetComponent<Bullet>().setBulletDamage(stats["attack"].GetValue());
         
         Rigidbody2D bulletrigid = bullet.GetComponent<Rigidbody2D>();
         bulletrigid.AddForce(bulletSpawnLocation.up * bulletForce, ForceMode2D.Impulse);

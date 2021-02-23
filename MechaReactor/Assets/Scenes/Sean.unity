@@ -1520,6 +1520,86 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[0].name
+      value: movementSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[1].name
+      value: attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[2].name
+      value: defense
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[3].name
+      value: special
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[4].name
+      value: attackSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[0].maxValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[0].minValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[1].maxValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[1].minValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[2].maxValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[2].minValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[3].maxValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[3].minValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[4].maxValue
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447998740629227340, guid: 7088455ec26740d4cb3edf243dab2c0b,
+        type: 3}
+      propertyPath: initialAttributes.Array.data[4].minValue
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6447998740629227341, guid: 7088455ec26740d4cb3edf243dab2c0b,
         type: 3}
       propertyPath: baseAttackTime

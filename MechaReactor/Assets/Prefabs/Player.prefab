@@ -131,6 +131,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f2ab7c512920f409e30ec600f6317e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialAttributes:
+  - name: movementSpeed
+    minValue: 1
+    maxValue: 3
+  - name: attack
+    minValue: 1
+    maxValue: 3
+  - name: defense
+    minValue: 1
+    maxValue: 3
+  - name: special
+    minValue: 1
+    maxValue: 3
+  - name: attackSpeed
+    minValue: 0.1
+    maxValue: 0.3
 --- !u!114 &6447998740629227341
 MonoBehaviour:
   m_ObjectHideFlags: 0

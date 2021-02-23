@@ -1,21 +1,59 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+
+[Serializable]
+public class Attribute
+{
+    public string name;
+    public float minValue, maxValue;
+
+    private int points;
+    private const int size = 3;
+    private float value;
+    private float step;
+
+    public int pointsAllocated 
+    { 
+        get => points; 
+        set 
+        {
+            points = (int) Mathf.Clamp(value, 0, size);
+            this.value = minValue + points * step;
+        }
+    }
+
+    public float GetValue()
+    {
+        return value;
+    }
+
+    public void Initialize()
+    {
+        pointsAllocated = 0;
+        step = (maxValue - minValue) / size;
+    }
+}
 
 public class ReactorAttributes : MonoBehaviour
 {
-    private Dictionary<string, float> m_attributes = new Dictionary<string, float>()
-    {
-        {"movementSpeed", 0.0f},
-        {"attack", 0.0f},
-        {"defense", 0.0f},
-        {"special", 0.0f},
-        {"attackSpeed", 0.0f},
-    };
+    [SerializeField]
+    private Attribute[] initialAttributes;
+    private Dictionary<string, Attribute> m_attributes;
 
-    // Operator [] overload to get a specific attribute from the m_attributes Dictionary.
-    public float this[string attribute] 
+    void Start()
     {
-        get { return m_attributes[attribute]; }
-        set { m_attributes[attribute] = value; }
+        m_attributes = new Dictionary<string, Attribute>();
+        foreach (Attribute attr in initialAttributes)
+        {
+            m_attributes[attr.name] = attr;
+            m_attributes[attr.name].Initialize();
+        }
+    }
+    
+    // Operator [] overload to get a specific attribute from the m_attributes Dictionary.
+    public Attribute this[string attribute] 
+    {
+        get => m_attributes[attribute];
     }
 }
