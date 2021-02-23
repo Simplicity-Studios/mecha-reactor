@@ -112,6 +112,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2177320247947138529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2305549594714774173}
+  m_Layer: 0
+  m_Name: MissileFirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2305549594714774173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2177320247947138529}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.005, y: 0.415, z: 0}
+  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6447998740629227338}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6447998740629227336
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,10 +154,10 @@ GameObject:
   - component: {fileID: 6447998740629227339}
   - component: {fileID: 6447998740629227340}
   - component: {fileID: 6447998740629227341}
+  - component: {fileID: 8249271630346668201}
   - component: {fileID: 6447998740629227343}
   - component: {fileID: 6447998740629227342}
   - component: {fileID: 1944640404}
-  - component: {fileID: 8249271630346668201}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -148,6 +178,7 @@ Transform:
   m_Children:
   - {fileID: 4394207328945688768}
   - {fileID: 8327639953578117384}
+  - {fileID: 2305549594714774173}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -254,6 +285,18 @@ MonoBehaviour:
     type: 3}
   baseSpecialTime: 1
   maxHealth: 300
+--- !u!114 &8249271630346668201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6447998740629227336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6acde0ebd62486c43b3c2d795dd193e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &6447998740629227343
 Rigidbody2D:
   serializedVersion: 4
@@ -336,18 +379,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8249271630346668201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6447998740629227336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6acde0ebd62486c43b3c2d795dd193e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8438424818740603269
 GameObject:
   m_ObjectHideFlags: 0

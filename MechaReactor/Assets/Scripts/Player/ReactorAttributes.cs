@@ -69,7 +69,7 @@ public class ReactorAttributes : MonoBehaviour
         m_points = points;
 
         m_electricity -= m_points * electricityDecreaseRate * 0.005f;
-        print(m_electricity);
+        //print(m_electricity);
     }
     
     // Operator [] overload to get a specific attribute from the m_attributes Dictionary.
