@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     {
         playerController = player.GetComponent<PlayerController>();
         roomManager = FindObjectOfType<RoomManager>();
+        Physics2D.IgnoreLayerCollision(11, 12, true);
     }
 
     void Update()
