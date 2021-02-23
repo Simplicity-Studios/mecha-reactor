@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject mainCamera;
 
+    private Vector3 offset = new Vector3(0f, 0f, -10f);
+
     public Transform getPlayerTransform()
     {
         return player.transform;
@@ -25,8 +27,13 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void setCameraBounds(float x, float y)
+    public void setCameraBounds(float x, float y, float xOffset, float yOffset)
     {
-        mainCamera.GetComponent<CamFollow>().setBounds(x, y);
+        mainCamera.GetComponent<CamFollow>().setBounds(x, y, xOffset, yOffset);
+    }
+
+    public void moveCameraToPosition(Transform pos)
+    {
+        mainCamera.GetComponent<Transform>().position = pos.position + offset;
     }
 }

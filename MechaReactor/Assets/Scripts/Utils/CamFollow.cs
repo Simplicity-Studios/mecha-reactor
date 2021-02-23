@@ -19,10 +19,10 @@ public class CamFollow : MonoBehaviour
         boundsY = roomBounds.size.y / 2;
     }
 
-    public void setBounds(float x, float y)
+    public void setBounds(float x, float y, float xOffset, float yOffset)
     {
-        boundsX = x / 2;
-        boundsY = y / 2;
+        boundsX = (x / 2) + Mathf.Abs(xOffset);
+        boundsY = (y / 2) + Mathf.Abs(yOffset);
     }
 
     void FixedUpdate()

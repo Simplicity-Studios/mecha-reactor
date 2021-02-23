@@ -31,7 +31,11 @@ public class RoomManager : MonoBehaviour
         //Tell game manager to set the camera bounds of the new room
         float newRoomBoundsX = rooms[currentRoom].GetComponent<Room>().roomBounds.size.x;
         float newRoomBoundsY = rooms[currentRoom].GetComponent<Room>().roomBounds.size.y;
-        gameManager.setCameraBounds(newRoomBoundsX, newRoomBoundsY);
+        float newRoomOffsetX = rooms[currentRoom].GetComponent<Room>().roomBounds.offset.x;
+        float newRoomOffsetY = rooms[currentRoom].GetComponent<Room>().roomBounds.offset.y;
+        gameManager.setCameraBounds(newRoomBoundsX, newRoomBoundsY, newRoomOffsetX, newRoomOffsetY);
+
+        gameManager.moveCameraToPosition(gameManager.player.GetComponent<Transform>());
 
         rooms[currentRoom].SetActive(true);
     }
