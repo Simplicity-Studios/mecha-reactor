@@ -375,6 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3078533016793803903}
   - component: {fileID: 3078533016793803900}
+  - component: {fileID: 7220448983446483149}
   - component: {fileID: 3078533016793803901}
   - component: {fileID: 3078533016793803890}
   m_Layer: 0
@@ -414,19 +415,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   healthBar: {fileID: 3078533015917692479}
-  enemyType: 0
   movementSpeed: 2
   rigidbody: {fileID: 3078533016793803901}
   spriteTransform: {fileID: 3078533016247707756}
   randomMoveDuration: 0.5
   infrontPoint: {fileID: 3078533015781873477}
+  player: {fileID: 0}
+--- !u!114 &7220448983446483149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078533016793803891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5da1928275558a123b10aa85fff94936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   attackSpeed: 1
   attackDamage: 10
-  attackRange: 1.25
-  bulletForce: 15
-  bulletSpawnLocation: {fileID: 3078533016597020333}
-  bulletPrefab: {fileID: 3462380549372543098, guid: af6551301a0461070bb2ce3ade0cf7f1,
-    type: 3}
+  attackRange: 1.3
   player: {fileID: 0}
 --- !u!50 &3078533016793803901
 Rigidbody2D:

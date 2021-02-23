@@ -40,8 +40,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1007641990052675765}
   - component: {fileID: 1007641990052675770}
+  - component: {fileID: 5727980702866087466}
   - component: {fileID: 1007641990052675771}
   - component: {fileID: 1007641990052675764}
+  - component: {fileID: 7821856175326355210}
   m_Layer: 0
   m_Name: RangedEnemy
   m_TagString: Enemy
@@ -88,11 +90,25 @@ MonoBehaviour:
   attackSpeed: 1
   attackDamage: 10
   attackRange: 1.25
-  bulletForce: 15
-  bulletSpawnLocation: {fileID: 1007641989924546620}
-  bulletPrefab: {fileID: 3462380549372543098, guid: af6551301a0461070bb2ce3ade0cf7f1,
-    type: 3}
   player: {fileID: 0}
+--- !u!114 &5727980702866087466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007641990052675766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26032325ca523c30f9ff59ed13f923a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  attackSpeed: 1
+  attackDamage: 10
+  bulletForce: 15
+  bulletSpawnLocation: {fileID: 0}
+  bulletPrefab: {fileID: 0}
 --- !u!50 &1007641990052675771
 Rigidbody2D:
   serializedVersion: 4
@@ -130,6 +146,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.28
+--- !u!114 &7821856175326355210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007641990052675766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26032325ca523c30f9ff59ed13f923a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  attackSpeed: 1
+  attackDamage: 10
+  bulletForce: 0
+  bulletSpawnLocation: {fileID: 0}
+  bulletPrefab: {fileID: 0}
 --- !u!1 &1007641990261636335
 GameObject:
   m_ObjectHideFlags: 0
