@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
-            currHealth -= 1;
+            TakeDamage(10f);
     }
 
     void FixedUpdate()
@@ -102,7 +102,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currHealth = Mathf.Max(currHealth - damage, 0);
+        currHealth = Mathf.Max(currHealth - (damage - stats["defense"].GetValue()), 0);
     }
 
     public bool MouseOverReactorButton()

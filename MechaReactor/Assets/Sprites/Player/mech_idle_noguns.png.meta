@@ -1,0 +1,1592 @@
+fileFormatVersion: 2
+guid: 966eb2bdabc0d9545976a38c61ecccf0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3641916700001454028
+    second: mech_idle_noguns_0
+  - first:
+      213: 741799977578008875
+    second: mech_idle_noguns_1
+  - first:
+      213: 5719571803600271111
+    second: mech_idle_noguns_2
+  - first:
+      213: 3419164995205911936
+    second: mech_idle_noguns_3
+  - first:
+      213: 7319460084493147670
+    second: mech_idle_noguns_4
+  - first:
+      213: 2310214129240711519
+    second: mech_idle_noguns_5
+  - first:
+      213: -5527514933084165816
+    second: mech_idle_noguns_6
+  - first:
+      213: -4788777765382996159
+    second: mech_idle_noguns_7
+  - first:
+      213: 1884813215364796037
+    second: mech_idle_noguns_8
+  - first:
+      213: 8440440519729037621
+    second: mech_idle_noguns_9
+  - first:
+      213: 459056555313749885
+    second: mech_idle_noguns_10
+  - first:
+      213: 1109266290862621116
+    second: mech_idle_noguns_11
+  - first:
+      213: -7648358578357531716
+    second: mech_idle_noguns_12
+  - first:
+      213: -4567641510576227885
+    second: mech_idle_noguns_13
+  - first:
+      213: -76086730852655364
+    second: mech_idle_noguns_14
+  - first:
+      213: 3710920369841435929
+    second: mech_idle_noguns_15
+  - first:
+      213: 4484230874573140605
+    second: mech_idle_noguns_16
+  - first:
+      213: -525036164965920694
+    second: mech_idle_noguns_17
+  - first:
+      213: -1306266973603907740
+    second: mech_idle_noguns_18
+  - first:
+      213: -5336114205723387303
+    second: mech_idle_noguns_19
+  - first:
+      213: -7606446462064249036
+    second: mech_idle_noguns_20
+  - first:
+      213: 3706831986171505902
+    second: mech_idle_noguns_21
+  - first:
+      213: -8727654061256099023
+    second: mech_idle_noguns_22
+  - first:
+      213: -3124870658613940410
+    second: mech_idle_noguns_23
+  - first:
+      213: -8531895727599448083
+    second: mech_idle_noguns_24
+  - first:
+      213: -7815389241336475704
+    second: mech_idle_noguns_25
+  - first:
+      213: 6837816970622478519
+    second: mech_idle_noguns_26
+  - first:
+      213: 7705795567015427023
+    second: mech_idle_noguns_27
+  - first:
+      213: -6149439601650363313
+    second: mech_idle_noguns_28
+  - first:
+      213: -4864909158998353911
+    second: mech_idle_noguns_29
+  - first:
+      213: 4310068815633165216
+    second: mech_idle_noguns_30
+  - first:
+      213: 677342100171470443
+    second: mech_idle_noguns_31
+  - first:
+      213: -9050038824351461371
+    second: mech_idle_noguns_32
+  - first:
+      213: -8198795928634144234
+    second: mech_idle_noguns_33
+  - first:
+      213: -661753992768445936
+    second: mech_idle_noguns_34
+  - first:
+      213: 4520413981076404519
+    second: mech_idle_noguns_35
+  - first:
+      213: -8691722368249703782
+    second: mech_idle_noguns_36
+  - first:
+      213: -3964505264386103546
+    second: mech_idle_noguns_37
+  - first:
+      213: -7722041904786984942
+    second: mech_idle_noguns_38
+  - first:
+      213: -2947526728047960969
+    second: mech_idle_noguns_39
+  - first:
+      213: -4187778536970562806
+    second: mech_idle_noguns_40
+  - first:
+      213: 7020151668283506756
+    second: mech_idle_noguns_41
+  - first:
+      213: -8070249316074861932
+    second: mech_idle_noguns_42
+  - first:
+      213: -4083840971036602841
+    second: mech_idle_noguns_43
+  - first:
+      213: -921338620264595381
+    second: mech_idle_noguns_44
+  - first:
+      213: -5364490084748038570
+    second: mech_idle_noguns_45
+  - first:
+      213: -4901548443621650075
+    second: mech_idle_noguns_46
+  - first:
+      213: 5423604246671064425
+    second: mech_idle_noguns_47
+  - first:
+      213: 4396599498936022957
+    second: mech_idle_noguns_48
+  - first:
+      213: -5472691966700522278
+    second: mech_idle_noguns_49
+  - first:
+      213: 2185264080340572825
+    second: mech_idle_noguns_50
+  - first:
+      213: -6402560369701927090
+    second: mech_idle_noguns_51
+  - first:
+      213: 2014900206593172982
+    second: mech_idle_noguns_52
+  - first:
+      213: 2412978798769186777
+    second: mech_idle_noguns_53
+  - first:
+      213: -3780253311846165862
+    second: mech_idle_noguns_54
+  - first:
+      213: 2111573519336038936
+    second: mech_idle_noguns_55
+  - first:
+      213: 833584638797417209
+    second: mech_idle_noguns_56
+  - first:
+      213: -1640778845394224161
+    second: mech_idle_noguns_57
+  - first:
+      213: 3182168908570390083
+    second: mech_idle_noguns_58
+  - first:
+      213: 4301534489645333172
+    second: mech_idle_noguns_59
+  - first:
+      213: 8811946472596292638
+    second: mech_idle_noguns_60
+  - first:
+      213: -4483023072882761808
+    second: mech_idle_noguns_61
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mech_idle_noguns_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438b9da9e00557dc0800000000000000
+      internalID: -3641916700001454028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 860
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b211eed36276b4a00800000000000000
+      internalID: 741799977578008875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 860
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7073fe47040006f40800000000000000
+      internalID: 5719571803600271111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 817
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085d2b79270537f20800000000000000
+      internalID: 3419164995205911936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_4
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 817
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e5ddbaa22f39560800000000000000
+      internalID: 7319460084493147670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_5
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 817
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f512b70b2878f0020800000000000000
+      internalID: 2310214129240711519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 774
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849e9d254725a43b0800000000000000
+      internalID: -5527514933084165816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_7
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 774
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fbe029ef7da8db0800000000000000
+      internalID: -4788777765382996159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 774
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ec7c912a3382a10800000000000000
+      internalID: 1884813215364796037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 731
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531434eeee7722570800000000000000
+      internalID: 8440440519729037621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_10
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 731
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f5a4f3185ee5600800000000000000
+      internalID: 459056555313749885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 731
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb18e2c70d7e46f00800000000000000
+      internalID: 1109266290862621116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb003e45629bd590800000000000000
+      internalID: -7648358578357531716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 688
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d976cc1f3a7c90c0800000000000000
+      internalID: -4567641510576227885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_14
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 688
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe186b758fa1fef0800000000000000
+      internalID: -76086730852655364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 645
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915f8224a66df7330800000000000000
+      internalID: 3710920369841435929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 645
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7275c1d8303b3e30800000000000000
+      internalID: 4484230874573140605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_17
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 645
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4019f4c362b6b8f0800000000000000
+      internalID: -525036164965920694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 602
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467b380cb153fdde0800000000000000
+      internalID: -1306266973603907740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_19
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 602
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a11fed66052f5b0800000000000000
+      internalID: -5336114205723387303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_20
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 602
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43732a15e39707690800000000000000
+      internalID: -7606446462064249036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeceec14d00517330800000000000000
+      internalID: 3706831986171505902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 559
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bb5545fd421e680800000000000000
+      internalID: -8727654061256099023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_23
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 559
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f664831ba32a4d0800000000000000
+      internalID: -3124870658613940410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def03c72a0e989980800000000000000
+      internalID: -8531895727599448083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_25
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 516
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfcab884e82a8390800000000000000
+      internalID: -7815389241336475704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_26
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 516
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b827157e4ec4ee50800000000000000
+      internalID: 6837816970622478519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 473
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbfbbbbd3c70fa60800000000000000
+      internalID: 7705795567015427023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_28
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 473
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4419ef634dc8aaa0800000000000000
+      internalID: -6149439601650363313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_29
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 473
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908db5135ee5c7cb0800000000000000
+      internalID: -4864909158998353911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 430
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abad4980c070db30800000000000000
+      internalID: 4310068815633165216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_31
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 430
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6633282d07666900800000000000000
+      internalID: 677342100171470443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_32
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 430
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500990f63adc76280800000000000000
+      internalID: -9050038824351461371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 387
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ac7dfba86083e80800000000000000
+      internalID: -8198795928634144234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_34
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 387
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012275cef3af0d6f0800000000000000
+      internalID: -661753992768445936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 387
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729b4cbc09cbbbe30800000000000000
+      internalID: 4520413981076404519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 344
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92d82a8e8cc06780800000000000000
+      internalID: -8691722368249703782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 344
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607a916877f3bf8c0800000000000000
+      internalID: -3964505264386103546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_38
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 344
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210bd7cfccbc5d490800000000000000
+      internalID: -7722041904786984942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c5bb8be084817d0800000000000000
+      internalID: -2947526728047960969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_40
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 301
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a035dd1cb9502e5c0800000000000000
+      internalID: -4187778536970562806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_41
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 301
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44087697fb69c6160800000000000000
+      internalID: 7020151668283506756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ac48a4107b00090800000000000000
+      internalID: -8070249316074861932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_43
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 258
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e4d2226484357c0800000000000000
+      internalID: -4083840971036602841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_44
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 258
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40c745086fb633f0800000000000000
+      internalID: -921338620264595381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65eec71b0b08d85b0800000000000000
+      internalID: -5364490084748038570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_46
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 215
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5611098f8a33afbb0800000000000000
+      internalID: -4901548443621650075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_47
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 215
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96df02da353844b40800000000000000
+      internalID: 5423604246671064425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 172
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7fdb933fbd30d30800000000000000
+      internalID: 4396599498936022957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_49
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 172
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad47eafd6a71d04b0800000000000000
+      internalID: -5472691966700522278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_50
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 172
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ade116a1e935e10800000000000000
+      internalID: 2185264080340572825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e474ce614498527a0800000000000000
+      internalID: -6402560369701927090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_52
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 129
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5e8dfff0d56fb10800000000000000
+      internalID: 2014900206593172982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_53
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 129
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7af27de6f9c7120800000000000000
+      internalID: 2412978798769186777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a925a6a34a7d98bc0800000000000000
+      internalID: -3780253311846165862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_55
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 86
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8126521ade0dd4d10800000000000000
+      internalID: 2111573519336038936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_56
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 86
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa0ebdffcc719b00800000000000000
+      internalID: 833584638797417209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb3d455558ca39e0800000000000000
+      internalID: -1640778845394224161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_58
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 43
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e61a233c5592c20800000000000000
+      internalID: 3182168908570390083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_59
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 43
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bab66ce3de12bb30800000000000000
+      internalID: 4301534489645333172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14cbde01a25a4a70800000000000000
+      internalID: 8811946472596292638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_idle_noguns_61
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf51fc644a19c1c0800000000000000
+      internalID: -4483023072882761808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1592 @@
+fileFormatVersion: 2
+guid: 5982031e080be1b45b42406bf74acc01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 193287395878172787
+    second: mech_walk_noguns_0
+  - first:
+      213: -6069650067574096672
+    second: mech_walk_noguns_1
+  - first:
+      213: -3759369018189070633
+    second: mech_walk_noguns_2
+  - first:
+      213: -2403252258436618026
+    second: mech_walk_noguns_3
+  - first:
+      213: -7523217178200499937
+    second: mech_walk_noguns_4
+  - first:
+      213: 7206123573872137927
+    second: mech_walk_noguns_5
+  - first:
+      213: 7751222324529397952
+    second: mech_walk_noguns_6
+  - first:
+      213: -6576136685819279997
+    second: mech_walk_noguns_7
+  - first:
+      213: 88450611644972088
+    second: mech_walk_noguns_8
+  - first:
+      213: 692991388661643312
+    second: mech_walk_noguns_9
+  - first:
+      213: 2924723113673181728
+    second: mech_walk_noguns_10
+  - first:
+      213: -6395438945462847715
+    second: mech_walk_noguns_11
+  - first:
+      213: 1514978249925022009
+    second: mech_walk_noguns_12
+  - first:
+      213: 826686502889624484
+    second: mech_walk_noguns_13
+  - first:
+      213: 2875921508991715441
+    second: mech_walk_noguns_14
+  - first:
+      213: -4373396302815842585
+    second: mech_walk_noguns_15
+  - first:
+      213: 8437839819736315797
+    second: mech_walk_noguns_16
+  - first:
+      213: -5225359965428931388
+    second: mech_walk_noguns_17
+  - first:
+      213: -6928141126196726527
+    second: mech_walk_noguns_18
+  - first:
+      213: 496640663133379743
+    second: mech_walk_noguns_19
+  - first:
+      213: 8177057809503991421
+    second: mech_walk_noguns_20
+  - first:
+      213: 8563759937125373435
+    second: mech_walk_noguns_21
+  - first:
+      213: -8700580709199687026
+    second: mech_walk_noguns_22
+  - first:
+      213: 941208224463848176
+    second: mech_walk_noguns_23
+  - first:
+      213: -4263707196766975260
+    second: mech_walk_noguns_24
+  - first:
+      213: 7591639110849128342
+    second: mech_walk_noguns_25
+  - first:
+      213: -4047066590918144454
+    second: mech_walk_noguns_26
+  - first:
+      213: -6512149444883719318
+    second: mech_walk_noguns_27
+  - first:
+      213: -336342621030381137
+    second: mech_walk_noguns_28
+  - first:
+      213: 3859799741605702496
+    second: mech_walk_noguns_29
+  - first:
+      213: -3097013287617762065
+    second: mech_walk_noguns_30
+  - first:
+      213: 1738915466808475448
+    second: mech_walk_noguns_31
+  - first:
+      213: -8273730613656032918
+    second: mech_walk_noguns_32
+  - first:
+      213: -7329955604161196436
+    second: mech_walk_noguns_33
+  - first:
+      213: -7437810807345646826
+    second: mech_walk_noguns_34
+  - first:
+      213: 4646595085098638742
+    second: mech_walk_noguns_35
+  - first:
+      213: -152172284636545057
+    second: mech_walk_noguns_36
+  - first:
+      213: 2214612201798217108
+    second: mech_walk_noguns_37
+  - first:
+      213: -8341917613556828979
+    second: mech_walk_noguns_38
+  - first:
+      213: -8858584376822798344
+    second: mech_walk_noguns_39
+  - first:
+      213: -1314566340826544385
+    second: mech_walk_noguns_40
+  - first:
+      213: 8812693915241860472
+    second: mech_walk_noguns_41
+  - first:
+      213: 2019859431506101031
+    second: mech_walk_noguns_42
+  - first:
+      213: 3570005283077369845
+    second: mech_walk_noguns_43
+  - first:
+      213: -8592128830397379941
+    second: mech_walk_noguns_44
+  - first:
+      213: -3801124333264265281
+    second: mech_walk_noguns_45
+  - first:
+      213: 6246255674932684098
+    second: mech_walk_noguns_46
+  - first:
+      213: -7025526617229406669
+    second: mech_walk_noguns_47
+  - first:
+      213: -5956373564089953824
+    second: mech_walk_noguns_48
+  - first:
+      213: -7372994328212956555
+    second: mech_walk_noguns_49
+  - first:
+      213: 7552003673558600355
+    second: mech_walk_noguns_50
+  - first:
+      213: -4040707276934051252
+    second: mech_walk_noguns_51
+  - first:
+      213: 7718003192951474236
+    second: mech_walk_noguns_52
+  - first:
+      213: 6915926903253976926
+    second: mech_walk_noguns_53
+  - first:
+      213: -4436795984352457374
+    second: mech_walk_noguns_54
+  - first:
+      213: -6160149236204081470
+    second: mech_walk_noguns_55
+  - first:
+      213: 1509096561932752354
+    second: mech_walk_noguns_56
+  - first:
+      213: 406580836840454845
+    second: mech_walk_noguns_57
+  - first:
+      213: 1639271518163474220
+    second: mech_walk_noguns_58
+  - first:
+      213: -3780627814637374670
+    second: mech_walk_noguns_59
+  - first:
+      213: 5798725956087367367
+    second: mech_walk_noguns_60
+  - first:
+      213: -5324000725146270219
+    second: mech_walk_noguns_61
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mech_walk_noguns_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378f0eaccd1bea200800000000000000
+      internalID: 193287395878172787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 960
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecf1530c6544cba0800000000000000
+      internalID: -6069650067574096672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 960
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de3b33cbc904dbc0800000000000000
+      internalID: -3759369018189070633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8ea3ecdcee5aed0800000000000000
+      internalID: -2403252258436618026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_4
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 912
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f191e3d06d9289790800000000000000
+      internalID: -7523217178200499937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_5
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 912
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c69734f53b410460800000000000000
+      internalID: 7206123573872137927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c007ace2afd19b60800000000000000
+      internalID: 7751222324529397952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_7
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 864
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385c35fa68edcb4a0800000000000000
+      internalID: -6576136685819279997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 864
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cb347dc5d3a3100800000000000000
+      internalID: 88450611644972088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038f4911ffffd9900800000000000000
+      internalID: 692991388661643312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_10
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 816
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a4dd01d24b69820800000000000000
+      internalID: 2924723113673181728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 816
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17fcf0e926de37a0800000000000000
+      internalID: -6395438945462847715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931593d01b8460510800000000000000
+      internalID: 1514978249925022009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 768
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a398519efaf87b00800000000000000
+      internalID: 826686502889624484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_14
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 768
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1784b59006359e720800000000000000
+      internalID: 2875921508991715441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eea7acdb339e43c0800000000000000
+      internalID: -4373396302815842585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 720
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59777074c9a391570800000000000000
+      internalID: 8437839819736315797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_17
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 720
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4af0debcacb77b0800000000000000
+      internalID: -5225359965428931388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105f4434a5c4adf90800000000000000
+      internalID: -6928141126196726527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_19
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 672
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c54134d0c64e600800000000000000
+      internalID: 496640663133379743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_20
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 672
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76b15bf0ceba7170800000000000000
+      internalID: 8177057809503991421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf554124a4698d670800000000000000
+      internalID: 8563759937125373435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 624
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82598051f3514780800000000000000
+      internalID: -8700580709199687026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_23
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 624
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f208d6b4e7df0d00800000000000000
+      internalID: 941208224463848176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea8d6605e444d4c0800000000000000
+      internalID: -4263707196766975260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_25
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 576
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697ef119c8bea5960800000000000000
+      internalID: 7591639110849128342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_26
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 576
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e09f9b06ee5d7c0800000000000000
+      internalID: -4047066590918144454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bd27d259230a5a0800000000000000
+      internalID: -6512149444883719318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_28
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 528
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa909ae0b22155bf0800000000000000
+      internalID: -336342621030381137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_29
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 528
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b6d863a63c09530800000000000000
+      internalID: 3859799741605702496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fece0e6d2d23505d0800000000000000
+      internalID: -3097013287617762065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_31
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 480
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f3d85676ed12810800000000000000
+      internalID: 1738915466808475448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_32
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 480
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69e1cdc7ddcd2d80800000000000000
+      internalID: -8273730613656032918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e869ab634c64a90800000000000000
+      internalID: -7329955604161196436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_34
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 432
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613f9995a7697c890800000000000000
+      internalID: -7437810807345646826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 432
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d51667c950c7040800000000000000
+      internalID: 4646595085098638742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf34950d1063edf0800000000000000
+      internalID: -152172284636545057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 384
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49dad636012ebbe10800000000000000
+      internalID: 2214612201798217108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_38
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 384
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4fe5ab02e8b3c80800000000000000
+      internalID: -8341917613556828979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7e6aea17cff0580800000000000000
+      internalID: -8858584376822798344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_40
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 336
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6495db0e8b1cde0800000000000000
+      internalID: -1314566340826544385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_41
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 336
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dcc3c9c6afc4a70800000000000000
+      internalID: 8812693915241860472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723c427837bf70c10800000000000000
+      internalID: 2019859431506101031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_43
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 288
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff2818e3e43b8130800000000000000
+      internalID: 3570005283077369845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_44
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 288
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a85cf0a50a2c880800000000000000
+      internalID: -8592128830397379941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf90b0ee81bf3bc0800000000000000
+      internalID: -3801124333264265281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_46
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 240
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24561a831782fa650800000000000000
+      internalID: 6246255674932684098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_47
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 240
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e4df3b3c0508e90800000000000000
+      internalID: -7025526617229406669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e114ea3dc5b65da0800000000000000
+      internalID: -5956373564089953824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_49
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 192
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a95e7e8bcdda990800000000000000
+      internalID: -7372994328212956555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_50
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 192
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aac7e0345b1ec860800000000000000
+      internalID: 7552003673558600355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a8205e3268ce7c0800000000000000
+      internalID: -4040707276934051252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_52
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 144
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c380433230bdb1b60800000000000000
+      internalID: 7718003192951474236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_53
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 144
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57450950ee4aff50800000000000000
+      internalID: 6915926903253976926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dcac33f855d62c0800000000000000
+      internalID: -4436795984352457374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_55
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 96
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce69a458e0c28aa0800000000000000
+      internalID: -6160149236204081470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_56
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 96
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5d3c9d35361f410800000000000000
+      internalID: 1509096561932752354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba3b50fd1774a500800000000000000
+      internalID: 406580836840454845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_58
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 48
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c279c82b2ccdfb610800000000000000
+      internalID: 1639271518163474220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_59
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 48
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233f3908803888bc0800000000000000
+      internalID: -3780627814637374670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6cc6ab886397050800000000000000
+      internalID: 5798725956087367367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mech_walk_noguns_61
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f50cb95c895d16b0800000000000000
+      internalID: -5324000725146270219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
