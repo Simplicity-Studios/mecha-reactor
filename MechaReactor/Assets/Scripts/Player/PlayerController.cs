@@ -23,8 +23,14 @@ public class PlayerController : MonoBehaviour
     public Transform bulletSpawnLocationLeft;
     public Transform bulletSpawnLocationRight;
     public GameObject bulletPrefab;
-    private float lastShot = 0.0f;
 
+    [Header("Special Attack")]
+    public GameObject specialPrefab;
+    public float baseSpecialTime;
+    private float lastShot = 0.0f;
+    private float lastSpecialUse = 0.0f;
+
+    [Header("Other")]
     public float maxHealth = 300.0f;
     private float currHealth;
 
@@ -72,6 +78,13 @@ public class PlayerController : MonoBehaviour
             lastShot = Time.time;
         }
 
+        // Input for Special attack
+        if (Input.GetButton("Fire2") && Time.time > baseSpecialTime + lastSpecialUse)
+        {
+            UseSpecial();
+            lastSpecialUse = Time.time;
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
             TakeDamage(10f);
     }
@@ -88,6 +101,11 @@ public class PlayerController : MonoBehaviour
         
         Rigidbody2D bulletrigid = bullet.GetComponent<Rigidbody2D>();
         bulletrigid.AddForce(bulletSpawnLocation.up * bulletForce, ForceMode2D.Impulse);
+    }
+
+    void UseSpecial()
+    {
+        GameObject shockwave = Instantiate(specialPrefab, transform.position, Quaternion.identity);
     }
 
     public float GetHealth()
@@ -119,5 +137,4 @@ public class PlayerController : MonoBehaviour
         }
         return false;
     }
-
 }

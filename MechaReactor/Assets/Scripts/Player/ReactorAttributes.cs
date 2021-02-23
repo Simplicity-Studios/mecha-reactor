@@ -47,7 +47,7 @@ public class ReactorAttributes : MonoBehaviour
     private Dictionary<string, Attribute> m_attributes;
     
     private int m_maxPoints = 9, m_points;
-    public float m_electricity;
+    private float m_electricity;
 
     void Start()
     {

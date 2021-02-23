@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 305581686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePointR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8327639953578117384}
   - component: {fileID: 4424843208887307048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 6447998740629227342}
   - component: {fileID: 1944640404}
   - component: {fileID: 8249271630346668201}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -232,7 +232,6 @@ MonoBehaviour:
   - name: attackSpeed
     minValue: 0.2
     maxValue: 0.8
-  m_electricity: 0
 --- !u!114 &6447998740629227341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +250,9 @@ MonoBehaviour:
   bulletSpawnLocationRight: {fileID: 305581686}
   bulletPrefab: {fileID: 9160622345975263177, guid: a0e79fdc0cf21f54198689e33091fa90,
     type: 3}
+  specialPrefab: {fileID: 5940129621328437739, guid: 9f510fd07b0d7bb42b0704518a309431,
+    type: 3}
+  baseSpecialTime: 1
   maxHealth: 300
 --- !u!50 &6447998740629227343
 Rigidbody2D:
@@ -356,7 +358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4394207328945688768}
   - component: {fileID: 4188273931630354772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5128704927720577916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePointL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
