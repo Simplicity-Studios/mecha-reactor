@@ -33,7 +33,9 @@ public class PlayerController : MonoBehaviour
     [Header("Other")]
     public float maxHealth = 300.0f;
     private float currHealth;
-
+    
+    [HideInInspector]
+    public bool isImmuneToEMP = false;
     private bool lastFiredLeft = false;
     private bool lastFiredRight = true;
 
