@@ -65,7 +65,7 @@ public class EnemyController : MonoBehaviour
 
         // determine if the enemy can follow a straight line 
         // to the player
-        RaycastHit2D hit = Physics2D.Raycast(transform.position + directionToPlayer.normalized, directionToPlayer, 20.0f, mask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position + directionToPlayer.normalized, directionToPlayer, 100.0f, mask);
         if (hit.collider != null) 
         {
             // obstacle infront of enemy
@@ -112,7 +112,8 @@ public class EnemyController : MonoBehaviour
         else if (enemyType == EnemyType.Ranged) 
         {
             // Only shoot at player if they are in line of sight
-            if (hit.collider.gameObject.name == player.name 
+            if (hit.collider != null 
+                && hit.collider.gameObject.name == player.name 
                 && Time.time > attackSpeed + lastAttack)
             {
                 Shoot();
