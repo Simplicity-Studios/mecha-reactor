@@ -136,4 +136,9 @@ public class ReactorAttributes : MonoBehaviour
     {
         return maxElectricity;
     }
+
+    public void AddElectricity(float add)
+    {
+        m_electricity = Mathf.Max(m_electricity + add, maxElectricity);
+    }
 }

@@ -138,6 +138,18 @@ public class PlayerController : MonoBehaviour
         stats[reactorToDisable].Disable();
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("HealthItem"))
+            currHealth = Mathf.Min(currHealth + maxHealth * 0.10f, maxHealth);
+        else if (other.CompareTag("ElectricityItem"))
+            stats.AddElectricity(stats.GetMaxElectricity() * 0.10f);
+        else
+            return;
+        
+        Destroy(other.gameObject);
+    }
+
     public string selectRandomReactor()
     {
         int rand = Random.Range(0, 5);

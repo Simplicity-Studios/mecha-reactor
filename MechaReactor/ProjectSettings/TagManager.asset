@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - ReactorButton
   - ReactorButtonBar
+  - HealthItem
+  - ElectricityItem
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,8 @@ public class Special : MonoBehaviour
     public GameObject playerPrefab;
     [Range(0.05f, 0.1f)]
     public float changeRate = 0.05f;
-    public float damage;
+    public float damage = 20.0f;
+    private float maxSize = 15.0f;
     private Vector2 scaleRatio;
 
     void Start()
@@ -17,7 +18,7 @@ public class Special : MonoBehaviour
 
     void Update()
     {
-        if (transform.localScale.x < 15)
+        if (transform.localScale.x < maxSize)
         {
             transform.localScale = new Vector2(transform.localScale.x + changeRate,
                                                transform.localScale.y + changeRate);
@@ -28,8 +29,10 @@ public class Special : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print(other.transform.tag);
         if (other.transform.CompareTag("Enemy"))
-            other.transform.GetComponent<EnemyController>().TakeDamage(damage);
+        {
+            other.transform.GetComponent<EnemyController>().TakeDamage(damage + 
+                playerPrefab.GetComponent<ReactorAttributes>()["special"].GetValue());
+        }
     }
 }
