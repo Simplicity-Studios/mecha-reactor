@@ -25,12 +25,17 @@ public class Room : MonoBehaviour
     private Transform currentEnemies;
 
 
-    void Start()
+    public void InitializeWithEnemies()
     {
         currentEnemies = this.transform.Find("CurrentEnemies");
         if(enemiesToSpawn.Length != locationsToSpawn.Length)
             Debug.LogError("enemiesToSpawn and locationsToSpawn are not the same length.");
         spawnEnemies();
+    }
+
+    public void InitializeWithoutEnemies()
+    {
+        currentEnemies = this.transform.Find("CurrentEnemies");
     }
 
     void Update()

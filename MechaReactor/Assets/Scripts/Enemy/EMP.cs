@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class Special : MonoBehaviour
+public class EMP : MonoBehaviour
 {
-    public GameObject playerPrefab;
     [Range(0.05f, 0.1f)]
     public float changeRate = 0.05f;
-    public float damage;
+    public float duration;
+    public float maxSize = 30f;
     private Vector2 scaleRatio;
 
     void Start()
@@ -17,7 +19,7 @@ public class Special : MonoBehaviour
 
     void Update()
     {
-        if (transform.localScale.x < 15)
+        if (transform.localScale.x < maxSize)
         {
             transform.localScale = new Vector2(transform.localScale.x + changeRate,
                                                transform.localScale.y + changeRate);
@@ -28,8 +30,9 @@ public class Special : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print(other.transform.tag);
-        if (other.transform.CompareTag("Enemy"))
-            other.transform.GetComponent<EnemyController>().TakeDamage(damage);
+        if(other.transform.CompareTag("Player"))
+        {
+            other.GetComponent<PlayerController>().HitByEMP(duration);
+        }
     }
 }

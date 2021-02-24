@@ -27,7 +27,10 @@ public class GunRotating : MonoBehaviour
             mousePos.y - gunRight.position.y
         );
 
-        gunLeft.up = directionLeftGun;
-        gunRight.up = directionRightGun;
+        if (Vector2.Dot(directionLeftGun, directionRightGun) > 0)
+        {
+            gunLeft.up = directionLeftGun;
+            gunRight.up = directionRightGun;
+        }
     }
 }

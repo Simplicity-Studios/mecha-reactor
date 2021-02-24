@@ -115,6 +115,11 @@ public class PlayerController : MonoBehaviour
         return currHealth;
     }
 
+    public void setHealth(float health)
+    {
+        currHealth = health;
+    }
+
     public float GetMaxHealth()
     {
         return maxHealth;
@@ -123,6 +128,42 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currHealth = Mathf.Max(currHealth - (damage - stats["defense"].GetValue()), 0);
+    }
+
+    public void HitByEMP(float duration)
+    {
+        string reactorToDisable = selectRandomReactor();
+        int currentlyAllocated = stats[reactorToDisable].pointsAllocated;
+        stats[reactorToDisable].pointsAllocated -= currentlyAllocated;
+        stats[reactorToDisable].Disable();
+    }
+
+    public string selectRandomReactor()
+    {
+        int rand = Random.Range(0, 5);
+        string reactorToDisable = "";
+        switch(rand)
+        {
+            case 0:
+                reactorToDisable = "attack";
+                break;
+            case 1:
+                reactorToDisable = "defense";
+                break;
+            case 2:
+                reactorToDisable = "movementSpeed";
+                break;
+            case 3:
+                reactorToDisable = "attackSpeed";
+                break;
+            case 4:
+                reactorToDisable = "special";
+                break;
+            default:
+                reactorToDisable = "attack";
+                break;
+        }
+        return reactorToDisable;
     }
 
     public bool MouseOverReactorButton()
