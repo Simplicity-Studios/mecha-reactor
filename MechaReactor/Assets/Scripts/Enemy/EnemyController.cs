@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 // =======================================================================
 
@@ -15,13 +16,14 @@ public class EnemyController : MonoBehaviour
     public float movementSpeed = 2.0f;
     public Rigidbody2D rigidbody; // for moving the enemy's position
     public Transform spriteTransform; // For rotating sprite and firepoint
-    private float lastRandomMoveTime; 
-    public float randomMoveDuration = 0.5f;
+    private float lastPathFindMoveTime; 
+    public float pathFindMoveDuration = 0.5f;
     public Transform infrontPoint;
     // keeps track of the player's position 
     // so that the enemy knows where to shoot and walk
     public GameObject player;
     LayerMask mask; 
+    public NavMeshAgent agent;
 
     // ===================================================================
 
@@ -33,6 +35,12 @@ public class EnemyController : MonoBehaviour
         // Enemy can only see players and obstacles
         // Things like bullets are ignored 
         mask = LayerMask.GetMask("Player") | LayerMask.GetMask("Obstacles");
+
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
+        // sync rigidbody speed with nav agent
+        agent.speed = movementSpeed;
     }
 
     // ===================================================================
@@ -52,31 +60,29 @@ public class EnemyController : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position + directionToPlayer.normalized, directionToPlayer, 100.0f, mask);
         if (hit.collider != null) 
         {
+            Debug.Log(hit.collider);
+
+            // Look at player
+            var angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg - 90f;
+            spriteTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
             // obstacle infront of enemy
             if (hit.collider.gameObject.name != player.name) 
             {
-                if (Time.time > randomMoveDuration + lastRandomMoveTime)
+                // Only set destination every x seconds
+                if (Time.time > pathFindMoveDuration + lastPathFindMoveTime)
                 {
-                    // Face random direction
-                    float randomAngle = Random.Range(0f, 360f);
-                    spriteTransform.rotation = Quaternion.AngleAxis(randomAngle, Vector3.forward);
-
-                    // Move local forwards
-                    Vector3 localForwards = infrontPoint.position - transform.position;
-                    rigidbody.velocity = localForwards.normalized * movementSpeed;
-
+                    agent.speed = movementSpeed;
+                    agent.SetDestination(player.transform.position);
                     // Mark time of random move 
-                    lastRandomMoveTime = Time.time;
+                    lastPathFindMoveTime = Time.time;
                 }
             }
             // no obstacles 
             else
             {
-                // Look at player
-                var angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg - 90f;
-                spriteTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
                 // Move towards player
+                agent.speed = 0;
                 rigidbody.velocity = directionToPlayer.normalized * movementSpeed;
             }
         }
