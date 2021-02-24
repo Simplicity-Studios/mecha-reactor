@@ -60,7 +60,6 @@ public class EnemyController : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position + directionToPlayer.normalized, directionToPlayer, 100.0f, mask);
         if (hit.collider != null) 
         {
-            Debug.Log(hit.collider);
 
             // Look at player
             var angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg - 90f;

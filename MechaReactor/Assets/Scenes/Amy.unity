@@ -165,7 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ee85baa07148e43b8e00a6e8a410bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms: []
+  rooms:
+  - {fileID: 302484529}
   currentRoom: 0
   gameManager: {fileID: 0}
 --- !u!1 &149186131
@@ -234,6 +235,12 @@ Transform:
   m_Father: {fileID: 309496945}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &302484529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 185960156185468259, guid: 3d57de52c6944c84393e9b19eeb96319,
+    type: 3}
+  m_PrefabInstance: {fileID: 309496943}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &309496943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -426,6 +433,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 185960156185468257, guid: 3d57de52c6944c84393e9b19eeb96319,
         type: 3}
+      propertyPath: roomManager
+      value: 
+      objectReference: {fileID: 91502096}
+    - target: {fileID: 185960156185468257, guid: 3d57de52c6944c84393e9b19eeb96319,
+        type: 3}
       propertyPath: enemiesToSpawn.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -483,15 +495,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room_0
       objectReference: {fileID: 0}
+    - target: {fileID: 185960156312053744, guid: 3d57de52c6944c84393e9b19eeb96319,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 185960156363588002, guid: 3d57de52c6944c84393e9b19eeb96319,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 185960156419360612, guid: 3d57de52c6944c84393e9b19eeb96319,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 185960156419360615, guid: 3d57de52c6944c84393e9b19eeb96319,
         type: 3}
