@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 32}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchoredPosition: {x: 0, y: 36.5}
+  m_SizeDelta: {x: 32, y: 41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2687794431820155009
 CanvasRenderer:
@@ -64,7 +64,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e628430a147607442be7057a5577f9c4, type: 3}
+  m_Sprite: {fileID: -5471936193629298889, guid: 8843c9a7748ff2e49aa5412de9a89732,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -209,8 +210,8 @@ MonoBehaviour:
   player: {fileID: 0}
   overallReactorBar: {fileID: 0}
   pointsbarSprites:
-  - {fileID: 21300000, guid: e628430a147607442be7057a5577f9c4, type: 3}
-  - {fileID: 21300000, guid: 0d6743d10c2086e4fb9fb942c8696e6c, type: 3}
-  - {fileID: 21300000, guid: 482810e21e92a42468f8b3a5c088bad3, type: 3}
-  - {fileID: 21300000, guid: a087200ba811979478a1c0288394caba, type: 3}
+  - {fileID: 21300000, guid: 3ba0d1fedd799a542ac05f8f685b76ed, type: 3}
+  - {fileID: 21300000, guid: 09e8875c4085a464faf9eb5a1843c5e5, type: 3}
+  - {fileID: 21300000, guid: 855ae9c49d644d44a8c07691549745f8, type: 3}
+  - {fileID: 21300000, guid: 251fedec3de728646868f1b54bd79a00, type: 3}
   attributeName: 
