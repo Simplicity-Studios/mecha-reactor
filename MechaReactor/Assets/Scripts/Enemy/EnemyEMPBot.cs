@@ -15,4 +15,9 @@ public class EnemyEMPBot : MonoBehaviour
     {
         
     }
+
+    void activateEMP()
+    {
+        
+    }
 }
