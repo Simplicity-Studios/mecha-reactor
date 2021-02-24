@@ -115,6 +115,11 @@ public class PlayerController : MonoBehaviour
         return currHealth;
     }
 
+    public void setHealth(float health)
+    {
+        currHealth = health;
+    }
+
     public float GetMaxHealth()
     {
         return maxHealth;

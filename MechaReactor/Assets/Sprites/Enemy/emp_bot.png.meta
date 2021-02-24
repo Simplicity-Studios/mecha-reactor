@@ -1,0 +1,1592 @@
+fileFormatVersion: 2
+guid: 238cc449903e8de45a03e55e4d4da132
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8891306969247032500
+    second: emp_bot_0
+  - first:
+      213: -7364471774372510264
+    second: emp_bot_1
+  - first:
+      213: 6475602338259399237
+    second: emp_bot_2
+  - first:
+      213: 1586821565247258918
+    second: emp_bot_3
+  - first:
+      213: 2040417504458447165
+    second: emp_bot_4
+  - first:
+      213: 8636729465448171177
+    second: emp_bot_5
+  - first:
+      213: -6842137363082205115
+    second: emp_bot_6
+  - first:
+      213: -7861102603933385961
+    second: emp_bot_7
+  - first:
+      213: 2890320329487803090
+    second: emp_bot_8
+  - first:
+      213: 2820654048451613367
+    second: emp_bot_9
+  - first:
+      213: -1069766880034550186
+    second: emp_bot_10
+  - first:
+      213: 8312769290325319543
+    second: emp_bot_11
+  - first:
+      213: -4868433751602221035
+    second: emp_bot_12
+  - first:
+      213: 9176281828061333568
+    second: emp_bot_13
+  - first:
+      213: 2059582341820035548
+    second: emp_bot_14
+  - first:
+      213: -7255781486043765279
+    second: emp_bot_15
+  - first:
+      213: -4086733659458500692
+    second: emp_bot_16
+  - first:
+      213: -1057869569652412218
+    second: emp_bot_17
+  - first:
+      213: 1169157091622667469
+    second: emp_bot_18
+  - first:
+      213: -5857488689908128053
+    second: emp_bot_19
+  - first:
+      213: 7128985962919838206
+    second: emp_bot_20
+  - first:
+      213: -7619160826471348663
+    second: emp_bot_21
+  - first:
+      213: 7270422781217165986
+    second: emp_bot_22
+  - first:
+      213: 1753148748784897562
+    second: emp_bot_23
+  - first:
+      213: -4929251291456491106
+    second: emp_bot_24
+  - first:
+      213: -2917481886434237106
+    second: emp_bot_25
+  - first:
+      213: 6474590542881816760
+    second: emp_bot_26
+  - first:
+      213: 1957594319810460652
+    second: emp_bot_27
+  - first:
+      213: -3646055194040166965
+    second: emp_bot_28
+  - first:
+      213: 6874089250527701906
+    second: emp_bot_29
+  - first:
+      213: 12419543426418828
+    second: emp_bot_30
+  - first:
+      213: 7631188310546072290
+    second: emp_bot_31
+  - first:
+      213: -1333479279131943044
+    second: emp_bot_32
+  - first:
+      213: 8431689183066418754
+    second: emp_bot_33
+  - first:
+      213: 8032365673251113470
+    second: emp_bot_34
+  - first:
+      213: 5560850890623426451
+    second: emp_bot_35
+  - first:
+      213: 5534907214758221379
+    second: emp_bot_36
+  - first:
+      213: 5570198588618495420
+    second: emp_bot_37
+  - first:
+      213: -3008304110878354344
+    second: emp_bot_38
+  - first:
+      213: -3189336611226263464
+    second: emp_bot_39
+  - first:
+      213: 8874027039666362
+    second: emp_bot_40
+  - first:
+      213: -1967733573324358779
+    second: emp_bot_41
+  - first:
+      213: -5623143301754460803
+    second: emp_bot_42
+  - first:
+      213: -3119457814321680285
+    second: emp_bot_43
+  - first:
+      213: -5121930799597356762
+    second: emp_bot_44
+  - first:
+      213: 6333411588180607775
+    second: emp_bot_45
+  - first:
+      213: -7956609089392543218
+    second: emp_bot_46
+  - first:
+      213: -7666434109047993463
+    second: emp_bot_47
+  - first:
+      213: 7009431245392488636
+    second: emp_bot_48
+  - first:
+      213: 4575789692451204289
+    second: emp_bot_49
+  - first:
+      213: 1262168772542915054
+    second: emp_bot_50
+  - first:
+      213: 1398073003527772893
+    second: emp_bot_51
+  - first:
+      213: 7858495928870228430
+    second: emp_bot_52
+  - first:
+      213: -8986530231878294593
+    second: emp_bot_53
+  - first:
+      213: -6824524964551924093
+    second: emp_bot_54
+  - first:
+      213: -3584875479975831963
+    second: emp_bot_55
+  - first:
+      213: -8293315781996927082
+    second: emp_bot_56
+  - first:
+      213: -5094506172993604579
+    second: emp_bot_57
+  - first:
+      213: 4588894854088213816
+    second: emp_bot_58
+  - first:
+      213: -7764444767150746451
+    second: emp_bot_59
+  - first:
+      213: -2939167536938074158
+    second: emp_bot_60
+  - first:
+      213: -1546504137637964765
+    second: emp_bot_61
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: emp_bot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b531d6b6bbb9480800000000000000
+      internalID: -8891306969247032500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1080
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5c22a90f32cc990800000000000000
+      internalID: -7364471774372510264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1080
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542f3a67406fdd950800000000000000
+      internalID: 6475602338259399237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6210e766ec5850610800000000000000
+      internalID: 1586821565247258918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1026
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d391cb2e8e4015c10800000000000000
+      internalID: 2040417504458447165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1026
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6003180b3dbd770800000000000000
+      internalID: 8636729465448171177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 972
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548ae09c158db01a0800000000000000
+      internalID: -6842137363082205115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 972
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bf6a5e4d0c7e290800000000000000
+      internalID: -7861102603933385961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 972
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2e53ea60b7c1820800000000000000
+      internalID: 2890320329487803090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 918
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2d930a9e9f42720800000000000000
+      internalID: 2820654048451613367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 918
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e0013c0bc6721f0800000000000000
+      internalID: -1069766880034550186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_11
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 918
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fdd9960a3ec5370800000000000000
+      internalID: 8312769290325319543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5103a370c49df6cb0800000000000000
+      internalID: -4868433751602221035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 864
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048c77064b3b85f70800000000000000
+      internalID: 9176281828061333568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_14
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 864
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1b9dd4a3b159c10800000000000000
+      internalID: 2059582341820035548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e561846e294e4b90800000000000000
+      internalID: -7255781486043765279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 810
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca70850a3610947c0800000000000000
+      internalID: -4086733659458500692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 810
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c03c223b31b151f0800000000000000
+      internalID: -1057869569652412218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc44ccc2e2ea93010800000000000000
+      internalID: 1169157091622667469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_19
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 756
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc66822221506bea0800000000000000
+      internalID: -5857488689908128053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 756
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1459856fe3fe260800000000000000
+      internalID: 7128985962919838206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 702
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9468a9ba89d434690800000000000000
+      internalID: -7619160826471348663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 702
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a25b59cffab5e460800000000000000
+      internalID: 7270422781217165986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_23
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 702
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e8eb99f7f645810800000000000000
+      internalID: 1753148748784897562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91b9141118c79bb0800000000000000
+      internalID: -4929251291456491106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 648
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4563788ea50387d0800000000000000
+      internalID: -2917481886434237106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_26
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 648
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0039e7bcd5ad950800000000000000
+      internalID: 6474590542881816760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 594
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebff9e79a5ca2b10800000000000000
+      internalID: 1957594319810460652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_28
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 594
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc594cf5e1c966dc0800000000000000
+      internalID: -3646055194040166965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 594
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29be80cb0cba56f50800000000000000
+      internalID: 6874089250527701906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88443a428f1c2000800000000000000
+      internalID: 12419543426418828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_31
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 540
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e24630365d67e960800000000000000
+      internalID: 7631188310546072290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 540
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f1ff329a78e7de0800000000000000
+      internalID: -1333479279131943044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e6d2593a0630570800000000000000
+      internalID: 8431689183066418754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_34
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 486
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef98c24c502b87f60800000000000000
+      internalID: 8032365673251113470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_35
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 486
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f16802c6c1c2d40800000000000000
+      internalID: 5560850890623426451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346196069c0ffcc40800000000000000
+      internalID: 5534907214758221379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_37
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 432
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5dcfaaa125d4d40800000000000000
+      internalID: 5570198588618495420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_38
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 432
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8549fbe895b5046d0800000000000000
+      internalID: -3008304110878354344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 378
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850e5baff333db3d0800000000000000
+      internalID: -3189336611226263464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_40
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 378
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab03d6d61e68f1000800000000000000
+      internalID: 8874027039666362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_41
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 378
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b34659db431b4e0800000000000000
+      internalID: -1967733573324358779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75eec1b5f496f1b0800000000000000
+      internalID: -5623143301754460803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_43
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 324
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3603a8d35a575b4d0800000000000000
+      internalID: -3119457814321680285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_44
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 324
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629fddd231f3be8b0800000000000000
+      internalID: -5121930799597356762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1309d9984cc4e750800000000000000
+      internalID: 6333411588180607775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_46
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 270
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0afc1a6032749190800000000000000
+      internalID: -7956609089392543218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_47
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 270
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b814cdbca5b9590800000000000000
+      internalID: -7666434109047993463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8a4238490864160800000000000000
+      internalID: 7009431245392488636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_49
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 216
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cca2715b78708f30800000000000000
+      internalID: 4575789692451204289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_50
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 216
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1e206bfcf148110800000000000000
+      internalID: 1262168772542915054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda16594df3f66310800000000000000
+      internalID: 1398073003527772893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_52
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 162
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1d925496cfe0d60800000000000000
+      internalID: 7858495928870228430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_53
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 162
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3e595ed5e694380800000000000000
+      internalID: -8986530231878294593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386e81fd3ba6a41a0800000000000000
+      internalID: -6824524964551924093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_55
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 108
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56658049eb6ff3ec0800000000000000
+      internalID: -3584875479975831963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_56
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 108
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697aee37c3938ec80800000000000000
+      internalID: -8293315781996927082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d147ea4a0adac49b0800000000000000
+      internalID: -5094506172993604579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_58
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 54
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835cb898e870faf30800000000000000
+      internalID: 4588894854088213816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_59
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 54
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4d6df3f962f3490800000000000000
+      internalID: -7764444767150746451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df327192baf537d0800000000000000
+      internalID: -2939167536938074158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emp_bot_61
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324da683ea6b98ae0800000000000000
+      internalID: -1546504137637964765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

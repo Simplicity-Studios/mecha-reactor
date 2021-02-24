@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 1007641990052675766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.518, y: 0.3963567, z: -0.39097765}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.3}
   m_Children:
   - {fileID: 3581223005636808604}
   - {fileID: 3581223005546777756}
@@ -81,15 +81,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   healthBar: {fileID: 3581223005724835950}
-  enemyType: 1
   movementSpeed: 2
   rigidbody: {fileID: 1007641990052675771}
   spriteTransform: {fileID: 3581223005636808604}
   randomMoveDuration: 0.5
   infrontPoint: {fileID: 1007641990261636334}
-  attackSpeed: 1
-  attackDamage: 10
-  attackRange: 1.25
   player: {fileID: 0}
 --- !u!114 &5727980702866087466
 MonoBehaviour:
@@ -469,7 +465,7 @@ Transform:
   m_GameObject: {fileID: 3581223005636808603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
   m_Children:
   - {fileID: 1007641989924546620}
   - {fileID: 1007641990261636334}
@@ -515,7 +511,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ee74324e45753dca7a0ff875fc024c17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3fa91d162890ac4d90b5875f85044f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
