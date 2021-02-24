@@ -11,11 +11,12 @@ public class Attribute
     private int points;
     private const int size = 3;
     private float value, step;
+    private bool enabled = true;
 
     // Value gets changed automatically based on how many points are allocated
     // and the min and max set by the developer beforehand.
     public int pointsAllocated 
-    { 
+    {
         get => points; 
         set 
         {
@@ -34,6 +35,21 @@ public class Attribute
         pointsAllocated = 0;
         step = (maxValue - minValue) / size;
     }
+
+    public void Disable()
+    {
+        enabled = false;
+    }
+
+    public void Enable()
+    {
+        enabled = true;
+    }
+
+    public bool IsEnabled()
+    {
+        return enabled;
+    }
 }
 
 public class ReactorAttributes : MonoBehaviour
@@ -48,6 +64,7 @@ public class ReactorAttributes : MonoBehaviour
     
     private int m_maxPoints = 9, m_points;
     private float m_electricity;
+    private bool m_penalty = false;
 
     void Start()
     {
@@ -69,9 +86,30 @@ public class ReactorAttributes : MonoBehaviour
         m_points = points;
 
         m_electricity -= m_points * electricityDecreaseRate * 0.005f;
-        //print(m_electricity);
+        m_electricity = Mathf.Clamp(m_electricity, 0, maxElectricity);
+
+        if (m_electricity == 0 && !m_penalty)
+        {
+            print("oops no electricity :(");
+            m_penalty = true;
+            foreach (Attribute attr in initialAttributes)
+            {
+                m_attributes[attr.name].pointsAllocated -= 1;
+                m_attributes[attr.name].Disable();
+            }
+        }
+        else if (m_penalty && m_electricity > 0)
+        {
+            print("yay! we're back");
+            m_penalty = false;
+            foreach (Attribute attr in initialAttributes)
+            {
+                m_attributes[attr.name].Enable();
+            }
+        }
+            
     }
-    
+
     // Operator [] overload to get a specific attribute from the m_attributes Dictionary.
     public Attribute this[string attribute] 
     {
