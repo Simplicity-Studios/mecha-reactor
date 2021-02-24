@@ -2,9 +2,10 @@
 
 public class Special : MonoBehaviour
 {
+    public GameObject playerPrefab;
     [Range(0.05f, 0.1f)]
     public float changeRate = 0.05f;
-    private float dmg;
+    public float damage;
     private Vector2 scaleRatio;
 
     void Start()
@@ -25,11 +26,10 @@ public class Special : MonoBehaviour
             Destroy(gameObject);
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
+        print(other.transform.tag);
         if (other.transform.CompareTag("Enemy"))
-            other.transform.GetComponent<EnemyController>().TakeDamage(dmg);
-        else
-            print("player enter collision");
+            other.transform.GetComponent<EnemyController>().TakeDamage(damage);
     }
 }
