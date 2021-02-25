@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public Transform bulletSpawnLocationLeft;
     public Transform bulletSpawnLocationRight;
     public GameObject bulletPrefab;
+    public AudioSource shootSound;
 
     [Header("Special Attack")]
     public GameObject specialPrefab;
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
         //Input for Shooting
         if (!MouseOverReactorButton() && Input.GetButton("Fire1")  && Time.time > (baseAttackTime - stats["attackSpeed"].GetValue()) + lastShot)
         {
+            
             if(lastFiredLeft)
             {
                 Shoot(bulletSpawnLocationRight);
@@ -98,6 +100,8 @@ public class PlayerController : MonoBehaviour
 
     void Shoot(Transform bulletSpawnLocation)
     {
+        shootSound.Play();
+        
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnLocation.position, bulletSpawnLocation.rotation);
         bullet.GetComponent<Bullet>().setBulletDamage(stats["attack"].GetValue());
         
