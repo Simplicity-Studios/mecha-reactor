@@ -257,7 +257,7 @@ MonoBehaviour:
     maxValue: 45
   - name: defense
     minValue: 1
-    maxValue: 7
+    maxValue: 4
   - name: special
     minValue: 1
     maxValue: 3

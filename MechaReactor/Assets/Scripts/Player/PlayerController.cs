@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine;
 
@@ -132,15 +133,30 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currHealth = Mathf.Max(currHealth - (damage - stats["defense"].GetValue()), 0);
+        currHealth = Mathf.Max(currHealth - (damage / stats["defense"].GetValue()), 0);
     }
 
     public void HitByEMP(float duration)
     {
-        string reactorToDisable = selectRandomReactor();
-        int currentlyAllocated = stats[reactorToDisable].pointsAllocated;
-        stats[reactorToDisable].pointsAllocated -= currentlyAllocated;
-        stats[reactorToDisable].Disable();
+        if(!isImmuneToEMP)
+        {
+            string reactorToDisable = selectRandomReactor();
+            int currentlyAllocated = stats[reactorToDisable].pointsAllocated;
+            stats[reactorToDisable].pointsAllocated -= currentlyAllocated;
+            stats[reactorToDisable].Disable();
+            StartCoroutine(RecoverFromEMP(duration, reactorToDisable, currentlyAllocated));
+        }
+        else
+        {
+            Debug.Log("plink");
+        }
+    }
+
+    IEnumerator RecoverFromEMP(float duration, string disabledReactor, int pointsLastAllocated)
+    {
+        yield return new WaitForSeconds(duration);
+        stats[disabledReactor].Enable();
+        stats[disabledReactor].pointsAllocated += pointsLastAllocated;
     }
 
     void OnTriggerEnter2D(Collider2D other)

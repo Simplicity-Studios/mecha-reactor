@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class EnemyEMPBot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject emp;
+    public float empActivationRate;
+    private float lastEMP;
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Time.time > (lastEMP + empActivationRate))
+        {
+            activateEMP();
+            lastEMP = Time.time;
+        }
     }
 
     void activateEMP()
     {
-        
+        Instantiate(emp, transform.position, Quaternion.identity);
     }
 }
