@@ -133,7 +133,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currHealth = Mathf.Max(currHealth - (damage - stats["defense"].GetValue()), 0);
+        currHealth = Mathf.Max(currHealth - (damage / stats["defense"].GetValue()), 0);
     }
 
     public void HitByEMP(float duration)
