@@ -100,6 +100,7 @@ public class PlayerController : MonoBehaviour
 
     void Shoot(Transform bulletSpawnLocation)
     {
+        shootSound.pitch = (Random.Range(0.9f, 1.1f));
         shootSound.Play();
         
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnLocation.position, bulletSpawnLocation.rotation);
