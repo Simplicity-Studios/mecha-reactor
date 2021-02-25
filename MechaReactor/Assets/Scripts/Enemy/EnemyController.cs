@@ -19,6 +19,7 @@ public class EnemyController : MonoBehaviour
     private float lastPathFindMoveTime; 
     public float pathFindMoveDuration = 0.5f;
     public Transform infrontPoint;
+    public bool canRotate = true;
     // keeps track of the player's position 
     // so that the enemy knows where to shoot and walk
     public GameObject player;
@@ -62,8 +63,11 @@ public class EnemyController : MonoBehaviour
         {
 
             // Look at player
-            var angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg - 90f;
-            spriteTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            if(canRotate)
+            {
+                var angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg - 90f;
+                spriteTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            }
 
             // obstacle infront of enemy
             if (hit.collider.gameObject.name != player.name) 
