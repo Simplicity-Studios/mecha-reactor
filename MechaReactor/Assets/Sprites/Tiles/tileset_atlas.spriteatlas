@@ -32,6 +32,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 5ec83e16009c0404faddd60274e56ef7, type: 3}
     - {fileID: 21300000, guid: 2760c3277e9327c4da33f7852949894b, type: 3}
+    - {fileID: 21300000, guid: 10a91ef81d4120944910fb1fed046e31, type: 3}
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -507,6 +508,7 @@ SpriteAtlas:
   - {fileID: 7246075180274767129, guid: 5ec83e16009c0404faddd60274e56ef7, type: 3}
   - {fileID: 6016333715317608678, guid: 5ec83e16009c0404faddd60274e56ef7, type: 3}
   - {fileID: 21300000, guid: 2760c3277e9327c4da33f7852949894b, type: 3}
+  - {fileID: 21300000, guid: 10a91ef81d4120944910fb1fed046e31, type: 3}
   m_PackedSpriteNamesToIndex:
   - tileset_326
   - tileset_350
@@ -980,5 +982,6 @@ SpriteAtlas:
   - tileset_357
   - tileset_463
   - black_tile
+  - corner_wall
   m_Tag: tileset_atlas
   m_IsVariant: 0

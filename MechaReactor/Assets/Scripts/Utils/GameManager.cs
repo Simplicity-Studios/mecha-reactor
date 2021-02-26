@@ -47,9 +47,10 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    //DEFUNCT FUNCTION
     public void setCameraBounds(float x, float y, float xOffset, float yOffset)
     {
-        mainCamera.GetComponent<CamFollow>().setBounds(x, y, xOffset, yOffset);
+        return;
     }
 
     public void moveCameraToPosition(Transform pos)
