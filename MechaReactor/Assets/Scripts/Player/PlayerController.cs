@@ -156,7 +156,8 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         stats[disabledReactor].Enable();
-        stats[disabledReactor].pointsAllocated += pointsLastAllocated;
+        int pointsRemaining = stats.GetMaxPoints() - stats.GetTotalPointsAllocated() - 1;
+        stats[disabledReactor].pointsAllocated += Mathf.Min(pointsLastAllocated, pointsRemaining);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -196,6 +197,7 @@ public class PlayerController : MonoBehaviour
                 reactorToDisable = "attack";
                 break;
         }
+
         return reactorToDisable;
     }
 
