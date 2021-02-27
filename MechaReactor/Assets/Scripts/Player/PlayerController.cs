@@ -35,14 +35,19 @@ public class PlayerController : MonoBehaviour
     [Header("Other")]
     public float maxHealth = 300.0f;
     private float currHealth;
+    public float invincibilityDuration;
+    public float invicinibilityDelta;
+    private GameManager gameManager;
     
     [HideInInspector]
     public bool isImmuneToEMP = false;
     private bool lastFiredLeft = false;
     private bool lastFiredRight = true;
+    private bool isInvulnerable = false;
 
     void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         stats = this.GetComponent<ReactorAttributes>();
         r = GetComponent<Rigidbody2D>();
         currHealth = maxHealth;
@@ -133,7 +138,12 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currHealth = Mathf.Max(currHealth - (damage / stats["defense"].GetValue()), 0);
+        if(!isInvulnerable)
+        {
+            currHealth = Mathf.Max(currHealth - (damage / stats["defense"].GetValue()), 0);
+            StartCoroutine("DamageFlash");
+            gameManager.StartCameraShake();
+        }
     }
 
     public void HitByEMP(float duration)
@@ -214,5 +224,21 @@ public class PlayerController : MonoBehaviour
                 return true;
         }
         return false;
+    }
+
+    IEnumerator DamageFlash()
+    {
+        isInvulnerable = true;
+        SpriteRenderer s = GetComponent<SpriteRenderer>();
+        Color normal = new Color(1, 1, 1, 1);
+        Color transparent = new Color(1, 1, 1, 0);
+        for(float i = 0; i < invincibilityDuration; i += invicinibilityDelta)
+        {
+            s.color = transparent;
+            yield return new WaitForSeconds(invicinibilityDelta / 2);
+            s.color = normal;
+            yield return new WaitForSeconds(invicinibilityDelta / 2);
+        }
+        isInvulnerable = false;
     }
 }

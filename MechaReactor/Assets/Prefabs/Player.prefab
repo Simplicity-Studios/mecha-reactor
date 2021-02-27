@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 6447998740629227342}
   - component: {fileID: 1944640404}
   - component: {fileID: 850650035681344151}
+  - component: {fileID: 1944640399}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -175,7 +176,7 @@ Transform:
   m_GameObject: {fileID: 6447998740629227336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 2.8, y: 2.8, z: 1}
   m_Children:
   - {fileID: 4394207328945688768}
   - {fileID: 8327639953578117384}
@@ -287,6 +288,8 @@ MonoBehaviour:
     type: 3}
   baseSpecialTime: 5
   maxHealth: 300
+  invincibilityDuration: 3
+  invicinibilityDelta: 0.1
   isImmuneToEMP: 0
 --- !u!114 &8249271630346668201
 MonoBehaviour:
@@ -478,6 +481,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1944640399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6447998740629227336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c44f8c39f84e64aac3fd7375d57644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missile: {fileID: 7244791129566649248, guid: 5f69b8f4889d85a4189d8541efc08750, type: 3}
+  missileBaseAttackTime: 1.5
+  missileForce: 20
+  missileFirePoint: {fileID: 2305549594714774173}
 --- !u!1 &8438424818740603269
 GameObject:
   m_ObjectHideFlags: 0

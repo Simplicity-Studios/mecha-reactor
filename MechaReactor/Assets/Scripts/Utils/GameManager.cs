@@ -47,6 +47,11 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void StartCameraShake()
+    {
+        mainCamera.GetComponent<CameraShake>().StartShake();
+    }
+
     //DEFUNCT FUNCTION
     public void setCameraBounds(float x, float y, float xOffset, float yOffset)
     {
