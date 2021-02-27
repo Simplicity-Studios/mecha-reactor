@@ -9,7 +9,8 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     // Health
-    public float currentHealth = 100.0f;
+    public float maxHealth = 100.0f;
+    public float currentHealth;
     public RectTransform healthBar; 
     // Movement 
     [Header( "Movement" )]
@@ -42,6 +43,8 @@ public class EnemyController : MonoBehaviour
         agent.updateUpAxis = false;
         // sync rigidbody speed with nav agent
         agent.speed = movementSpeed;
+
+        currentHealth = maxHealth; 
     }
 
     // ===================================================================
@@ -91,8 +94,10 @@ public class EnemyController : MonoBehaviour
         }
 
         // adjust healthbar 
-        // healthbar is 200 wide so *2 converts to out of 200
-        float barLevel = currentHealth * 2;
+        // healthbar is 200 wide 
+        // convert health level to bar width 
+        float healthPercent = currentHealth / maxHealth; 
+        float barLevel = healthPercent * 200;
         healthBar.sizeDelta = new Vector2(barLevel, healthBar.sizeDelta.y);
         
     }
