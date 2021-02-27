@@ -146,6 +146,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void TakeDamageIgnoreHitstop(float damage)
+    {
+        currHealth = Mathf.Max(currHealth - (damage / stats["defense"].GetValue()), 0);
+        gameManager.StartCameraShake();
+    }
+
     public void HitByEMP(float duration)
     {
         if(!isImmuneToEMP)

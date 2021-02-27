@@ -60,7 +60,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &4343953099392054762
 MonoBehaviour:
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 6490704244646571933}
   - component: {fileID: 741680992}
   m_Layer: 0
-  m_Name: Laser_Tower
+  m_Name: Mini_Laser_Tower
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,7 @@ Transform:
   m_GameObject: {fileID: 4343953099511740131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.5, y: 0.49, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 0.3}
+  m_LocalScale: {x: 1, y: 1.2, z: 0.3}
   m_Children:
   - {fileID: 4343953099392054756}
   - {fileID: 1607643610146720219}
@@ -183,7 +183,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 13dde028d368f1446900270e24bbe890, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7830189, g: 0.072523475, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e117723b8d2bd81e7b70bc8906181624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
+  maxHealth: 120
   currentHealth: 0
   healthBar: {fileID: 4343953099564874006}
   movementSpeed: 0
@@ -265,16 +265,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c1bed777991e8f43b5b5449d1753818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPower: 50
-  seekingDistance: 25
+  laserPower: 10
+  seekingDistance: 15
   firePoint: {fileID: 1607643610146720219}
-  chargeDuration: 3
-  cooldown: 3
+  chargeDuration: 2
+  cooldown: 0.5
   laserCharge: {fileID: 8300000, guid: 001837647b2b64044ae5af6f25b94d69, type: 3}
   laserFire: {fileID: 8300000, guid: e78a49fe09d2ce545bbf412050965bbc, type: 3}
   ChargeSource: {fileID: 4776685941606300516}
   FireSource: {fileID: 3362369209343743064}
   laserMat: {fileID: 2100000, guid: 89ac19048221e2a4e826e10cefa8a463, type: 2}
+  givesHitstop: 0
   player: {fileID: 0}
 --- !u!120 &6990064123548494771
 LineRenderer:
@@ -385,8 +386,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.63
-  m_Pitch: 1
+  m_Volume: 0.504
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -481,8 +482,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.826
-  m_Pitch: 1
+  m_Volume: 0.665
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0

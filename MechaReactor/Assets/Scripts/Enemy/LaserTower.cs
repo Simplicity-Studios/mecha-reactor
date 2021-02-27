@@ -17,6 +17,8 @@ public class LaserTower : MonoBehaviour
 
     public Material laserMat;
 
+    public bool givesHitstop = true;
+
     public GameObject player;
     private LineRenderer laser;
     LayerMask mask;
@@ -63,6 +65,7 @@ public class LaserTower : MonoBehaviour
             chargeTime += Time.deltaTime;
             if(chargeTime >= chargeDuration && !hasFired)
             {
+                ChargeSource.Stop();
                 StartCoroutine("laserCleanup");
                 FireSource.Play();
                 shootLaser();
@@ -103,7 +106,14 @@ public class LaserTower : MonoBehaviour
     {
         laserMat.color = new Color(1, 0, 0, 1);
         laser.enabled = true;
-        player.GetComponent<PlayerController>().TakeDamage(laserPower);
+        if(givesHitstop)
+        {
+            player.GetComponent<PlayerController>().TakeDamage(laserPower);
+        }
+        else 
+        {
+            player.GetComponent<PlayerController>().TakeDamageIgnoreHitstop(laserPower);   
+        }
     }
 
     IEnumerator laserCleanup()

@@ -19,7 +19,13 @@ public class GameManager : MonoBehaviour
     {
         playerController = player.GetComponent<PlayerController>();
         roomManager = FindObjectOfType<RoomManager>();
+        //Bullets and missiles
         Physics2D.IgnoreLayerCollision(11, 12, true);
+        //Bullets and obstacles-that-dont-collide
+        Physics2D.IgnoreLayerCollision(10, 11, true);
+        //Missiles and obstacles-that-dont-collide
+        Physics2D.IgnoreLayerCollision(10, 12, true);
+
     }
 
     void Update()
@@ -58,6 +64,10 @@ public class GameManager : MonoBehaviour
         return;
     }
 
+    public void setCameraSize(float newSize)
+    {
+        mainCamera.GetComponent<Camera>().orthographicSize = newSize;
+    }
     public void moveCameraToPosition(Transform pos)
     {
         mainCamera.GetComponent<Transform>().position = pos.position + offset;

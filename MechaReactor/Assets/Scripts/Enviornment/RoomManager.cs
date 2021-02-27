@@ -15,6 +15,8 @@ public class RoomManager : MonoBehaviour
         rooms[currentRoom].SetActive(true);
         rooms[currentRoom].GetComponent<Room>().InitializeWithEnemies();
         gameManager.setPlayerTransform(rooms[currentRoom].GetComponent<Room>().spawnLocation);
+        gameManager.moveCameraToPosition(gameManager.player.GetComponent<Transform>());
+        gameManager.setCameraSize(rooms[currentRoom].GetComponent<Room>().cameraDistance);
     }
 
     public void nextRoom()
@@ -30,6 +32,7 @@ public class RoomManager : MonoBehaviour
         gameManager.setPlayerTransform(rooms[currentRoom].GetComponent<Room>().spawnLocation);
 
         gameManager.moveCameraToPosition(gameManager.player.GetComponent<Transform>());
+        gameManager.setCameraSize(rooms[currentRoom].GetComponent<Room>().cameraDistance);
 
         rooms[currentRoom].SetActive(true);
         rooms[currentRoom].GetComponent<Room>().InitializeWithEnemies();
@@ -45,6 +48,7 @@ public class RoomManager : MonoBehaviour
         //Tell the game manager to set the player's position to the next room's spawn point
         gameManager.setPlayerTransform(rooms[currentRoom].GetComponent<Room>().spawnLocation);
         gameManager.moveCameraToPosition(gameManager.player.GetComponent<Transform>());
+        gameManager.setCameraSize(rooms[currentRoom].GetComponent<Room>().cameraDistance);
 
         rooms[currentRoom].SetActive(true);
         rooms[currentRoom].GetComponent<Room>().InitializeWithoutEnemies();

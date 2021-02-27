@@ -20,7 +20,7 @@ TagManager:
   - 
   - Player
   - Obstacles
-  - 
+  - ObstaclesButDontCollideWithBullets
   - Bullet
   - Missile
   - 

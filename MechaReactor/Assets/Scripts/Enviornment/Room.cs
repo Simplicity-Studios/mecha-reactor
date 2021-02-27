@@ -10,6 +10,7 @@ public class Room : MonoBehaviour
     public GameObject door;
     // The location the player should spawn when the room becomes active
     public Transform spawnLocation;
+    public float cameraDistance = 6.75f;
 
     private BoxCollider2D exitCollisionTrigger;
 

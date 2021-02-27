@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 6490704244646571933}
   - component: {fileID: 741680992}
   m_Layer: 0
-  m_Name: Laser_Tower
+  m_Name: Laser_Tower_REDUCED_RANGE
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,7 @@ Transform:
   m_GameObject: {fileID: 4343953099511740131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.5, y: 0.49, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 0.3}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 0.3}
   m_Children:
   - {fileID: 4343953099392054756}
   - {fileID: 1607643610146720219}
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserPower: 50
-  seekingDistance: 25
+  seekingDistance: 12
   firePoint: {fileID: 1607643610146720219}
   chargeDuration: 3
   cooldown: 3
