@@ -885,6 +885,7 @@ MonoBehaviour:
   exitTrigger: {fileID: 6255304489362662028}
   door: {fileID: 6255304489573846023}
   spawnLocation: {fileID: 6255304490441192478}
+  cameraDistance: 6.75
   roomManager: {fileID: 0}
   enemiesToSpawn: []
   locationsToSpawn: []

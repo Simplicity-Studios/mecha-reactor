@@ -24,6 +24,10 @@ public class Room : MonoBehaviour
     // The object that holds all enemies
     private Transform currentEnemies;
 
+    void Start()
+    {
+        roomManager = GameObject.Find("RoomManager").GetComponent<RoomManager>();
+    }
 
     public void InitializeWithEnemies()
     {
