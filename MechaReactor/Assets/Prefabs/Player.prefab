@@ -156,10 +156,10 @@ GameObject:
   - component: {fileID: 6447998740629227341}
   - component: {fileID: 8249271630346668201}
   - component: {fileID: 6447998740629227343}
-  - component: {fileID: 6447998740629227342}
   - component: {fileID: 1944640404}
   - component: {fileID: 850650035681344151}
   - component: {fileID: 1944640399}
+  - component: {fileID: 3790549692854131153}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -324,48 +324,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &6447998740629227342
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6447998740629227336}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.54, y: 0.43}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.26245782, y: -0.11779307}
-      - {x: 0.25625023, y: -0.13949358}
-      - {x: 0.21854194, y: -0.1681691}
-      - {x: -0.039797835, y: -0.16718486}
-      - {x: -0.21256411, y: -0.17019683}
-      - {x: -0.24170218, y: -0.1471583}
-      - {x: -0.26652786, y: -0.09500648}
-      - {x: -0.26534185, y: 0.09106898}
-      - {x: -0.23603404, y: 0.14555873}
-      - {x: -0.20590664, y: 0.16752617}
-      - {x: -0.14986494, y: 0.1693879}
-      - {x: -0.001630262, y: 0.17997289}
-      - {x: 0.20826076, y: 0.17298222}
-      - {x: 0.23698832, y: 0.16728726}
-      - {x: 0.26441148, y: 0.1471053}
-      - {x: 0.27131343, y: -0.014227459}
-      - {x: 0.27343422, y: -0.09710157}
 --- !u!95 &1944640404
 Animator:
   serializedVersion: 3
@@ -497,6 +455,32 @@ MonoBehaviour:
   missileBaseAttackTime: 1.5
   missileForce: 20
   missileFirePoint: {fileID: 2305549594714774173}
+--- !u!61 &3790549692854131153
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6447998740629227336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0025082827, y: -0.0012541637}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.54, y: 0.43}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40789604, y: 0.33886492}
+  m_EdgeRadius: 0
 --- !u!1 &8438424818740603269
 GameObject:
   m_ObjectHideFlags: 0
