@@ -5,6 +5,7 @@ using UnityEngine;
 public class ElectricityPickupable : MonoBehaviour
 {
     public float amountOfElectricity = 25f;
+    public AudioClip source;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -14,6 +15,8 @@ public class ElectricityPickupable : MonoBehaviour
             ReactorAttributes player = collider.gameObject.GetComponent<ReactorAttributes>();
             // give the player the electricity 
             player.AddElectricity(amountOfElectricity);
+            // play sound
+            AudioSource.PlayClipAtPoint(source, Camera.main.transform.position);
             // and get rid of this pickupable
             Destroy(gameObject); 
         }
