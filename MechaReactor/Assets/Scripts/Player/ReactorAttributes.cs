@@ -8,7 +8,7 @@ public class Attribute
     public string name;
     public float minValue, maxValue;
 
-    private int points;
+    private int points, hiddenPoints;
     private const int size = 3;
     private float value, step;
     private bool enabled = true;
@@ -38,17 +38,26 @@ public class Attribute
 
     public void Disable()
     {
+        hiddenPoints = pointsAllocated;
+        pointsAllocated = 0;
         enabled = false;
     }
 
     public void Enable()
     {
+        pointsAllocated = hiddenPoints;
+        hiddenPoints = 0;
         enabled = true;
     }
 
     public bool IsEnabled()
     {
         return enabled;
+    }
+
+    public int GetHiddenPoints()
+    {
+        return hiddenPoints;
     }
 }
 
@@ -82,7 +91,7 @@ public class ReactorAttributes : MonoBehaviour
     {
         int points = 0;
         foreach (Attribute attr in m_attributes.Values)
-            points += attr.pointsAllocated;
+            points += attr.pointsAllocated + attr.GetHiddenPoints();
         m_points = points;
 
         m_electricity -= m_points * electricityDecreaseRate * 0.005f;
@@ -93,19 +102,14 @@ public class ReactorAttributes : MonoBehaviour
             print("oops no electricity :(");
             m_penalty = true;
             foreach (Attribute attr in initialAttributes)
-            {
-                m_attributes[attr.name].pointsAllocated -= 1;
                 m_attributes[attr.name].Disable();
-            }
         }
         else if (m_penalty && m_electricity > 0)
         {
             print("yay! we're back");
             m_penalty = false;
             foreach (Attribute attr in initialAttributes)
-            {
                 m_attributes[attr.name].Enable();
-            }
         }
             
     }

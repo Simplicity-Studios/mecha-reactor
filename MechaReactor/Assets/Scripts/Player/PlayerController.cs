@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
     public float invincibilityDuration;
     public float invicinibilityDelta;
     private GameManager gameManager;
+    public AudioSource damageSound;
+    public AudioSource EMPSound;
     
     [HideInInspector]
     public bool isImmuneToEMP = false;
@@ -94,9 +96,6 @@ public class PlayerController : MonoBehaviour
             UseSpecial();
             lastSpecialUse = Time.time;
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-            TakeDamage(10f);
     }
 
     void FixedUpdate()
@@ -148,6 +147,7 @@ public class PlayerController : MonoBehaviour
             currHealth = Mathf.Max(currHealth - (damage / stats["defense"].GetValue()), 0);
             StartCoroutine("DamageFlash");
             gameManager.StartCameraShake();
+            damageSound.Play();
         }
     }
 
@@ -155,17 +155,17 @@ public class PlayerController : MonoBehaviour
     {
         currHealth = Mathf.Max(currHealth - (damage / stats["defense"].GetValue()), 0);
         gameManager.StartCameraShake();
+        damageSound.Play();
     }
 
     public void HitByEMP(float duration)
     {
-        if(!isImmuneToEMP)
+        if(!isImmuneToEMP && stats.GetElectricity() > 0)
         {
             string reactorToDisable = selectRandomReactor();
-            int currentlyAllocated = stats[reactorToDisable].pointsAllocated;
-            stats[reactorToDisable].pointsAllocated -= currentlyAllocated;
             stats[reactorToDisable].Disable();
-            StartCoroutine(RecoverFromEMP(duration, reactorToDisable, currentlyAllocated));
+            EMPSound.Play();
+            StartCoroutine(RecoverFromEMP(duration, reactorToDisable));
         }
         else
         {
@@ -173,12 +173,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator RecoverFromEMP(float duration, string disabledReactor, int pointsLastAllocated)
+    IEnumerator RecoverFromEMP(float duration, string disabledReactor)
     {
         yield return new WaitForSeconds(duration);
-        stats[disabledReactor].Enable();
-        int pointsRemaining = stats.GetMaxPoints() - stats.GetTotalPointsAllocated() - 1;
-        stats[disabledReactor].pointsAllocated += Mathf.Min(pointsLastAllocated, pointsRemaining);
+        if (stats.GetElectricity() > 0)
+            stats[disabledReactor].Enable();
     }
 
     void OnTriggerEnter2D(Collider2D other)

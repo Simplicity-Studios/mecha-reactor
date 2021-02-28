@@ -32,6 +32,7 @@ public class EMP : MonoBehaviour
     {
         if(other.transform.CompareTag("Player"))
         {
+            Destroy(GetComponent<CircleCollider2D>());
             other.GetComponent<PlayerController>().HitByEMP(duration);
         }
     }
