@@ -26,6 +26,12 @@ public class EnemyController : MonoBehaviour
     public GameObject player;
     LayerMask mask; 
     public NavMeshAgent agent;
+    // Audio
+    public AudioSource source;
+    public AudioClip deathSound;
+
+    [HideInInspector]
+    public bool isDying = false;
 
     // ===================================================================
 
@@ -45,6 +51,8 @@ public class EnemyController : MonoBehaviour
         agent.speed = movementSpeed;
 
         currentHealth = maxHealth; 
+        if(source != null)
+            source.clip = deathSound;
     }
 
     // ===================================================================
@@ -117,7 +125,20 @@ public class EnemyController : MonoBehaviour
     // i.e sound fxs, particles, whatever
     public void die()
     {
-        Destroy(gameObject);
+        if(source != null && !isDying)
+        {
+            isDying = true;
+            AudioSource.PlayClipAtPoint(deathSound, transform.position, 5.0f);
+        }
+
+        if(transform.localScale.x > 0 && transform.localScale.y > 0)
+        {
+            transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // ===================================================================

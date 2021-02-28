@@ -24,6 +24,7 @@ public class LaserTower : MonoBehaviour
     LayerMask mask;
 
     private float laserWidth = 0.25f;
+    private EnemyController controller;
 
     private float lastFired = 0.0f;
     private float chargeTime = 0.0f;
@@ -32,6 +33,7 @@ public class LaserTower : MonoBehaviour
 
     void Start()
     {
+        controller = this.GetComponent<EnemyController>();
         player = GameObject.Find("Player");
         mask = LayerMask.GetMask("Player") | LayerMask.GetMask("Obstacles");
         laser = GetComponent<LineRenderer>();
@@ -45,6 +47,11 @@ public class LaserTower : MonoBehaviour
     */
     void Update()
     {
+        if(controller.isDying)
+        {
+            laser.enabled = false;
+            return;
+        }
         if(hasFired)
         {
             laserWidth -= Time.deltaTime * 2;
