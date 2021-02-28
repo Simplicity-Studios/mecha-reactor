@@ -28,7 +28,6 @@ public class EnemyBullet : MonoBehaviour
         // Collide with walls and obstacles
         else if (col.gameObject.layer == LayerMask.NameToLayer("Obstacles")) 
         {
-            Debug.Log("Die wall!");
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, 1f);
             Destroy(gameObject);

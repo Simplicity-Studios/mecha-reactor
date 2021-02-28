@@ -29,6 +29,11 @@ public class EnemyController : MonoBehaviour
     // Audio
     public AudioSource source;
     public AudioClip deathSound;
+    // Item drops
+    [Header( "Item Drops" )]
+    public GameObject[] itemPrefabs;
+    public Transform[] itemSpawnLocations;
+    private Vector3 originalScale; 
 
     [HideInInspector]
     public bool isDying = false;
@@ -125,19 +130,45 @@ public class EnemyController : MonoBehaviour
     // i.e sound fxs, particles, whatever
     public void die()
     {
-        if(source != null && !isDying)
+        // if dying script just started
+        if (!isDying)
         {
+            // save previous scale 
+            originalScale = transform.localScale;
+            // play dying audio
+            if(source != null)
+            {
+                AudioSource.PlayClipAtPoint(deathSound, transform.position, 5.0f);
+            }
+            // mark this as dying 
             isDying = true;
-            AudioSource.PlayClipAtPoint(deathSound, transform.position, 5.0f);
         }
 
-        if(transform.localScale.x > 0 && transform.localScale.y > 0)
-        {
+        // If dying anim isnt complete
+        if (transform.localScale.x > 0 && transform.localScale.y > 0)
+        {   
+            // Continue to shrink enemy
             transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
         }
+        // Shrinking animation finished
         else
         {
             Destroy(gameObject);
+            // restore scale to un-distort item spawn locations
+            transform.localScale = originalScale;
+            Debug.Log(originalScale);
+            // spawn items
+            if (itemPrefabs.Length != 0)
+            {
+                foreach (Transform itemSpawn in itemSpawnLocations)
+                {
+                    // pick random item to drop
+                    int j = Random.Range(0, itemPrefabs.Length);
+                    // spawn random item
+                    GameObject item = Instantiate(itemPrefabs[j], itemSpawn.position, itemSpawn.rotation);
+                }
+            }
+
         }
     }
 

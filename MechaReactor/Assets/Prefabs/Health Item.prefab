@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 631442975031011264}
   - component: {fileID: 631442975031011271}
   - component: {fileID: 631442975031011270}
+  - component: {fileID: 1812269070}
   m_Layer: 0
   m_Name: Health Item
   m_TagString: HealthItem
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b9da3f779e9bb3340b59529b1331ec74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,3 +99,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.35
+--- !u!114 &1812269070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631442975031011269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e854db5360d50d9c9af66b151f1daa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfHealth: 25

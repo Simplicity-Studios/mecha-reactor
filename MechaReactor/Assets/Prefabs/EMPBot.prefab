@@ -1,5 +1,66 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3864888756208934312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8343989240783352596}
+  m_Layer: 0
+  m_Name: ItemSpawn01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8343989240783352596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3864888756208934312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6768230070900618151}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4861373539561160177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6768230070900618151}
+  m_Layer: 0
+  m_Name: ItemSpawnLocations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6768230070900618151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861373539561160177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8343989240783352596}
+  m_Father: {fileID: 5866270107903848925}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5866270107903848926
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,6 +95,7 @@ Transform:
   m_Children:
   - {fileID: 7863847630767537908}
   - {fileID: 7863847630853438964}
+  - {fileID: 6768230070900618151}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e117723b8d2bd81e7b70bc8906181624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 7863847630679175430}
   movementSpeed: 0.3
@@ -59,6 +122,14 @@ MonoBehaviour:
   canRotate: 0
   player: {fileID: 0}
   agent: {fileID: 7035862043193661973}
+  source: {fileID: 0}
+  deathSound: {fileID: 0}
+  itemPrefabs:
+  - {fileID: 631442975031011269, guid: 196d414ff3d705840b2e5c789c66421d, type: 3}
+  - {fileID: 6930399925783180233, guid: 0a101878bffb7904ab51a293c413f0d4, type: 3}
+  itemSpawnLocations:
+  - {fileID: 8343989240783352596}
+  isDying: 0
 --- !u!114 &6267036995138334647
 MonoBehaviour:
   m_ObjectHideFlags: 0

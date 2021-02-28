@@ -131,6 +131,11 @@ public class PlayerController : MonoBehaviour
         currHealth = health;
     }
 
+    public void AddHealth(float health)
+    {
+        currHealth = Mathf.Min(currHealth + health, maxHealth);
+    }
+
     public float GetMaxHealth()
     {
         return maxHealth;

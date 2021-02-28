@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4188576719238904594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3628031603224401426}
+  m_Layer: 0
+  m_Name: ItemSpawn01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3628031603224401426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4188576719238904594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3036022801891443928}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4343953099392054759
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +170,7 @@ Transform:
   m_Children:
   - {fileID: 4343953099392054756}
   - {fileID: 1607643610146720219}
+  - {fileID: 3036022801891443928}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -216,6 +247,14 @@ MonoBehaviour:
   canRotate: 0
   player: {fileID: 0}
   agent: {fileID: 0}
+  source: {fileID: 0}
+  deathSound: {fileID: 0}
+  itemPrefabs:
+  - {fileID: 6930399925783180233, guid: 0a101878bffb7904ab51a293c413f0d4, type: 3}
+  - {fileID: 631442975031011269, guid: 196d414ff3d705840b2e5c789c66421d, type: 3}
+  itemSpawnLocations:
+  - {fileID: 3628031603224401426}
+  isDying: 0
 --- !u!50 &4343953099511740134
 Rigidbody2D:
   serializedVersion: 4
@@ -275,6 +314,7 @@ MonoBehaviour:
   ChargeSource: {fileID: 4776685941606300516}
   FireSource: {fileID: 3362369209343743064}
   laserMat: {fileID: 2100000, guid: 89ac19048221e2a4e826e10cefa8a463, type: 2}
+  givesHitstop: 1
   player: {fileID: 0}
 --- !u!120 &6990064123548494771
 LineRenderer:
@@ -934,4 +974,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4343953099511740132}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6052477477109895897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3036022801891443928}
+  m_Layer: 0
+  m_Name: ItemSpawnLocations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3036022801891443928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6052477477109895897}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3628031603224401426}
+  m_Father: {fileID: 4343953099511740132}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
