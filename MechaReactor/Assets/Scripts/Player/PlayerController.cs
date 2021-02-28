@@ -154,13 +154,11 @@ public class PlayerController : MonoBehaviour
 
     public void HitByEMP(float duration)
     {
-        if(!isImmuneToEMP)
+        if(!isImmuneToEMP && stats.GetElectricity() > 0)
         {
             string reactorToDisable = selectRandomReactor();
-            int currentlyAllocated = stats[reactorToDisable].pointsAllocated;
-            stats[reactorToDisable].pointsAllocated -= currentlyAllocated;
             stats[reactorToDisable].Disable();
-            StartCoroutine(RecoverFromEMP(duration, reactorToDisable, currentlyAllocated));
+            StartCoroutine(RecoverFromEMP(duration, reactorToDisable));
         }
         else
         {
@@ -168,12 +166,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator RecoverFromEMP(float duration, string disabledReactor, int pointsLastAllocated)
+    IEnumerator RecoverFromEMP(float duration, string disabledReactor)
     {
         yield return new WaitForSeconds(duration);
-        stats[disabledReactor].Enable();
-        int pointsRemaining = stats.GetMaxPoints() - stats.GetTotalPointsAllocated() - 1;
-        stats[disabledReactor].pointsAllocated += Mathf.Min(pointsLastAllocated, pointsRemaining);
+        if (stats.GetElectricity() > 0)
+            stats[disabledReactor].Enable();
     }
 
     void OnTriggerEnter2D(Collider2D other)
