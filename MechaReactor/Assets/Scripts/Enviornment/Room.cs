@@ -23,6 +23,7 @@ public class Room : MonoBehaviour
 
     // The object that holds all enemies
     private Transform currentEnemies;
+    private bool doorIsOpen = false;
 
     void Start()
     {
@@ -45,9 +46,10 @@ public class Room : MonoBehaviour
     void Update()
     {
         // If the amount of children of currentEnemies goes to zero, all the enemies are dead
-        if(currentEnemies.childCount == 0) 
+        if(currentEnemies.childCount == 0 && !doorIsOpen) 
         {
             openDoor();
+            doorIsOpen = true;
         }
     }
 
@@ -69,6 +71,7 @@ public class Room : MonoBehaviour
 
     private void openDoor()
     {
+        roomManager.playDoorOpeningSFX();
         door.SetActive(false);
     }
 }

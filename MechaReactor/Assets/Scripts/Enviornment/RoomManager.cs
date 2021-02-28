@@ -8,9 +8,15 @@ public class RoomManager : MonoBehaviour
     public int currentRoom;
 
     public GameManager gameManager;
+    public AudioClip doorOpening;
+    private AudioSource audio;
+
 
     void Start()
     {
+        audio = GetComponent<AudioSource>();
+        audio.clip = doorOpening;
+
         currentRoom = 0;
         rooms[currentRoom].SetActive(true);
         rooms[currentRoom].GetComponent<Room>().InitializeWithEnemies();
@@ -52,5 +58,11 @@ public class RoomManager : MonoBehaviour
 
         rooms[currentRoom].SetActive(true);
         rooms[currentRoom].GetComponent<Room>().InitializeWithoutEnemies();
+    }
+
+    public void playDoorOpeningSFX()
+    {
+        gameManager.StartCameraShake();
+        audio.Play();
     }
 }

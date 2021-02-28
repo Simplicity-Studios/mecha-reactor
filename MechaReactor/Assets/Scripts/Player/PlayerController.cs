@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
     public float invincibilityDuration;
     public float invicinibilityDelta;
     private GameManager gameManager;
+    public AudioSource damageSound;
+    public AudioSource EMPSound;
     
     [HideInInspector]
     public bool isImmuneToEMP = false;
@@ -94,9 +96,6 @@ public class PlayerController : MonoBehaviour
             UseSpecial();
             lastSpecialUse = Time.time;
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-            TakeDamage(10f);
     }
 
     void FixedUpdate()
@@ -143,6 +142,7 @@ public class PlayerController : MonoBehaviour
             currHealth = Mathf.Max(currHealth - (damage / stats["defense"].GetValue()), 0);
             StartCoroutine("DamageFlash");
             gameManager.StartCameraShake();
+            damageSound.Play();
         }
     }
 
@@ -150,6 +150,7 @@ public class PlayerController : MonoBehaviour
     {
         currHealth = Mathf.Max(currHealth - (damage / stats["defense"].GetValue()), 0);
         gameManager.StartCameraShake();
+        damageSound.Play();
     }
 
     public void HitByEMP(float duration)
@@ -158,6 +159,7 @@ public class PlayerController : MonoBehaviour
         {
             string reactorToDisable = selectRandomReactor();
             stats[reactorToDisable].Disable();
+            EMPSound.Play();
             StartCoroutine(RecoverFromEMP(duration, reactorToDisable));
         }
         else
