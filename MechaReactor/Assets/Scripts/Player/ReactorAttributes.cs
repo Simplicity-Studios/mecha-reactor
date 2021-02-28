@@ -66,6 +66,8 @@ public class ReactorAttributes : MonoBehaviour
     public int maxElectricity;
     [Range(1, 10)]
     public int electricityDecreaseRate = 1;
+    public AudioSource electricityPenalty;
+    public AudioSource electricityBackOnline;
 
     [SerializeField]
     private Attribute[] initialAttributes;
@@ -99,14 +101,14 @@ public class ReactorAttributes : MonoBehaviour
 
         if (m_electricity == 0 && !m_penalty)
         {
-            print("oops no electricity :(");
+            electricityPenalty.Play();
             m_penalty = true;
             foreach (Attribute attr in initialAttributes)
                 m_attributes[attr.name].Disable();
         }
         else if (m_penalty && m_electricity > 0)
         {
-            print("yay! we're back");
+            electricityBackOnline.Play();
             m_penalty = false;
             foreach (Attribute attr in initialAttributes)
                 m_attributes[attr.name].Enable();

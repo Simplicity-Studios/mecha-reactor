@@ -16,7 +16,7 @@ public class ElectricityPickupable : MonoBehaviour
             // give the player the electricity 
             player.AddElectricity(amountOfElectricity);
             // play sound
-            AudioSource.PlayClipAtPoint(source, Camera.main.transform.position);
+            AudioSource.PlayClipAtPoint(source, Camera.main.transform.position, 0.50f);
             // and get rid of this pickupable
             Destroy(gameObject); 
         }

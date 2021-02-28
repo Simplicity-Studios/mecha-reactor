@@ -136,10 +136,7 @@ public class EnemyController : MonoBehaviour
             // save previous scale 
             originalScale = transform.localScale;
             // play dying audio
-            if(source != null)
-            {
-                AudioSource.PlayClipAtPoint(deathSound, transform.position, 5.0f);
-            }
+            AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, 0.6f);
             // mark this as dying 
             isDying = true;
         }
@@ -148,7 +145,7 @@ public class EnemyController : MonoBehaviour
         if (transform.localScale.x > 0 && transform.localScale.y > 0)
         {   
             // Continue to shrink enemy
-            transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
+            transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f) * originalScale.x;
         }
         // Shrinking animation finished
         else

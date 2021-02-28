@@ -10,6 +10,8 @@ public class EnemyRangedAttack : MonoBehaviour
     public GameObject player;
     LayerMask mask; 
 
+    public AudioSource shootSFX;
+
     [Range(0.0f, 2.0f)]
     public float attackSpeed = 1.0f;
     public float attackDamage = 10.0f;
@@ -25,6 +27,7 @@ public class EnemyRangedAttack : MonoBehaviour
         // Enemy can only see players and obstacles
         // Things like bullets/enemies are ignored 
         mask = LayerMask.GetMask("Player") | LayerMask.GetMask("Obstacles");
+        shootSFX = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -49,6 +52,8 @@ public class EnemyRangedAttack : MonoBehaviour
         // Send bullet
         Rigidbody2D bulletrigid = bullet.GetComponent<Rigidbody2D>();
         bulletrigid.AddForce(bulletSpawnLocation.up * bulletForce, ForceMode2D.Impulse);
+        // Play sound
+        shootSFX.Play();
     }
 
 }
