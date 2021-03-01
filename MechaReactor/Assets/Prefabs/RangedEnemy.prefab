@@ -115,7 +115,7 @@ MonoBehaviour:
   player: {fileID: 0}
   shootSFX: {fileID: 0}
   attackSpeed: 1
-  attackDamage: 10
+  attackDamage: 20
   bulletForce: 10
   bulletSpawnLocation: {fileID: 1007641989924546620}
   bulletPrefab: {fileID: 3462380549372543098, guid: af6551301a0461070bb2ce3ade0cf7f1,

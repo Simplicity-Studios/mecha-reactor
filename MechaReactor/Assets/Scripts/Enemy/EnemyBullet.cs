@@ -9,9 +9,20 @@ public class EnemyBullet : MonoBehaviour
 
     private float dmg;
 
+    private float timeCreated;
+    private float maxLifetime = 5f;
+
     void Start()
     {
         collider = GetComponent<Collider2D>();
+        timeCreated = Time.time;
+        maxLifetime += timeCreated;
+    }
+
+    void Update()
+    {
+        if(Time.time > maxLifetime)
+            Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D col)

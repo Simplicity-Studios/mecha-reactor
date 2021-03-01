@@ -111,5 +111,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e854db5360d50d9c9af66b151f1daa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfHealth: 25
+  amountOfHealth: 8
   source: {fileID: 8300000, guid: 8a708adf463e6b2498d176aa09cc7b0d, type: 3}

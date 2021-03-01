@@ -124,7 +124,7 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: 7035862043193661973}
   source: {fileID: 0}
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 7238af257c7881940862bc7945147a95, type: 3}
   itemPrefabs:
   - {fileID: 631442975031011269, guid: 196d414ff3d705840b2e5c789c66421d, type: 3}
   - {fileID: 6930399925783180233, guid: 0a101878bffb7904ab51a293c413f0d4, type: 3}
@@ -217,7 +217,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 09689fd9383f2d746b9446d030b123f3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.468
   m_Pitch: 0.53
   Loop: 0
   Mute: 0

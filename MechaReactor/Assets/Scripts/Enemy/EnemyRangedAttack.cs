@@ -37,7 +37,8 @@ public class EnemyRangedAttack : MonoBehaviour
         // Only shoot at player if they are in line of sight
         if (hit.collider != null 
             && hit.collider.gameObject.name == player.name 
-            && Time.time > attackSpeed + lastAttack)
+            && Time.time > attackSpeed + lastAttack
+            && !GetComponent<EnemyController>().isDying)
         {
             Shoot();
             lastAttack = Time.time;

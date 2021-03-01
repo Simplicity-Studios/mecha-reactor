@@ -45,7 +45,8 @@ public class PlayerController : MonoBehaviour
     public bool isImmuneToEMP = false;
     private bool lastFiredLeft = false;
     private bool lastFiredRight = true;
-    private bool isInvulnerable = false;
+    [HideInInspector]
+    public bool isInvulnerable = false;
 
     void Start()
     {

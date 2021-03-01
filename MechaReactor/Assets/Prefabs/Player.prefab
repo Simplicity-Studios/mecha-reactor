@@ -294,11 +294,12 @@ MonoBehaviour:
     type: 3}
   baseSpecialTime: 5
   maxHealth: 300
-  invincibilityDuration: 3
-  invicinibilityDelta: 0.1
+  invincibilityDuration: 1.8
+  invicinibilityDelta: 0.2
   damageSound: {fileID: 2355149874184237720}
   EMPSound: {fileID: 7448300194584373181}
   isImmuneToEMP: 0
+  isInvulnerable: 0
 --- !u!114 &8249271630346668201
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -457,7 +457,7 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: -9186428038753566984}
   source: {fileID: 0}
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 7238af257c7881940862bc7945147a95, type: 3}
   itemPrefabs:
   - {fileID: 631442975031011269, guid: 196d414ff3d705840b2e5c789c66421d, type: 3}
   - {fileID: 6930399925783180233, guid: 0a101878bffb7904ab51a293c413f0d4, type: 3}
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSpeed: 1
-  attackDamage: 10
+  attackDamage: 40
   attackRange: 1.3
   player: {fileID: 0}
 --- !u!195 &-9186428038753566984

@@ -23,7 +23,8 @@ public class EnemyMeleeAttack : MonoBehaviour
         // if within range of player
         // and not currently on attack cooldown
         if (Vector2.Distance(player.transform.position, transform.position) <= attackRange
-            && Time.time > attackSpeed + lastAttack)
+            && Time.time > attackSpeed + lastAttack
+            && !GetComponent<EnemyController>().isDying)
         {
             MeleeAttack();
             lastAttack = Time.time;

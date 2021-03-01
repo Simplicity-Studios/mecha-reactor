@@ -29,6 +29,7 @@ public class RoomManager : MonoBehaviour
     {
         rooms[currentRoom].SetActive(false);
         ++currentRoom;
+        cleanUpPickups();
         //we reached the last room
         if(currentRoom >= rooms.Length)
         {
@@ -47,6 +48,12 @@ public class RoomManager : MonoBehaviour
     public void goBack()
     {
         rooms[currentRoom].SetActive(false);
+        // Kill all the enemies so theres not double enemies when you come back from previous room.
+        foreach(Transform child in rooms[currentRoom].transform.Find("CurrentEnemies"))
+        {
+            Destroy(child.gameObject);
+        }
+
         if(currentRoom > 0)
         {
             --currentRoom;
@@ -64,5 +71,21 @@ public class RoomManager : MonoBehaviour
     {
         gameManager.StartCameraShake();
         audio.Play();
+    }
+
+    public void cleanUpPickups()
+    {
+        GameObject[] electricityLeftovers = GameObject.FindGameObjectsWithTag("ElectricityItem");
+        GameObject[] healthLeftovers = GameObject.FindGameObjectsWithTag("HealthItem");
+        if(electricityLeftovers.Length > 0)
+        {
+            foreach(GameObject e in electricityLeftovers)
+                Destroy(e);
+        }
+        if(healthLeftovers.Length > 0)
+        {
+            foreach(GameObject h in healthLeftovers)
+                Destroy(h); 
+        }
     }
 }

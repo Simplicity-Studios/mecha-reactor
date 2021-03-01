@@ -57,7 +57,7 @@ public class LaserTower : MonoBehaviour
             laserWidth -= Time.deltaTime * 2;
             laser.startWidth = Mathf.Clamp(laserWidth, 0.0f, 1.0f);
         }
-        if(canSeePlayer() && Time.time > lastFired + cooldown)
+        if(canSeePlayer() && Time.time > lastFired + cooldown && !player.GetComponent<PlayerController>().isInvulnerable)
         {
             if(!isCharging)
             {

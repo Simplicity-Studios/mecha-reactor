@@ -15,8 +15,11 @@ public class GameManager : MonoBehaviour
     private RoomManager roomManager;
     private bool isDying = false;
 
+    private AudioSource loopingMusic;
+
     void Start()
     {
+        loopingMusic = GetComponent<AudioSource>();
         playerController = player.GetComponent<PlayerController>();
         roomManager = FindObjectOfType<RoomManager>();
         //Bullets and missiles
@@ -25,7 +28,7 @@ public class GameManager : MonoBehaviour
         Physics2D.IgnoreLayerCollision(10, 11, true);
         //Missiles and obstacles-that-dont-collide
         Physics2D.IgnoreLayerCollision(10, 12, true);
-
+        loopingMusic.Play();
     }
 
     void Update()
@@ -81,7 +84,12 @@ public class GameManager : MonoBehaviour
     public void GoBackToPreviousRoom()
     {
         roomManager.goBack();
+        
+        float maxElec = player.GetComponent<ReactorAttributes>().GetMaxElectricity();
+        player.GetComponent<ReactorAttributes>().AddElectricity(maxElec);
+
         playerController.setHealth(playerController.GetMaxHealth());
+        
         isDying = false;
         playerController.enabled = true;
         player.SetActive(true);

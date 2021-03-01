@@ -344,7 +344,7 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: 0}
   source: {fileID: 0}
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 1713e50fa3391d74f9d1ecf0e7797294, type: 3}
   itemPrefabs:
   - {fileID: 6930399925783180233, guid: 0a101878bffb7904ab51a293c413f0d4, type: 3}
   - {fileID: 631442975031011269, guid: 196d414ff3d705840b2e5c789c66421d, type: 3}
