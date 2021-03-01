@@ -67,6 +67,19 @@ public class RoomManager : MonoBehaviour
         rooms[currentRoom].GetComponent<Room>().InitializeWithoutEnemies();
     }
 
+    public void resetCurrentRoom()
+    {
+        foreach(Transform child in rooms[currentRoom].transform.Find("CurrentEnemies"))
+        {
+            Destroy(child.gameObject);
+        }
+        cleanUpPickups();
+        gameManager.setPlayerTransform(rooms[currentRoom].GetComponent<Room>().spawnLocation);
+        gameManager.moveCameraToPosition(gameManager.player.GetComponent<Transform>());
+        gameManager.setCameraSize(rooms[currentRoom].GetComponent<Room>().cameraDistance);
+        rooms[currentRoom].GetComponent<Room>().InitializeWithEnemies();
+    }
+
     public void playDoorOpeningSFX()
     {
         gameManager.StartCameraShake();
