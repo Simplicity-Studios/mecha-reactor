@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     private PlayerController playerController;
     private RoomManager roomManager;
     private bool isDying = false;
+    [HideInInspector]
+    public bool isPaused = false;
+
+    public GameObject escape_menu_sprite;
 
     private AudioSource loopingMusic;
 
@@ -37,6 +41,32 @@ public class GameManager : MonoBehaviour
         {
             killPlayer();
         } 
+
+        if(!isPaused && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Paused");
+            isPaused = true;
+            Time.timeScale = 0.0f;
+            loopingMusic.Pause();
+            player.GetComponent<PlayerController>().enabled = false;
+            player.GetComponent<GunRotating>().enabled = false;
+            player.GetComponent<MaxReactor>().enabled = false;
+            escape_menu_sprite.SetActive(true);
+            return;
+        }
+
+        if(isPaused && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Unpaused");
+            isPaused = false;
+            Time.timeScale = 1.0f;
+            loopingMusic.UnPause();
+            player.GetComponent<PlayerController>().enabled = true;
+            player.GetComponent<GunRotating>().enabled = true;
+            player.GetComponent<MaxReactor>().enabled = true;
+            escape_menu_sprite.SetActive(false);
+            return;
+        }
     }
 
     public Transform getPlayerTransform()

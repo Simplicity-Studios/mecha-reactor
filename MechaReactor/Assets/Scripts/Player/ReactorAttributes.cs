@@ -77,8 +77,11 @@ public class ReactorAttributes : MonoBehaviour
     private float m_electricity;
     private bool m_penalty = false;
 
+    private GameManager gameManager;
+
     void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         m_electricity = maxElectricity;
 
         m_attributes = new Dictionary<string, Attribute>();
@@ -96,8 +99,11 @@ public class ReactorAttributes : MonoBehaviour
             points += attr.pointsAllocated + attr.GetHiddenPoints();
         m_points = points;
 
-        m_electricity -= m_points * electricityDecreaseRate * 0.005f;
-        m_electricity = Mathf.Clamp(m_electricity, 0, maxElectricity);
+        if(!gameManager.isPaused)
+        {
+            m_electricity -= m_points * electricityDecreaseRate * 0.005f;
+            m_electricity = Mathf.Clamp(m_electricity, 0, maxElectricity);
+        }
 
         if (m_electricity == 0 && !m_penalty)
         {

@@ -111,5 +111,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f286077bec3e78698e40ef80b3d03bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfElectricity: 30
+  amountOfElectricity: 25
   source: {fileID: 8300000, guid: 35eef1c3f7bcc444f9675862db603bec, type: 3}

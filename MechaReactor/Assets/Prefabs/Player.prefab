@@ -257,20 +257,20 @@ MonoBehaviour:
   electricityBackOnline: {fileID: 1747685782603190346}
   initialAttributes:
   - name: movementSpeed
-    minValue: 1
-    maxValue: 3
+    minValue: 1.4
+    maxValue: 3.4
   - name: attack
     minValue: 10
-    maxValue: 45
+    maxValue: 20
   - name: defense
     minValue: 1
-    maxValue: 4
+    maxValue: 2
   - name: special
     minValue: 1
     maxValue: 3
   - name: attackSpeed
-    minValue: 0.5
-    maxValue: 0.8
+    minValue: 0.6
+    maxValue: 0.85
 --- !u!114 &6447998740629227341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +293,7 @@ MonoBehaviour:
   specialPrefab: {fileID: 5940129621328437739, guid: 9f510fd07b0d7bb42b0704518a309431,
     type: 3}
   baseSpecialTime: 5
-  maxHealth: 300
+  maxHealth: 200
   invincibilityDuration: 1.8
   invicinibilityDelta: 0.2
   damageSound: {fileID: 2355149874184237720}
@@ -748,13 +748,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6f778d2d1550f9d49a7e4da387d1ce03, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.717
-  m_Pitch: 1.2
+  m_Volume: 1
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 142
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missile: {fileID: 7244791129566649248, guid: 5f69b8f4889d85a4189d8541efc08750, type: 3}
-  missileBaseAttackTime: 1.5
+  missileBaseAttackTime: 2
   missileForce: 20
   missileFirePoint: {fileID: 2305549594714774173}
 --- !u!61 &3790549692854131153

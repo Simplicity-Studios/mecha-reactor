@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e117723b8d2bd81e7b70bc8906181624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 550
+  maxHealth: 650
   currentHealth: 0
   healthBar: {fileID: 4343953099564874006}
   movementSpeed: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c1bed777991e8f43b5b5449d1753818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPower: 150
+  laserPower: 120
   seekingDistance: 50
   firePoint: {fileID: 1607643610146720219}
   chargeDuration: 5

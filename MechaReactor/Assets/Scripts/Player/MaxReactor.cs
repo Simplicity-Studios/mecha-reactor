@@ -37,7 +37,7 @@ public class MaxReactor : MonoBehaviour
         if(!reactorButtonMouseOver && Input.GetButton("Fire1") && Time.time > (missileBaseAttackTime + lastMissileShot))
         {
             GameObject m = Instantiate(missile, missileFirePoint.position, missileFirePoint.rotation);
-            m.GetComponent<Bullet>().setBulletDamage(stats["attack"].GetValue() + 5f);
+            m.GetComponent<Bullet>().setBulletDamage(stats["attack"].GetValue());
             Rigidbody2D bulletrigid = m.GetComponent<Rigidbody2D>();
             bulletrigid.AddForce(missileFirePoint.up * missileForce, ForceMode2D.Impulse);
             lastMissileShot = Time.time;

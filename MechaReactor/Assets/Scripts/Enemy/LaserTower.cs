@@ -47,29 +47,36 @@ public class LaserTower : MonoBehaviour
     */
     void Update()
     {
+        // If the laser tower is in the process of dying don't bother with lasers
         if(controller.isDying)
         {
             laser.enabled = false;
             return;
         }
+        // Modifies the width of the laser after it has been fired
         if(hasFired)
         {
             laserWidth -= Time.deltaTime * 2;
             laser.startWidth = Mathf.Clamp(laserWidth, 0.0f, 1.0f);
         }
+        // If we can see the player, cooldown is up, and the player isn't invulerable, start charging
         if(canSeePlayer() && Time.time > lastFired + cooldown && !player.GetComponent<PlayerController>().isInvulnerable)
         {
+            // If we're not charging, play the sound once
+            // This is needed otherwise the charge sound will play 1 million times
             if(!isCharging)
             {
                 ChargeSource.Play();
                 isCharging = true;
             }
             isCharging = true;
+            //If we haven't fired yet, draw the laser and increase the charge time
             if(!hasFired)
             {
                 drawLaser();
             }
             chargeTime += Time.deltaTime;
+            // If the charge time is up, stop the charge up sound effect and fire the laser
             if(chargeTime >= chargeDuration && !hasFired)
             {
                 ChargeSource.Stop();
@@ -80,6 +87,7 @@ public class LaserTower : MonoBehaviour
                 hasFired = true;
             }
         }
+        // If we can't see the player, basically reset everything
         else
         {
             laser.enabled = false;
@@ -97,6 +105,7 @@ public class LaserTower : MonoBehaviour
         return (hit.collider != null && hit.collider.CompareTag("Player"));
     }
 
+    // Draws the initial line from the tower to the player. 
     private void drawLaser()
     {
         laserMat.color = new Color(1, 0, 0, 0.25f);
@@ -122,7 +131,7 @@ public class LaserTower : MonoBehaviour
             player.GetComponent<PlayerController>().TakeDamageIgnoreHitstop(laserPower);   
         }
     }
-
+    // Actually cleans up the line renderer itself and resets all the boolean values
     IEnumerator laserCleanup()
     {
         yield return new WaitForSeconds(1.0f);
