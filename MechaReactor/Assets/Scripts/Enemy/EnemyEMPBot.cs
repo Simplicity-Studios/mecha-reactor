@@ -8,6 +8,8 @@ public class EnemyEMPBot : MonoBehaviour
     public float empActivationRate;
     private float lastEMP;
 
+    public float damage;
+
     public AudioSource empSFX;
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class EnemyEMPBot : MonoBehaviour
     void activateEMP()
     {
         empSFX.Play();
-        Instantiate(emp, transform.position, Quaternion.identity);
+        GameObject blast = Instantiate(emp, transform.position, Quaternion.identity);
+        blast.GetComponent<EMP>().damage = damage;
     }
 }

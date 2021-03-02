@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emp: {fileID: 5940129621328437739, guid: 2507e1310f6f51b4a89d391cb74e6da7, type: 3}
   empActivationRate: 6
+  damage: 10
   empSFX: {fileID: 1596257509218383919}
 --- !u!50 &5866270107903848915
 Rigidbody2D:

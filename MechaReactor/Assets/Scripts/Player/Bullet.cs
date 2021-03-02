@@ -13,6 +13,9 @@ public class Bullet : MonoBehaviour
         if(col.transform.CompareTag("Enemy"))
         {
             col.gameObject.GetComponent<EnemyController>().TakeDamage(dmg);
+        } else if(col.transform.CompareTag("Absorber"))
+        {
+            col.gameObject.GetComponent<EnemyAbsorber>().ProcessDamage(dmg);
         }
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 1f);

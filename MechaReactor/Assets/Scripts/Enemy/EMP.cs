@@ -8,6 +8,7 @@ public class EMP : MonoBehaviour
     public float changeRate = 0.05f;
     public float duration;
     public float maxSize = 30f;
+    public float damage = 0.0f;
     private Vector2 scaleRatio;
 
     void Start()
@@ -34,6 +35,7 @@ public class EMP : MonoBehaviour
         {
             Destroy(GetComponent<CircleCollider2D>());
             other.GetComponent<PlayerController>().HitByEMP(duration);
+            other.GetComponent<PlayerController>().TakeDamageIgnoreHitstop(damage);
         }
     }
 }
