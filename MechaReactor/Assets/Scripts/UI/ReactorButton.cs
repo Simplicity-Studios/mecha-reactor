@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class ReactorButton : MonoBehaviour, IPointerClickHandler
 {
+    public AudioSource allocSound, deallocSound;
     public GameObject player, overallReactorBar;
     public Sprite[] pointsbarSprites;
     public string attributeName;
@@ -34,9 +35,15 @@ public class ReactorButton : MonoBehaviour, IPointerClickHandler
             float pointsRemaining = stats.GetMaxPoints() - stats.GetTotalPointsAllocated() - 1;
 
             if (eventData.button == PointerEventData.InputButton.Left && pointsRemaining > 0)
+            {
                 stats[attributeName].pointsAllocated += 1;
+                allocSound.Play(0);
+            }
             else if (eventData.button == PointerEventData.InputButton.Right)
+            {
                 stats[attributeName].pointsAllocated -= 1;
+                deallocSound.Play(0);
+            }
         }
     }
 }
