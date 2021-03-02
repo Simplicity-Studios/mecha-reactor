@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e117723b8d2bd81e7b70bc8906181624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 200
   currentHealth: 100
   healthBar: {fileID: 3078533015917692479}
   movementSpeed: 0.3
@@ -517,6 +517,7 @@ MonoBehaviour:
   waveAttack: {fileID: 8286431971111198340, guid: 232b7c1098762654894d5a7e873b1837,
     type: 3}
   firePoint: {fileID: 3078533015781873477}
+  renderer: {fileID: 3078533016247707759}
 --- !u!82 &7313981089663213718
 AudioSource:
   m_ObjectHideFlags: 0

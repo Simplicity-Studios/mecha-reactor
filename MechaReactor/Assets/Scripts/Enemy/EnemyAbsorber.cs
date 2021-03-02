@@ -22,6 +22,8 @@ public class EnemyAbsorber : MonoBehaviour
     public Transform firePoint;
 
     private bool isAbsorbing = false;
+    public SpriteRenderer renderer;
+
     private Sprite defaultSprite;
 
     private float defaultMovementSpeed;
@@ -29,7 +31,7 @@ public class EnemyAbsorber : MonoBehaviour
 
     void Start()
     {
-        defaultSprite = GameObject.Find("EnemySprite").GetComponent<SpriteRenderer>().sprite;
+        defaultSprite = renderer.sprite;
         defaultMovementSpeed = GetComponent<EnemyController>().movementSpeed;
     }
 
@@ -46,7 +48,7 @@ public class EnemyAbsorber : MonoBehaviour
         // If we're not in the process of absorbing, take damage like normal
         if(!isAbsorbing)
             GetComponent<EnemyController>().TakeDamage(dmg);
-        else   //Otherwise add the damage to the amount absorbed and take a fifth of the damage
+        else   //Otherwise add the damage to the amount absorbed and take a sixth of the damage
         {
             absorbedDmg += dmg;
             GetComponent<EnemyController>().TakeDamage(dmg/6);
@@ -72,13 +74,13 @@ public class EnemyAbsorber : MonoBehaviour
         isAbsorbing = true;
         absorbParticle.SetActive(true);
         absorbSFX.Play();
-        GameObject.Find("EnemySprite").GetComponent<SpriteRenderer>().sprite = absorbingSprite;
+        renderer.sprite = absorbingSprite;
         GetComponent<EnemyController>().movementSpeed = 0.0f;
 
         yield return new WaitForSeconds(absorbingTime);
 
         absorbSFX.Stop();
-        GameObject.Find("EnemySprite").GetComponent<SpriteRenderer>().sprite = defaultSprite;
+        renderer.sprite = defaultSprite;
         GetComponent<EnemyController>().movementSpeed = defaultMovementSpeed;
         lastAbsorbTime = Time.time;
         absorbParticle.SetActive(false);
