@@ -6,6 +6,7 @@ public class EnemyAbsorber : MonoBehaviour
 {
     public float absorbingTime = 3.0f;
 
+    public float waveSpeed = 10f;
     public float absorbCooldown;
     private float lastAbsorbTime;
 
@@ -34,7 +35,7 @@ public class EnemyAbsorber : MonoBehaviour
 
     void Update()
     {
-        if(Time.time > (lastAbsorbTime + absorbCooldown) && !isAbsorbing)
+        if(Time.time > (lastAbsorbTime + absorbCooldown) && !isAbsorbing && !GetComponent<EnemyController>().isDying)
         {
             StartCoroutine(BeginAbsorb());
         }
@@ -45,17 +46,25 @@ public class EnemyAbsorber : MonoBehaviour
         // If we're not in the process of absorbing, take damage like normal
         if(!isAbsorbing)
             GetComponent<EnemyController>().TakeDamage(dmg);
-        else //Otherwise add the damage to the amount absorbed
+        else   //Otherwise add the damage to the amount absorbed and take a fifth of the damage
+        {
             absorbedDmg += dmg;
+            GetComponent<EnemyController>().TakeDamage(dmg/6);
+        } 
+            
     }   
 
     public void ReleaseWaveAttack(float totalDmg)
     {
-        GameObject wave = Instantiate(waveAttack, firePoint.position, firePoint.rotation);
-        wave.GetComponent<EnemyWave>().setDamage(totalDmg);
-        Rigidbody2D bulletrigid = wave.GetComponent<Rigidbody2D>();
-        bulletrigid.AddForce(firePoint.up * 10f, ForceMode2D.Impulse);
-        absorbedDmg = 0.0f;
+        if(totalDmg != 0.0f)
+        {
+            releaseSFX.Play();
+            GameObject wave = Instantiate(waveAttack, firePoint.position, firePoint.rotation);
+            wave.GetComponent<EnemyWave>().setDamage(totalDmg);
+            Rigidbody2D bulletrigid = wave.GetComponent<Rigidbody2D>();
+            bulletrigid.AddForce(firePoint.up * waveSpeed, ForceMode2D.Impulse);
+            absorbedDmg = 0.0f;
+        }
     }
 
     IEnumerator BeginAbsorb()
@@ -74,7 +83,6 @@ public class EnemyAbsorber : MonoBehaviour
         lastAbsorbTime = Time.time;
         absorbParticle.SetActive(false);
         isAbsorbing = false;
-        releaseSFX.Play();
         ReleaseWaveAttack(absorbedDmg);
     }
 }

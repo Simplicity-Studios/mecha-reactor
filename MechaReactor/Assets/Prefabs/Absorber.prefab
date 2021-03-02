@@ -507,8 +507,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19db893ed193bc41bcde1d662d1ba5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  absorbingTime: 3
-  absorbCooldown: 8
+  absorbingTime: 4
+  waveSpeed: 15
+  absorbCooldown: 7
   absorbingSprite: {fileID: 21300000, guid: 06d646519c845b649a1274b8610d8e29, type: 3}
   absorbParticle: {fileID: 7814094350556436259}
   absorbSFX: {fileID: 7313981089663213718}
@@ -528,7 +529,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e666574f2ccb12645a281becfdcd2ac2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.438
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1124,8 +1125,8 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     startSize:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 1
+      minMaxState: 3
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1177,7 +1178,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -1230,7 +1231,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
