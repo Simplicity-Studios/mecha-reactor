@@ -22,7 +22,7 @@ public class Room : MonoBehaviour
     public Transform[] locationsToSpawn;
 
     // The object that holds all enemies
-    private Transform currentEnemies;
+    public Transform currentEnemies;
     private bool doorIsOpen = false;
 
     void Start()
