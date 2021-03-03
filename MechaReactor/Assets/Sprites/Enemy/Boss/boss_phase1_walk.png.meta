@@ -1,0 +1,1595 @@
+fileFormatVersion: 2
+guid: 32037a3db8aa08840bae9e5ddedd0972
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4610712230950862359
+    second: boss_phase1_walk_0
+  - first:
+      213: -2031115969632016224
+    second: boss_phase1_walk_1
+  - first:
+      213: 8399507080020067126
+    second: boss_phase1_walk_2
+  - first:
+      213: 6169621053947047816
+    second: boss_phase1_walk_3
+  - first:
+      213: -3064654571489140119
+    second: boss_phase1_walk_4
+  - first:
+      213: -6351600306997087080
+    second: boss_phase1_walk_5
+  - first:
+      213: -7919750201272071244
+    second: boss_phase1_walk_6
+  - first:
+      213: -6771056871359370625
+    second: boss_phase1_walk_7
+  - first:
+      213: 8215633924880598306
+    second: boss_phase1_walk_8
+  - first:
+      213: -843161091767983984
+    second: boss_phase1_walk_9
+  - first:
+      213: 2057645428858840872
+    second: boss_phase1_walk_10
+  - first:
+      213: 5893051578610172902
+    second: boss_phase1_walk_11
+  - first:
+      213: 3333385151678888037
+    second: boss_phase1_walk_12
+  - first:
+      213: -2265053519424713888
+    second: boss_phase1_walk_13
+  - first:
+      213: 6677706934342112310
+    second: boss_phase1_walk_14
+  - first:
+      213: -7785426495452692772
+    second: boss_phase1_walk_15
+  - first:
+      213: -5264444717369164621
+    second: boss_phase1_walk_16
+  - first:
+      213: -1380455084438217547
+    second: boss_phase1_walk_17
+  - first:
+      213: 8882629617650812131
+    second: boss_phase1_walk_18
+  - first:
+      213: 6653450669595221008
+    second: boss_phase1_walk_19
+  - first:
+      213: 2471050648111168959
+    second: boss_phase1_walk_20
+  - first:
+      213: 3574337608587280598
+    second: boss_phase1_walk_21
+  - first:
+      213: -3197315996809482337
+    second: boss_phase1_walk_22
+  - first:
+      213: -2200977406839367362
+    second: boss_phase1_walk_23
+  - first:
+      213: 592736011989850186
+    second: boss_phase1_walk_24
+  - first:
+      213: 1119897930501948125
+    second: boss_phase1_walk_25
+  - first:
+      213: -7165726991678785357
+    second: boss_phase1_walk_26
+  - first:
+      213: -3020174156376443027
+    second: boss_phase1_walk_27
+  - first:
+      213: 3427159137380884349
+    second: boss_phase1_walk_28
+  - first:
+      213: 211854704406009665
+    second: boss_phase1_walk_29
+  - first:
+      213: -1284929653405588085
+    second: boss_phase1_walk_30
+  - first:
+      213: 8436726861474787417
+    second: boss_phase1_walk_31
+  - first:
+      213: 1505713477039335852
+    second: boss_phase1_walk_32
+  - first:
+      213: 6603191857227493031
+    second: boss_phase1_walk_33
+  - first:
+      213: 6237427645190138405
+    second: boss_phase1_walk_34
+  - first:
+      213: -3908221773042291401
+    second: boss_phase1_walk_35
+  - first:
+      213: 7868692418060056914
+    second: boss_phase1_walk_36
+  - first:
+      213: -7733639891203081641
+    second: boss_phase1_walk_37
+  - first:
+      213: 3257648046514810200
+    second: boss_phase1_walk_38
+  - first:
+      213: 5348935391176439551
+    second: boss_phase1_walk_39
+  - first:
+      213: 6203818778417730679
+    second: boss_phase1_walk_40
+  - first:
+      213: 5487492113551052248
+    second: boss_phase1_walk_41
+  - first:
+      213: 8678429837769199699
+    second: boss_phase1_walk_42
+  - first:
+      213: -4803842879226161560
+    second: boss_phase1_walk_43
+  - first:
+      213: 9127486278503119813
+    second: boss_phase1_walk_44
+  - first:
+      213: 6811402311640701528
+    second: boss_phase1_walk_45
+  - first:
+      213: 6053992691176189383
+    second: boss_phase1_walk_46
+  - first:
+      213: -2061506655757764854
+    second: boss_phase1_walk_47
+  - first:
+      213: 3464729310944206162
+    second: boss_phase1_walk_48
+  - first:
+      213: 6110693558829627860
+    second: boss_phase1_walk_49
+  - first:
+      213: -7610502031480326135
+    second: boss_phase1_walk_50
+  - first:
+      213: 3856332845880014386
+    second: boss_phase1_walk_51
+  - first:
+      213: 1901284844074493033
+    second: boss_phase1_walk_52
+  - first:
+      213: -2212192655118731564
+    second: boss_phase1_walk_53
+  - first:
+      213: 4657968362850163150
+    second: boss_phase1_walk_54
+  - first:
+      213: 6681792750130722480
+    second: boss_phase1_walk_55
+  - first:
+      213: -3950868798900865047
+    second: boss_phase1_walk_56
+  - first:
+      213: -7236606589621182757
+    second: boss_phase1_walk_57
+  - first:
+      213: -2501145938793918987
+    second: boss_phase1_walk_58
+  - first:
+      213: -7103432585698711110
+    second: boss_phase1_walk_59
+  - first:
+      213: 8451792191372299045
+    second: boss_phase1_walk_60
+  - first:
+      213: -2597528496382784365
+    second: boss_phase1_walk_61
+  - first:
+      213: -6470575700593739591
+    second: boss_phase1_walk_62
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss_phase1_walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3426
+        width: 279
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71eff5f685a8cff30800000000000000
+      internalID: 4610712230950862359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 3420
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8e57479c600d3e0800000000000000
+      internalID: -2031115969632016224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_2
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 3420
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63389f0df2b019470800000000000000
+      internalID: 8399507080020067126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3249
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fe84719a5ee9550800000000000000
+      internalID: 6169621053947047816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 3249
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962ec1b87e82875d0800000000000000
+      internalID: -3064654571489140119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_5
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 3249
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8943d2a4c259ad7a0800000000000000
+      internalID: -6351600306997087080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3078
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb895f0725671290800000000000000
+      internalID: -7919750201272071244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 3078
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a28ac66af5802a0800000000000000
+      internalID: -6771056871359370625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_8
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 3078
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2250821c68bc30270800000000000000
+      internalID: 8215633924880598306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2907
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0902dbc447d7c44f0800000000000000
+      internalID: -843161091767983984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_10
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2907
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82766dc9d993e8c10800000000000000
+      internalID: 2057645428858840872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_11
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2907
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e34d12203358c150800000000000000
+      internalID: 5893051578610172902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2736
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568b1696220924e20800000000000000
+      internalID: 3333385151678888037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_13
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2736
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b017923d9e090e0800000000000000
+      internalID: -2265053519424713888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_14
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2736
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634df97a31bfbac50800000000000000
+      internalID: 6677706934342112310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2565
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdeb0a1f9db94f390800000000000000
+      internalID: -7785426495452692772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_16
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2565
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc7789fb6fe0f6b0800000000000000
+      internalID: -5264444717369164621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_17
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2565
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc9da72a63a7dce0800000000000000
+      internalID: -1380455084438217547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2394
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4c0773390754b70800000000000000
+      internalID: 8882629617650812131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_19
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2394
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cdecbe12ec55c50800000000000000
+      internalID: 6653450669595221008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_20
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2394
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd3aa6e87fea4220800000000000000
+      internalID: 2471050648111168959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2223
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d00a2b0e199a9130800000000000000
+      internalID: 3574337608587280598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_22
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2223
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f2f7f7a0ad0a3d0800000000000000
+      internalID: -3197315996809482337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_23
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2223
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39dda2b5be8471e0800000000000000
+      internalID: -2200977406839367362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2052
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a489c303342d93800800000000000000
+      internalID: 592736011989850186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_25
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2052
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2834cfb3daa8f00800000000000000
+      internalID: 1119897930501948125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_26
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2052
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8be8744493e8c90800000000000000
+      internalID: -7165726991678785357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1881
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67fd593b9f2616d0800000000000000
+      internalID: -3020174156376443027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_28
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1881
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f525cd317bf8f20800000000000000
+      internalID: 3427159137380884349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_29
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1881
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1479d103bb8a0f200800000000000000
+      internalID: 211854704406009665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1710
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85e46fb9430b2ee0800000000000000
+      internalID: -1284929653405588085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_31
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1710
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950733d7166451570800000000000000
+      internalID: 8436726861474787417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_32
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1710
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9a2740e6e55e410800000000000000
+      internalID: 1505713477039335852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1539
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aeebc9420043ab50800000000000000
+      internalID: 6603191857227493031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_34
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1539
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a62cf556bcf8650800000000000000
+      internalID: 6237427645190138405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_35
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1539
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ded5a010533c9c0800000000000000
+      internalID: -3908221773042291401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1368
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25977496016333d60800000000000000
+      internalID: 7868692418060056914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_37
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1368
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75abc085e779ca490800000000000000
+      internalID: -7733639891203081641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_38
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1368
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85da2c773ad753d20800000000000000
+      internalID: 3257648046514810200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1197
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6369df56c3b3a40800000000000000
+      internalID: 5348935391176439551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_40
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1197
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7749c7a4f44681650800000000000000
+      internalID: 6203818778417730679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_41
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1197
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddc7f7d00d772c40800000000000000
+      internalID: 5487492113551052248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350526805f9ff6870800000000000000
+      internalID: 8678429837769199699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_43
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1026
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8665fea6a52555db0800000000000000
+      internalID: -4803842879226161560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_44
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1026
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb3e6a29685bae70800000000000000
+      internalID: 9127486278503119813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 855
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a5e976056f68e50800000000000000
+      internalID: 6811402311640701528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_46
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 855
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd2e56f64a140450800000000000000
+      internalID: 6053992691176189383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_47
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 855
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0774717e9e0463e0800000000000000
+      internalID: -2061506655757764854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 684
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d96bd83f0351030800000000000000
+      internalID: 3464729310944206162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_49
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 684
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9be497a6b8dc450800000000000000
+      internalID: 6110693558829627860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_50
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 684
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908f93b79b0126690800000000000000
+      internalID: -7610502031480326135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2367956aa42748530800000000000000
+      internalID: 3856332845880014386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_52
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 513
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964e4e30e78b26a10800000000000000
+      internalID: 1901284844074493033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_53
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 513
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d67be83086bc41e0800000000000000
+      internalID: -2212192655118731564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec911ba0c8d64a040800000000000000
+      internalID: 4657968362850163150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_55
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 342
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b67256ca1f7abc50800000000000000
+      internalID: 6681792750130722480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_56
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 342
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7f65f82c1bb29c0800000000000000
+      internalID: -3950868798900865047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 171
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bded06ed5a8629b90800000000000000
+      internalID: -7236606589621182757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_58
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 171
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd07c235052a4dd0800000000000000
+      internalID: -2501145938793918987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_59
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 171
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab96e7be2b98b6d90800000000000000
+      internalID: -7103432585698711110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b8a22f73cca4570800000000000000
+      internalID: 8451792191372299045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase1_walk_61
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 0
+        width: 279
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c46274899b3fbd0800000000000000
+      internalID: -2597528496382784365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
