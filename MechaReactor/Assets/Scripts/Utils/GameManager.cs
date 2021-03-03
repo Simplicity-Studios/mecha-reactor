@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     private AudioSource loopingMusic;
     private float loopingMusicVolume;
 
+    private AudioSource[] allAudioSources;
+
     void Start()
     {
         loopingMusic = GetComponent<AudioSource>();
@@ -54,6 +56,7 @@ public class GameManager : MonoBehaviour
             player.GetComponent<GunRotating>().enabled = false;
             player.GetComponent<MaxReactor>().enabled = false;
             escape_menu_sprite.SetActive(true);
+            PauseAllSFX();
             return;
         }
 
@@ -67,7 +70,26 @@ public class GameManager : MonoBehaviour
             player.GetComponent<GunRotating>().enabled = true;
             player.GetComponent<MaxReactor>().enabled = true;
             escape_menu_sprite.SetActive(false);
+            ResumeAllSFX();
             return;
+        }
+    }
+
+    public void PauseAllSFX()
+    {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach( AudioSource audioS in allAudioSources) 
+        {
+            audioS.Pause();
+        }
+    }
+
+    public void ResumeAllSFX()
+    {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach( AudioSource audioS in allAudioSources) 
+        {
+            audioS.UnPause();
         }
     }
 
@@ -124,6 +146,7 @@ public class GameManager : MonoBehaviour
         
         isDying = false;
         playerController.enabled = true;
+        playerController.isInvulnerable = false;
         player.SetActive(true);
     }
 

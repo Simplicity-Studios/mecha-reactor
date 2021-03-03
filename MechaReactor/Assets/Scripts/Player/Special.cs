@@ -33,5 +33,9 @@ public class Special : MonoBehaviour
             other.transform.GetComponent<EnemyController>().TakeDamage(damage * 
                 playerPrefab.GetComponent<ReactorAttributes>()["special"].GetValue());
         }
+        else if(other.transform.CompareTag("EnemyBullet"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }

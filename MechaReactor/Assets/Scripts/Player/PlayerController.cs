@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
         r = GetComponent<Rigidbody2D>();
         currHealth = maxHealth;
         anim = GetComponent<Animator>();
+        isInvulnerable = false;
     }
 
     void Update()

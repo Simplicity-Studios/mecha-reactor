@@ -505,7 +505,7 @@ MonoBehaviour:
   Absorb:
     absorbEffect: {fileID: 5687814915494529476}
     absorbingTime: 3
-    waveSpeed: 10
+    waveSpeed: 15
     waveReleasePoint: {fileID: 8857817453050873864}
     wavePrefab: {fileID: 8286431971111198340, guid: 232b7c1098762654894d5a7e873b1837,
       type: 3}
@@ -516,8 +516,9 @@ MonoBehaviour:
   Bullet:
     shootSFX: {fileID: 4988425999243147408}
     attackSpeed: 0.8
-    bulletDamage: 10
+    bulletDamage: 15
     bulletForce: 10
+    bulletSize: 2
     maxBullets: 5
     timesToFire: 10
     bulletSpawnLocations:

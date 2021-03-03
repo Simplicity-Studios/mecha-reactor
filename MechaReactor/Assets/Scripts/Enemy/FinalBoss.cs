@@ -49,6 +49,8 @@ public class FinalBoss : MonoBehaviour
         public float bulletDamage = 10.0f;
         public float bulletForce = 10.0f;
 
+        public float bulletSize = 2.0f;
+
         public int maxBullets = 5;
 
         public int timesToFire = 10;
@@ -135,21 +137,29 @@ public class FinalBoss : MonoBehaviour
         {
             setAttack();
             executeAttack();
+            if(isAngry)
+            {
+                Invoke("setAttack", 1.0f);
+                Invoke("executeAttack", 1.1f);
+            }
         }
     }
 
     public void activateAngerBuff()
     {
-        Bullet.attackSpeed -= 0.15f;
-        Bullet.timesToFire += 5;
-        Bullet.bulletForce += 2.0f;
+        Bullet.attackSpeed -= 0.10f;
+        Bullet.timesToFire += 2;
+        Bullet.bulletForce += 1.0f;
         Bullet.maxBullets += 2;
+        Bullet.bulletSize = 1.5f;
         Laser.laserPower += 20;
         Laser.flashesToAttack = 2;
         Laser.chargeDuration = 1.8f;
         Absorb.waveSpeed += 3;
 
         attackIntervals /= 2.1f;
+
+        originalMS += 1.0f;
     }
     
     public void ProcessDamage(float dmg)
@@ -166,7 +176,7 @@ public class FinalBoss : MonoBehaviour
 
     private void setAttack()
     {
-        float roll = 0.24f;
+        float roll = Random.Range(0.0f, 0.74f);
         if(roll < 0.25f)
         {
             currentAttack = Attacks.Laser;
@@ -309,6 +319,10 @@ public class FinalBoss : MonoBehaviour
 
     private void ReleaseWaveAttack(float totalDmg)
     {
+        if(isAngry && totalDmg < 5.0f)
+        {
+            totalDmg += 5f;
+        }
         if(totalDmg != 0.0f)
         {
             Absorb.releaseSFX.Play();
@@ -354,7 +368,7 @@ public class FinalBoss : MonoBehaviour
             {
                 GameObject b = Instantiate(Bullet.bulletPrefab, spawn.transform.position, spawn.rotation);
                 b.GetComponent<EnemyBullet>().setBulletDamage(Bullet.bulletDamage);
-                b.transform.localScale *= 2;
+                b.transform.localScale *= Bullet.bulletSize;
                 Rigidbody2D bulletrigid = b.GetComponent<Rigidbody2D>();
                 b.transform.Rotate(0, 0, Random.Range(-50, 50));
                 bulletrigid.AddForce(b.transform.up * Bullet.bulletForce, ForceMode2D.Impulse);
