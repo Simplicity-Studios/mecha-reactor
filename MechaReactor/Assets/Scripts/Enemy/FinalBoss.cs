@@ -6,13 +6,11 @@ public class FinalBoss : MonoBehaviour
 {
     public AbsorbClass Absorb;
     public BulletHellClass Bullet;
+    public LaserClass Laser;
 
     public float attackIntervals;
  
     public Animator anim;
-
-    public GameObject laserLeft;
-    public GameObject laserRight;
 
     private EnemyController enemyController;
 
@@ -59,11 +57,43 @@ public class FinalBoss : MonoBehaviour
         public GameObject bulletPrefab;
     }
 
+    // LASER PARAMETERS
+    [System.Serializable]
+    public class LaserClass 
+    {
+        public float laserPower;
+        public float chargeDuration;
+        public int flashesToAttack;
+
+        public AudioSource ChargeSource;
+        public AudioSource FireSource;
+        public AudioSource lockedOnSource;
+
+        public Material laserMat;
+        public LineRenderer laser;
+        public CapsuleCollider2D capsule;
+        [HideInInspector]
+        public Vector2 finalPosition;
+        [HideInInspector]
+        public Vector3 finalDirectionToPlayer;
+        [HideInInspector]
+        public LayerMask mask;
+        [HideInInspector]
+        public float laserWidth = 0.25f;
+        [HideInInspector]
+        public bool isCharging = false;
+        [HideInInspector]
+        public bool hasFired = false;
+    }
+
+    
+
     void Start()
     {
         enemyController = GetComponent<EnemyController>();
         originalMS = GetComponent<EnemyController>().movementSpeed;
         currentAttack = Attacks.NoAttack;
+        Laser.mask = LayerMask.GetMask("Player") | LayerMask.GetMask("Obstacles");
     }
 
     void Update()
@@ -73,9 +103,20 @@ public class FinalBoss : MonoBehaviour
             isAngry = true;
             activateAngerBuff();
         }
-            
 
-        if(isAttacking)
+        //WE LOVE THE LASER ATTACK :)
+        if(Laser.isCharging)
+        {
+            drawLaser();
+        }
+
+        if(Laser.hasFired)
+        {
+            Laser.laserWidth -= Time.deltaTime*2;
+            Laser.laser.startWidth = Mathf.Clamp(Laser.laserWidth, 0.0f, 1.0f);
+        }
+            
+        if(isAttacking && !isAngry)
         {
             enemyController.movementSpeed = 0.0f;
         } 
@@ -100,6 +141,10 @@ public class FinalBoss : MonoBehaviour
         Bullet.timesToFire += 5;
         Bullet.bulletForce += 2.0f;
         Bullet.maxBullets += 2;
+        Laser.laserPower += 20;
+        Laser.flashesToAttack = 2;
+        Laser.chargeDuration = 1.8f;
+        Absorb.waveSpeed += 3;
     }
     
     public void ProcessDamage(float dmg)
@@ -116,7 +161,7 @@ public class FinalBoss : MonoBehaviour
 
     private void setAttack()
     {
-        float roll = 0.55f;
+        float roll = 0.24f;
         if(roll < 0.25f)
         {
             currentAttack = Attacks.Laser;
@@ -155,10 +200,86 @@ public class FinalBoss : MonoBehaviour
         }
     }
 
+    /*
+        ***************************************************
+        LASER ATTACK
+
+        pain 👉😎👉
+        ***************************************************
+    */
+        
+
     private void laserAttack()
     {
-
+        StartCoroutine(BeginLaserCharge());
     }
+
+    IEnumerator BeginLaserCharge()
+    {
+        
+        Laser.laser.enabled = true;
+        Laser.isCharging = true;
+        Laser.ChargeSource.Play();
+        yield return new WaitForSeconds(Laser.chargeDuration);
+        Laser.ChargeSource.Stop();
+        Laser.lockedOnSource.Play();
+        Laser.isCharging = false;
+        enemyController.canRotate = false;
+        for(int i = 0; i < Laser.flashesToAttack; ++i)
+        {
+            yield return new WaitForSeconds(0.05f);
+            Laser.laser.enabled = false;
+            yield return new WaitForSeconds(0.05f);
+            Laser.laser.enabled = true;
+        }
+        Laser.lockedOnSource.Stop();
+        fireLaser();
+        Laser.FireSource.Play();
+        enemyController.canRotate = true;
+        lastAttack = Time.time;
+        yield return new WaitForSeconds(0.8f);
+        Laser.capsule.enabled = false;
+        Laser.hasFired = false;
+        Laser.laserWidth = 0.25f;
+        isAttacking = false;
+    }
+
+    private void drawLaser()
+    {
+        Laser.laserMat.color = new Color(1, 0, 0, 0.25f);
+        Laser.laser.startWidth = Laser.laserWidth;
+        Laser.laserWidth += Time.deltaTime/6;
+
+        Vector3 directionToPlayer = GetComponent<EnemyController>().player.transform.position - transform.position;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position + directionToPlayer.normalized, directionToPlayer, 400, Laser.mask);
+        Laser.laser.SetPosition(0, Laser.laser.transform.position);
+        Laser.laser.SetPosition(1, hit.point);
+        Laser.finalDirectionToPlayer = directionToPlayer;
+        Laser.finalPosition = hit.point;
+    }
+
+    private void fireLaser()
+    {
+        Laser.hasFired = true;
+        
+        Vector3 directionToPlayer = Laser.finalDirectionToPlayer;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position + directionToPlayer.normalized, directionToPlayer, 400, Laser.mask);
+        Laser.laser.SetPosition(1, hit.point);
+        Laser.laserMat.color = new Color(1, 0, 0, 1f);
+        Laser.laser.startWidth = 1.5f;
+
+        Laser.capsule.transform.position = (hit.point + new Vector2(transform.position.x, transform.position.y)) / 2;
+        Laser.capsule.size = new Vector2(0.68f, hit.distance + 3.0f);
+        float angle = Mathf.Atan2(transform.position.y - hit.point.y, transform.position.x - hit.point.x) *180/Mathf.PI - 90f;
+        Laser.capsule.transform.rotation = Quaternion.Euler(0.0f, 0.0f, angle);
+        Laser.capsule.enabled = true;
+    }
+
+    /*
+        ***************************************************
+        ABSORPTION ATTACK
+        ***************************************************
+    */
 
     private void absorbAttack()
     {
@@ -170,12 +291,10 @@ public class FinalBoss : MonoBehaviour
         Absorb.isAbsorbing = true;
         Absorb.absorbEffect.SetActive(true);
         Absorb.absorbSFX.Play();
-        enemyController.movementSpeed = 0.0f;
 
         yield return new WaitForSeconds(Absorb.absorbingTime);
 
         Absorb.absorbSFX.Stop();
-        enemyController.movementSpeed = originalMS;
         lastAttack = Time.time;
         Absorb.absorbEffect.SetActive(false);
         Absorb.isAbsorbing = false;
@@ -189,12 +308,18 @@ public class FinalBoss : MonoBehaviour
         {
             Absorb.releaseSFX.Play();
             GameObject wave = Instantiate(Absorb.wavePrefab, Absorb.waveReleasePoint.position, Absorb.waveReleasePoint.rotation);
-            wave.GetComponent<EnemyWave>().setDamage(totalDmg / 2);
+            wave.GetComponent<EnemyWave>().setDamage(totalDmg / 3);
             Rigidbody2D bulletrigid = wave.GetComponent<Rigidbody2D>();
             bulletrigid.AddForce(Absorb.waveReleasePoint.up * Absorb.waveSpeed, ForceMode2D.Impulse);
             Absorb.absorbedDmg = 0.0f;
         }
     }
+
+    /*
+        ***************************************************
+        BULLET HELL ATTACK
+        ***************************************************
+    */
 
     private void bulletHellAttack()
     {

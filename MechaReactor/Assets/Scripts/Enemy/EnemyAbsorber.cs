@@ -68,7 +68,7 @@ public class EnemyAbsorber : MonoBehaviour
         {
             releaseSFX.Play();
             GameObject wave = Instantiate(waveAttack, firePoint.position, firePoint.rotation);
-            wave.GetComponent<EnemyWave>().setDamage(totalDmg);
+            wave.GetComponent<EnemyWave>().setDamage(totalDmg / 2);
             Rigidbody2D bulletrigid = wave.GetComponent<Rigidbody2D>();
             bulletrigid.AddForce(firePoint.up * waveSpeed, ForceMode2D.Impulse);
             absorbedDmg = 0.0f;
