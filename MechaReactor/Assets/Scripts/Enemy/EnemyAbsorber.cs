@@ -52,6 +52,11 @@ public class EnemyAbsorber : MonoBehaviour
         else   //Otherwise add the damage to the amount absorbed and take a sixth of the damage
         {
             absorbedDmg += dmg;
+            var emi = absorbParticle.GetComponent<ParticleSystem>().emission;
+            var shape = absorbParticle.GetComponent<ParticleSystem>().shape;
+            shape.radius = absorbedDmg / 40;
+            emi.rateOverTime = absorbedDmg / 4;
+            absorbParticle.transform.localScale += new Vector3(0.027f, 0.027f, 0.0f);
             GetComponent<EnemyController>().TakeDamage(dmg/6);
         } 
             
@@ -85,7 +90,12 @@ public class EnemyAbsorber : MonoBehaviour
         GetComponent<EnemyController>().movementSpeed = defaultMovementSpeed;
         lastAbsorbTime = Time.time;
         absorbParticle.SetActive(false);
+        absorbParticle.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
         isAbsorbing = false;
+        var emi = absorbParticle.GetComponent<ParticleSystem>().emission;
+        var shape = absorbParticle.GetComponent<ParticleSystem>().shape;
+        emi.rateOverTime = 5.0f;
+        shape.radius = 0.81f;
         ReleaseWaveAttack(absorbedDmg);
     }
 }

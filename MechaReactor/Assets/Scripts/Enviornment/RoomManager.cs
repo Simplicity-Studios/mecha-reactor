@@ -101,4 +101,10 @@ public class RoomManager : MonoBehaviour
                 Destroy(h); 
         }
     }
+
+    public int getNumberOfEnemiesLeft()
+    {
+        Room room = rooms[currentRoom].GetComponent<Room>(); 
+        return room.currentEnemies.childCount; 
+    }
 }

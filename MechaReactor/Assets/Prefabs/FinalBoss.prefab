@@ -448,7 +448,7 @@ Transform:
   m_GameObject: {fileID: 3078533016793803891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.3}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.3}
   m_Children:
   - {fileID: 3078533016247707756}
   - {fileID: 3078533017131457707}
@@ -470,8 +470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBoss: 1
-  maxHealth: 3000
-  currentHealth: 5000
+  maxHealth: 5000
+  currentHealth: 1
   healthBar: {fileID: 3078533015917692479}
   movementSpeed: 1
   rigidbody: {fileID: 3078533016793803901}
@@ -517,6 +517,7 @@ MonoBehaviour:
     attackSpeed: 0.8
     bulletDamage: 10
     bulletForce: 10
+    maxBullets: 5
     timesToFire: 10
     bulletSpawnLocations:
     - {fileID: 79119723141479273}
