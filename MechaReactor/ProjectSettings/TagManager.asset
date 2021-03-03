@@ -10,6 +10,7 @@ TagManager:
   - HealthItem
   - ElectricityItem
   - Absorber
+  - Shield
   layers:
   - Default
   - TransparentFX

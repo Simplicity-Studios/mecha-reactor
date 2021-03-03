@@ -10,13 +10,19 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.transform.CompareTag("Enemy"))
+        if (col.collider.gameObject.transform.CompareTag("Shield"))
+        {
+            // do nothing?
+            Debug.Log("Ha! Loser, you are no match for my powers!");
+        }
+        else if(col.transform.CompareTag("Enemy"))
         {
             col.gameObject.GetComponent<EnemyController>().TakeDamage(dmg);
-        } else if(col.transform.CompareTag("Absorber"))
+        } 
+        else if(col.transform.CompareTag("Absorber"))
         {
             col.gameObject.GetComponent<EnemyAbsorber>().ProcessDamage(dmg);
-        }
+        } 
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 1f);
         Destroy(gameObject);

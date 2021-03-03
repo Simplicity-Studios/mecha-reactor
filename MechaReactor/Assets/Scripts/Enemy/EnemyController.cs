@@ -65,9 +65,20 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // adjust healthbar 
+        // healthbar is 200 wide 
+        // convert health level to bar width 
+        float healthPercent = currentHealth / maxHealth; 
+        float barLevel = healthPercent * 200;
+        healthBar.sizeDelta = new Vector2(barLevel, healthBar.sizeDelta.y);
+
         // Death check
         if(currentHealth <= 0.0f)
+        {
             die();
+            return; 
+        }
 
         // Movement 
         Vector3 directionToPlayer = player.transform.position - transform.position;
@@ -106,12 +117,6 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        // adjust healthbar 
-        // healthbar is 200 wide 
-        // convert health level to bar width 
-        float healthPercent = currentHealth / maxHealth; 
-        float barLevel = healthPercent * 200;
-        healthBar.sizeDelta = new Vector2(barLevel, healthBar.sizeDelta.y);
         
     }
 
