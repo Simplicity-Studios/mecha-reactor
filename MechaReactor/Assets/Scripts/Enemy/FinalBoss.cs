@@ -114,6 +114,9 @@ public class FinalBoss : MonoBehaviour
         {
             Laser.laserWidth -= Time.deltaTime*2;
             Laser.laser.startWidth = Mathf.Clamp(Laser.laserWidth, 0.0f, 1.0f);
+            float capsuleWidth = Laser.capsule.size.x;
+            capsuleWidth -= Time.deltaTime*2;
+            Laser.capsule.size = new Vector2(Mathf.Clamp(capsuleWidth, 0.0f, 1.0f), Laser.capsule.size.y);
         }
             
         if(isAttacking && !isAngry)
@@ -145,6 +148,8 @@ public class FinalBoss : MonoBehaviour
         Laser.flashesToAttack = 2;
         Laser.chargeDuration = 1.8f;
         Absorb.waveSpeed += 3;
+
+        attackIntervals /= 2.1f;
     }
     
     public void ProcessDamage(float dmg)
@@ -269,7 +274,7 @@ public class FinalBoss : MonoBehaviour
         Laser.laser.startWidth = 1.5f;
 
         Laser.capsule.transform.position = (hit.point + new Vector2(transform.position.x, transform.position.y)) / 2;
-        Laser.capsule.size = new Vector2(0.68f, hit.distance + 3.0f);
+        Laser.capsule.size = new Vector2(0.6f, hit.distance + 3.0f);
         float angle = Mathf.Atan2(transform.position.y - hit.point.y, transform.position.x - hit.point.x) *180/Mathf.PI - 90f;
         Laser.capsule.transform.rotation = Quaternion.Euler(0.0f, 0.0f, angle);
         Laser.capsule.enabled = true;
