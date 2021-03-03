@@ -47,9 +47,11 @@ public class FinalBoss : MonoBehaviour
     {
         public AudioSource shootSFX;
 
-        public float attackSpeed = 0.7f;
+        public float attackSpeed = 0.8f;
         public float bulletDamage = 10.0f;
         public float bulletForce = 10.0f;
+
+        public int maxBullets = 5;
 
         public int timesToFire = 10;
 
@@ -66,8 +68,12 @@ public class FinalBoss : MonoBehaviour
 
     void Update()
     {
-        if(enemyController.currentHealth < enemyController.maxHealth / 2)
+        if(enemyController.currentHealth < enemyController.maxHealth / 2 && !isAngry)
+        {
             isAngry = true;
+            activateAngerBuff();
+        }
+            
 
         if(isAttacking)
         {
@@ -86,6 +92,14 @@ public class FinalBoss : MonoBehaviour
             setAttack();
             executeAttack();
         }
+    }
+
+    public void activateAngerBuff()
+    {
+        Bullet.attackSpeed -= 0.15f;
+        Bullet.timesToFire += 5;
+        Bullet.bulletForce += 2.0f;
+        Bullet.maxBullets += 2;
     }
     
     public void ProcessDamage(float dmg)
@@ -192,7 +206,7 @@ public class FinalBoss : MonoBehaviour
         enemyController.movementSpeed = 0.0f;
         for(int i = 0; i < Bullet.timesToFire; ++i)
         {
-            int amount = Random.Range(1, 5);
+            int amount = Random.Range(1, Bullet.maxBullets);
             sprayBullets(amount);
             Bullet.shootSFX.Play();
             yield return new WaitForSeconds(Bullet.attackSpeed);
