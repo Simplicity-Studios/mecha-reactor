@@ -1,0 +1,1595 @@
+fileFormatVersion: 2
+guid: d16deab22a7432e4ab12a5d16307d9e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3916513569777099116
+    second: boss_phase2_idle_0
+  - first:
+      213: -8115136395995399043
+    second: boss_phase2_idle_1
+  - first:
+      213: -7499868941449365357
+    second: boss_phase2_idle_2
+  - first:
+      213: 6420246157712015379
+    second: boss_phase2_idle_3
+  - first:
+      213: -4609237313190171800
+    second: boss_phase2_idle_4
+  - first:
+      213: -8070368589088456697
+    second: boss_phase2_idle_5
+  - first:
+      213: 1723565708829522599
+    second: boss_phase2_idle_6
+  - first:
+      213: -5751761696232093772
+    second: boss_phase2_idle_7
+  - first:
+      213: 8398775086249737845
+    second: boss_phase2_idle_8
+  - first:
+      213: 4670185245158984914
+    second: boss_phase2_idle_9
+  - first:
+      213: 1657350435818435418
+    second: boss_phase2_idle_10
+  - first:
+      213: 3390909747740936832
+    second: boss_phase2_idle_11
+  - first:
+      213: 6465631061782549953
+    second: boss_phase2_idle_12
+  - first:
+      213: -3124073346214889352
+    second: boss_phase2_idle_13
+  - first:
+      213: -330688646374987178
+    second: boss_phase2_idle_14
+  - first:
+      213: -2883267099636238144
+    second: boss_phase2_idle_15
+  - first:
+      213: -763878076957795348
+    second: boss_phase2_idle_16
+  - first:
+      213: 7858885374589198549
+    second: boss_phase2_idle_17
+  - first:
+      213: -1431210552777297493
+    second: boss_phase2_idle_18
+  - first:
+      213: 8013346431057434722
+    second: boss_phase2_idle_19
+  - first:
+      213: -3311874499331634118
+    second: boss_phase2_idle_20
+  - first:
+      213: 3343040126847778841
+    second: boss_phase2_idle_21
+  - first:
+      213: 6244603723355387674
+    second: boss_phase2_idle_22
+  - first:
+      213: 4321985379965559453
+    second: boss_phase2_idle_23
+  - first:
+      213: -5779976924251496527
+    second: boss_phase2_idle_24
+  - first:
+      213: -2311829688133493434
+    second: boss_phase2_idle_25
+  - first:
+      213: 1772311614968688419
+    second: boss_phase2_idle_26
+  - first:
+      213: -1454394394692832327
+    second: boss_phase2_idle_27
+  - first:
+      213: -3741528783616503439
+    second: boss_phase2_idle_28
+  - first:
+      213: 2530072500714246390
+    second: boss_phase2_idle_29
+  - first:
+      213: -7496450937050970696
+    second: boss_phase2_idle_30
+  - first:
+      213: 4802639839769766531
+    second: boss_phase2_idle_31
+  - first:
+      213: 818433612402571556
+    second: boss_phase2_idle_32
+  - first:
+      213: -8104036182862705306
+    second: boss_phase2_idle_33
+  - first:
+      213: -2539200398616258444
+    second: boss_phase2_idle_34
+  - first:
+      213: -5170253520683593894
+    second: boss_phase2_idle_35
+  - first:
+      213: -8884538315243548187
+    second: boss_phase2_idle_36
+  - first:
+      213: -6760925678596274464
+    second: boss_phase2_idle_37
+  - first:
+      213: 3474803141452098146
+    second: boss_phase2_idle_38
+  - first:
+      213: 5560482927146748805
+    second: boss_phase2_idle_39
+  - first:
+      213: 1483653984248345007
+    second: boss_phase2_idle_40
+  - first:
+      213: 7719780731075526149
+    second: boss_phase2_idle_41
+  - first:
+      213: 589668735319639062
+    second: boss_phase2_idle_42
+  - first:
+      213: -4058961659475924873
+    second: boss_phase2_idle_43
+  - first:
+      213: -5376829080920122316
+    second: boss_phase2_idle_44
+  - first:
+      213: 5515348092853126175
+    second: boss_phase2_idle_45
+  - first:
+      213: 760910817652303405
+    second: boss_phase2_idle_46
+  - first:
+      213: -504395073435204269
+    second: boss_phase2_idle_47
+  - first:
+      213: -355620929114347455
+    second: boss_phase2_idle_48
+  - first:
+      213: -5766854386449076750
+    second: boss_phase2_idle_49
+  - first:
+      213: -2250882136557770038
+    second: boss_phase2_idle_50
+  - first:
+      213: 193431621893557406
+    second: boss_phase2_idle_51
+  - first:
+      213: -8014515064299449595
+    second: boss_phase2_idle_52
+  - first:
+      213: -970595622728381153
+    second: boss_phase2_idle_53
+  - first:
+      213: 8951898246496708888
+    second: boss_phase2_idle_54
+  - first:
+      213: 7928972684913455117
+    second: boss_phase2_idle_55
+  - first:
+      213: -7632460175605385297
+    second: boss_phase2_idle_56
+  - first:
+      213: 6683792378023426470
+    second: boss_phase2_idle_57
+  - first:
+      213: -5011471776121814393
+    second: boss_phase2_idle_58
+  - first:
+      213: -6278670234553306047
+    second: boss_phase2_idle_59
+  - first:
+      213: -5788679815306922299
+    second: boss_phase2_idle_60
+  - first:
+      213: -1382536615123296220
+    second: boss_phase2_idle_61
+  - first:
+      213: 6452900842336955227
+    second: boss_phase2_idle_62
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss_phase2_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3260
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e507ba8afb5a9c0800000000000000
+      internalID: -3916513569777099116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3260
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7cb9d4917e316f80800000000000000
+      internalID: -8115136395995399043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3260
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398fcea0fec1be790800000000000000
+      internalID: -7499868941449365357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3097
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310cdf05ddb491950800000000000000
+      internalID: 6420246157712015379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3097
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86be2dd9513b800c0800000000000000
+      internalID: -4609237313190171800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_5
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3097
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70089e0e68a400090800000000000000
+      internalID: -8070368589088456697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2934
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aaf3dd51e55be710800000000000000
+      internalID: 1723565708829522599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2934
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7436f1633ad20b0800000000000000
+      internalID: -5751761696232093772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2934
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ef05c31717e8470800000000000000
+      internalID: 8398775086249737845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2771
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcc8fc9cb4dfc040800000000000000
+      internalID: 4670185245158984914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_10
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2771
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53fb4bb077100710800000000000000
+      internalID: 1657350435818435418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_11
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2771
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a0283237eee0f20800000000000000
+      internalID: 3390909747740936832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2608
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5d74eb1398ab950800000000000000
+      internalID: 6465631061782549953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2608
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878789af7df05a4d0800000000000000
+      internalID: -3124073346214889352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_14
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2608
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a609d9d68296bf0800000000000000
+      internalID: -330688646374987178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2445
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c87c9d59d39cf7d0800000000000000
+      internalID: -2883267099636238144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2445
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebd83bafe82665f0800000000000000
+      internalID: -763878076957795348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_17
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2445
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0e6ea2c9e501d60800000000000000
+      internalID: 7858885374589198549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2282
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba13beac591532ce0800000000000000
+      internalID: -1431210552777297493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_19
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2282
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268925d5f10253f60800000000000000
+      internalID: 8013346431057434722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_20
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2282
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cc9ae90bbd902d0800000000000000
+      internalID: -3311874499331634118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2119
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91083ae784dd46e20800000000000000
+      internalID: 3343040126847778841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_22
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2119
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17fda5400a49a650800000000000000
+      internalID: 6244603723355387674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_23
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2119
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d926741edc6cafb30800000000000000
+      internalID: 4321985379965559453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1956
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfd80c6c9569cfa0800000000000000
+      internalID: -5779976924251496527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1956
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64dd991b52bbaefd0800000000000000
+      internalID: -2311829688133493434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_26
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1956
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fe1811604889810800000000000000
+      internalID: 1772311614968688419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1793
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3b305f004f0dbe0800000000000000
+      internalID: -1454394394692832327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_28
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1793
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17193af056b631cc0800000000000000
+      internalID: -3741528783616503439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_29
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1793
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f09e05d88f9c1320800000000000000
+      internalID: 2530072500714246390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1630
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5cee4379147f790800000000000000
+      internalID: -7496450937050970696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_31
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1630
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38aad912d7766a240800000000000000
+      internalID: 4802639839769766531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_32
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1630
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429be73c809ab5b00800000000000000
+      internalID: 818433612402571556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1467
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d4e89570ea88f80800000000000000
+      internalID: -8104036182862705306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_34
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1467
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47892f2d0b2f2ccd0800000000000000
+      internalID: -2539200398616258444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_35
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1467
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f01fce0d19f38b0800000000000000
+      internalID: -5170253520683593894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1304
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e19f8e7977c3b480800000000000000
+      internalID: -8884538315243548187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_37
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1304
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6c37e8aed5c22a0800000000000000
+      internalID: -6760925678596274464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_38
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1304
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ae9aefb0bf83030800000000000000
+      internalID: 3474803141452098146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1141
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bc434f2cdca2d40800000000000000
+      internalID: 5560482927146748805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_40
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1141
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa137bc107ff69410800000000000000
+      internalID: 1483653984248345007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_41
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1141
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e79ab7cab222b60800000000000000
+      internalID: 7719780731075526149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 978
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61481ef279cee2800800000000000000
+      internalID: 589668735319639062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_43
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 978
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778e10240ebaba7c0800000000000000
+      internalID: -4058961659475924873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_44
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 978
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c14c5407aa165b0800000000000000
+      internalID: -5376829080920122316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 815
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14832f6ed37a8c40800000000000000
+      internalID: 5515348092853126175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_46
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 815
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26eaef6b5c4f8a00800000000000000
+      internalID: 760910817652303405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_47
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 815
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35500756a570009f0800000000000000
+      internalID: -504395073435204269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 652
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148e17d26a4901bf0800000000000000
+      internalID: -355620929114347455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_49
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 652
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdac485d7408ffa0800000000000000
+      internalID: -5766854386449076750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_50
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 652
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acaa33b5f9243c0e0800000000000000
+      internalID: -2250882136557770038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 489
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c0b4709053fa200800000000000000
+      internalID: 193431621893557406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_52
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 489
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5031a610309b6c090800000000000000
+      internalID: -8014515064299449595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_53
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 489
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dc9be6c60c782f0800000000000000
+      internalID: -970595622728381153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819e0e7a6088b3c70800000000000000
+      internalID: 8951898246496708888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_55
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 326
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00ba0eb5ae590e60800000000000000
+      internalID: 7928972684913455117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_56
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 326
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7b9b6a8ed041690800000000000000
+      internalID: -7632460175605385297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 163
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9bc8c61c991cc50800000000000000
+      internalID: 6683792378023426470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_58
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 163
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7820d56b8fca37ab0800000000000000
+      internalID: -5011471776121814393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_59
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 163
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144b1afffaeadd8a0800000000000000
+      internalID: -6278670234553306047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c63822b06a7aafa0800000000000000
+      internalID: -5788679815306922299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_phase2_idle_61
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 280
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420ea96064e30dce0800000000000000
+      internalID: -1382536615123296220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

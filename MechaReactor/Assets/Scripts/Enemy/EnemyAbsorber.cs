@@ -37,7 +37,8 @@ public class EnemyAbsorber : MonoBehaviour
 
     void Update()
     {
-        if(Time.time > (lastAbsorbTime + absorbCooldown) && !isAbsorbing && !GetComponent<EnemyController>().isDying)
+        float distanceToPlayer = Vector2.Distance(transform.position, GetComponent<EnemyController>().player.transform.position);
+        if(Time.time > (lastAbsorbTime + absorbCooldown) && !isAbsorbing && !GetComponent<EnemyController>().isDying && distanceToPlayer <= 6.5f)
         {
             StartCoroutine(BeginAbsorb());
         }

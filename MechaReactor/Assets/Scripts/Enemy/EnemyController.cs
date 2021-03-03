@@ -8,6 +8,7 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    public bool isBoss = false;
     // Health
     public float maxHealth = 100.0f;
     public float currentHealth;
@@ -74,7 +75,7 @@ public class EnemyController : MonoBehaviour
         healthBar.sizeDelta = new Vector2(barLevel, healthBar.sizeDelta.y);
 
         // Death check
-        if(currentHealth <= 0.0f)
+        if(currentHealth <= 0.0f && !isBoss)
         {
             die();
             return; 
