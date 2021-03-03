@@ -2,18 +2,16 @@
 
 public class Special : MonoBehaviour
 {
-    public GameObject playerPrefab;
-    [Range(0.05f, 0.1f)]
+    private GameObject playerPrefab;
+    [Range(0.01f, 0.05f)]
     public float changeRate = 0.05f;
     public float damage = 20.0f;
-    private float maxSize = 15.0f;
-    private Vector2 scaleRatio;
+    private float maxSize = 5.0f;
 
     void Start()
     {
+        playerPrefab = GameObject.Find("Player");
         transform.localScale = new Vector2(1, 1);
-        scaleRatio = transform.localToWorldMatrix * transform.localScale;
-        scaleRatio = transform.GetChild(0).transform.worldToLocalMatrix * new Vector2(scaleRatio.x, scaleRatio.y);
     }
 
     void Update()
@@ -31,7 +29,8 @@ public class Special : MonoBehaviour
     {
         if (other.transform.CompareTag("Enemy"))
         {
-            other.transform.GetComponent<EnemyController>().TakeDamage(damage + 
+            print("enemy entered special");
+            other.transform.GetComponent<EnemyController>().TakeDamage(damage * 
                 playerPrefab.GetComponent<ReactorAttributes>()["special"].GetValue());
         }
     }

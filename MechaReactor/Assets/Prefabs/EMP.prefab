@@ -115,6 +115,7 @@ MonoBehaviour:
   changeRate: 0.09
   duration: 2
   maxSize: 35
+  damage: 0
 --- !u!1 &8941427190442131949
 GameObject:
   m_ObjectHideFlags: 0
