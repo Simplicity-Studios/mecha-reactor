@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject escape_menu_sprite;
 
     private AudioSource loopingMusic;
+    private float loopingMusicVolume;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
         //Missiles and obstacles-that-dont-collide
         Physics2D.IgnoreLayerCollision(10, 12, true);
         loopingMusic.Play();
+        loopingMusicVolume = loopingMusic.volume;
     }
 
     void Update()
@@ -47,7 +49,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Paused");
             isPaused = true;
             Time.timeScale = 0.0f;
-            loopingMusic.Pause();
+            loopingMusic.volume = loopingMusicVolume / 6;
             player.GetComponent<PlayerController>().enabled = false;
             player.GetComponent<GunRotating>().enabled = false;
             player.GetComponent<MaxReactor>().enabled = false;
@@ -60,7 +62,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Unpaused");
             isPaused = false;
             Time.timeScale = 1.0f;
-            loopingMusic.UnPause();
+            loopingMusic.volume = loopingMusicVolume;
             player.GetComponent<PlayerController>().enabled = true;
             player.GetComponent<GunRotating>().enabled = true;
             player.GetComponent<MaxReactor>().enabled = true;
