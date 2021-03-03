@@ -16,6 +16,9 @@ public class Bullet : MonoBehaviour
         } else if(col.transform.CompareTag("Absorber"))
         {
             col.gameObject.GetComponent<EnemyAbsorber>().ProcessDamage(dmg);
+        } else if(col.transform.CompareTag("Boss"))
+        {
+            col.gameObject.GetComponent<FinalBoss>().ProcessDamage(dmg);
         }
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 1f);

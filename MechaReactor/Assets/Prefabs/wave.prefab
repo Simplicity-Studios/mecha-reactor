@@ -99,8 +99,8 @@ MonoBehaviour:
   hitEffect: {fileID: 6830415907616362860, guid: 598e00880a748324681084ea2a16079a,
     type: 3}
   collider: {fileID: 5546637058937785261}
-  maxSize: 30
-  changeRate: 0.05
+  maxSize: 15
+  changeRate: 0.04
 --- !u!60 &5546637058937785261
 PolygonCollider2D:
   m_ObjectHideFlags: 0
