@@ -12,6 +12,7 @@ TagManager:
   - Absorber
   - Boss
   - Shield
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
