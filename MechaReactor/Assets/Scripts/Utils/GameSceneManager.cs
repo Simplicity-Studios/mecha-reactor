@@ -16,8 +16,13 @@ public class GameSceneManager : MonoBehaviour
     public void LoadMainMenu()
     {
         GameManager gm = FindObjectOfType<GameManager>();
-        if (gm.isPaused)
+        if (gm != null && gm.isPaused)
             gm.Unpause();
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void LoadCredits()
+    {
+        SceneManager.LoadScene("Credits");
     }
 }
