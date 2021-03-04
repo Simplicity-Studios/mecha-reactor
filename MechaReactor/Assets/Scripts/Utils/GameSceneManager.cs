@@ -12,4 +12,12 @@ public class GameSceneManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void LoadMainMenu()
+    {
+        GameManager gm = FindObjectOfType<GameManager>();
+        if (gm.isPaused)
+            gm.Unpause();
+        SceneManager.LoadScene("Main Menu");
+    }
 }

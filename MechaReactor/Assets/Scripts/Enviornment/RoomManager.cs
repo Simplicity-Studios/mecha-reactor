@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RoomManager : MonoBehaviour
 {
@@ -78,6 +79,9 @@ public class RoomManager : MonoBehaviour
         gameManager.moveCameraToPosition(gameManager.player.GetComponent<Transform>());
         gameManager.setCameraSize(rooms[currentRoom].GetComponent<Room>().cameraDistance);
         rooms[currentRoom].GetComponent<Room>().InitializeWithEnemies();
+        
+        if (gameManager.isPaused)
+            gameManager.Unpause();
     }
 
     public void playDoorOpeningSFX()

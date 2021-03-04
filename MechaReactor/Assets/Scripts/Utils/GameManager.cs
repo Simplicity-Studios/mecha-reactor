@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject playerDeathEffect;
 
+    public GameObject pauseButtons;
 
     private Vector3 offset = new Vector3(0f, 0f, -10f);
     private PlayerController playerController;
@@ -54,29 +55,13 @@ public class GameManager : MonoBehaviour
 
         if(!isPaused && Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Paused");
-            isPaused = true;
-            Time.timeScale = 0.0f;
-            loopingMusic.volume = loopingMusicVolume / 6;
-            player.GetComponent<PlayerController>().enabled = false;
-            player.GetComponent<GunRotating>().enabled = false;
-            player.GetComponent<MaxReactor>().enabled = false;
-            escape_menu_sprite.SetActive(true);
-            PauseAllSFX();
+            Pause();
             return;
         }
 
         if(isPaused && Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Unpaused");
-            isPaused = false;
-            Time.timeScale = 1.0f;
-            loopingMusic.volume = loopingMusicVolume;
-            player.GetComponent<PlayerController>().enabled = true;
-            player.GetComponent<GunRotating>().enabled = true;
-            player.GetComponent<MaxReactor>().enabled = true;
-            escape_menu_sprite.SetActive(false);
-            ResumeAllSFX();
+            Unpause();
             return;
         }
 
@@ -108,6 +93,34 @@ public class GameManager : MonoBehaviour
             player.GetComponent<ReactorAttributes>()[statName].pointsAllocated -= 1;
             deallocSound.Play(0);
         }
+    }
+
+    public void Pause()
+    {
+        Debug.Log("Paused");
+        isPaused = true;
+        Time.timeScale = 0.0f;
+        loopingMusic.volume = loopingMusicVolume / 6;
+        player.GetComponent<PlayerController>().enabled = false;
+        player.GetComponent<GunRotating>().enabled = false;
+        player.GetComponent<MaxReactor>().enabled = false;
+        escape_menu_sprite.SetActive(true);
+        pauseButtons.SetActive(true);
+        PauseAllSFX();
+    }
+
+    public void Unpause()
+    {
+        Debug.Log("Unpaused");
+        isPaused = false;
+        Time.timeScale = 1.0f;
+        loopingMusic.volume = loopingMusicVolume;
+        player.GetComponent<PlayerController>().enabled = true;
+        player.GetComponent<GunRotating>().enabled = true;
+        player.GetComponent<MaxReactor>().enabled = true;
+        escape_menu_sprite.SetActive(false);
+        pauseButtons.SetActive(false);
+        ResumeAllSFX();
     }
 
     public void PauseAllSFX()
