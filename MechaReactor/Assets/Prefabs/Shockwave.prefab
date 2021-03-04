@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7521735383468355986}
   - component: {fileID: 2296665735987187291}
   - component: {fileID: 4704340695096654482}
-  m_Layer: 1
+  m_Layer: 0
   m_Name: Shockwave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 8fc8fd7eda154414596436af9a917952, type: 3}
   m_Color: {r: 1, g: 0.9903463, b: 0, a: 1}
   m_FlipX: 0

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject playerDeathEffect;
 
+
     private Vector3 offset = new Vector3(0f, 0f, -10f);
     private PlayerController playerController;
     private RoomManager roomManager;
@@ -21,12 +22,15 @@ public class GameManager : MonoBehaviour
 
     private AudioSource loopingMusic;
     private float loopingMusicVolume;
+    public AudioSource allocSound, deallocSound;
 
     private AudioSource[] allAudioSources;
 
 
     void Start()
     {
+        deallocSound.playOnAwake = false;
+        allocSound.playOnAwake = false;
         loopingMusic = GetComponent<AudioSource>();
         playerController = player.GetComponent<PlayerController>();
         roomManager = FindObjectOfType<RoomManager>();
@@ -94,9 +98,15 @@ public class GameManager : MonoBehaviour
                               player.GetComponent<ReactorAttributes>().GetTotalPointsAllocated() - 1;
         print(points);
         if (points > 0 && pointsRemaining > 0)
+        {
             player.GetComponent<ReactorAttributes>()[statName].pointsAllocated += 1;
+            allocSound.Play(0);
+        }
         else if (points < 0)
+        {
             player.GetComponent<ReactorAttributes>()[statName].pointsAllocated -= 1;
+            deallocSound.Play(0);
+        }
     }
 
     public void PauseAllSFX()
