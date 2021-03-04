@@ -30,7 +30,8 @@ public class PlayerController : MonoBehaviour
     public GameObject specialPrefab;
     public float baseSpecialTime;
     private float lastShot = 0.0f;
-    private float lastSpecialUse = 0.0f;
+    [HideInInspector]
+    public float lastSpecialUse = 0.0f;
 
     [Header("Other")]
     public float maxHealth = 300.0f;

@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     private AudioSource loopingMusic;
     private float loopingMusicVolume;
+    
     public AudioSource allocSound, deallocSound;
 
     private AudioSource[] allAudioSources;
