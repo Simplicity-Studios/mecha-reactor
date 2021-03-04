@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     private AudioSource[] allAudioSources;
 
+
     void Start()
     {
         loopingMusic = GetComponent<AudioSource>();
@@ -73,6 +74,29 @@ public class GameManager : MonoBehaviour
             ResumeAllSFX();
             return;
         }
+
+        int deltaPoints = Input.GetKey(KeyCode.LeftShift) ? -1 : 1;
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            AddPoints("movementSpeed", deltaPoints);
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            AddPoints("attack", deltaPoints);
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+            AddPoints("defense", deltaPoints);
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+            AddPoints("attackSpeed", deltaPoints);
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+            AddPoints("special", deltaPoints);
+    }
+
+    public void AddPoints(string statName, int points)
+    {
+        int pointsRemaining = player.GetComponent<ReactorAttributes>().GetMaxPoints() - 
+                              player.GetComponent<ReactorAttributes>().GetTotalPointsAllocated() - 1;
+        print(points);
+        if (points > 0 && pointsRemaining > 0)
+            player.GetComponent<ReactorAttributes>()[statName].pointsAllocated += 1;
+        else if (points < 0)
+            player.GetComponent<ReactorAttributes>()[statName].pointsAllocated -= 1;
     }
 
     public void PauseAllSFX()
