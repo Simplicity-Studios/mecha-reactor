@@ -22,6 +22,7 @@ public class EnemyController : MonoBehaviour
     public float pathFindMoveDuration = 0.5f;
     public Transform infrontPoint;
     public bool canRotate = true;
+    public bool doesPathfinding = true;
     // keeps track of the player's position 
     // so that the enemy knows where to shoot and walk
     public GameObject player;
@@ -98,7 +99,7 @@ public class EnemyController : MonoBehaviour
             }
 
             // obstacle infront of enemy
-            if (hit.collider.gameObject.name != player.name) 
+            if (hit.collider.gameObject.name != player.name && doesPathfinding) 
             {
                 // Only set destination every x seconds
                 if (Time.time > pathFindMoveDuration + lastPathFindMoveTime)

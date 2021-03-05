@@ -7,10 +7,12 @@ public class FinalBoss : MonoBehaviour
     public AbsorbClass Absorb;
     public BulletHellClass Bullet;
     public LaserClass Laser;
+    public MissilesClass Missile;
 
     public float attackIntervals;
  
     public Animator anim;
+    public AudioSource angryRoar;
 
     private EnemyController enemyController;
 
@@ -88,6 +90,23 @@ public class FinalBoss : MonoBehaviour
         public bool hasFired = false;
     }
 
+    // MISSILE PARAMETERS
+    [System.Serializable]
+    public class MissilesClass
+    {
+        public float missileImpactDamage = 20f;
+        public float missileSpeed = 15f;
+        public float missileFireRate = 0.3f;
+        public float missileSpread = 6f;
+        public int missilesToSpawnMin = 2;
+        public int missilesToSpawnMax = 5;
+        public GameObject missilePrefab;
+
+        public AudioSource missileLaunchSource;
+
+        public Transform[] missileFirePoints;
+    }
+
     
 
     void Start()
@@ -100,7 +119,7 @@ public class FinalBoss : MonoBehaviour
 
     void Update()
     {
-        if(enemyController.currentHealth < enemyController.maxHealth / 2 && !isAngry)
+        if(enemyController.currentHealth < enemyController.maxHealth / 3 && !isAngry)
         {
             isAngry = true;
             activateAngerBuff();
@@ -147,19 +166,22 @@ public class FinalBoss : MonoBehaviour
 
     public void activateAngerBuff()
     {
-        Bullet.attackSpeed -= 0.10f;
+        angryRoar.Play();
+        Bullet.attackSpeed -= 0.15f;
         Bullet.timesToFire += 2;
-        Bullet.bulletForce += 1.0f;
-        Bullet.maxBullets += 2;
+        Bullet.maxBullets += 1;
         Bullet.bulletSize = 1.5f;
         Laser.laserPower += 20;
-        Laser.flashesToAttack = 2;
-        Laser.chargeDuration = 1.8f;
+        Laser.flashesToAttack = 3;
+        Laser.chargeDuration = 1.9f;
         Absorb.waveSpeed += 3;
+        Missile.missileSpread += 6f;
+        Missile.missilesToSpawnMin += 2;
+        Missile.missileFireRate -= 0.1f;
 
-        attackIntervals /= 2.1f;
+        attackIntervals = 1.8f;
 
-        originalMS += 1.0f;
+        originalMS += 0.6f;
     }
     
     public void ProcessDamage(float dmg)
@@ -176,22 +198,29 @@ public class FinalBoss : MonoBehaviour
 
     private void setAttack()
     {
-        float roll = Random.Range(0.0f, 0.74f);
-        if(roll < 0.25f)
+        while(true)
         {
-            currentAttack = Attacks.Laser;
-        }
-        else if(roll >= 0.25f && roll < 0.50f)
-        {
-            currentAttack = Attacks.Absorb;
-        }
-        else if(roll >= 0.50f && roll < 0.75f)
-        {
-            currentAttack = Attacks.BulletHell;
-        }
-        else
-        {
-            currentAttack = Attacks.Missiles;
+            float roll = Random.Range(0f, 1f);
+            if(roll < 0.25f && currentAttack != Attacks.Laser)
+            {
+                currentAttack = Attacks.Laser;
+                break;
+            }
+            else if(roll >= 0.25f && roll < 0.50f && currentAttack != Attacks.Absorb)
+            {
+                currentAttack = Attacks.Absorb;
+                break;
+            }
+            else if(roll >= 0.50f && roll < 0.75f && currentAttack != Attacks.BulletHell)
+            {
+                currentAttack = Attacks.BulletHell;
+                break;
+            }
+            else if(roll >= 0.75f && roll < 1f && currentAttack != Attacks.Missiles)
+            {
+                currentAttack = Attacks.Missiles;
+                break;
+            }
         }
     }
 
@@ -213,6 +242,43 @@ public class FinalBoss : MonoBehaviour
                 missileAttack();
                 break;
         }
+    }
+
+    /*
+        ***************************************************
+        Missile Attack
+        ***************************************************
+    */
+
+    private void missileAttack()
+    {
+        StartCoroutine(BeginMissileAttack());
+    }
+
+    IEnumerator BeginMissileAttack()
+    {
+        yield return new WaitForSeconds(0.1f);
+        int missilesToSpawn = Random.Range(Missile.missilesToSpawnMin, Missile.missilesToSpawnMax);
+        for(int i = 0; i < missilesToSpawn; ++i)
+        {
+            foreach(Transform t in Missile.missileFirePoints)
+            {
+                fireMissile(t);
+                yield return new WaitForSeconds(Missile.missileFireRate);
+            }
+        }
+        isAttacking = false;
+        lastAttack = Time.time;
+    }
+
+    private void fireMissile(Transform source)
+    {
+        Missile.missileLaunchSource.Play();
+        GameObject missile = Instantiate(Missile.missilePrefab, source.position, source.rotation);
+        missile.GetComponent<EnemyMissile>().setDamage(Missile.missileImpactDamage);
+        Rigidbody2D missilerigid = missile.GetComponent<Rigidbody2D>();
+        missile.transform.Rotate(0, 0, Random.Range(-Missile.missileSpread, Missile.missileSpread));
+        missilerigid.AddForce(missile.transform.up * Missile.missileSpeed, ForceMode2D.Impulse);
     }
 
     /*
@@ -347,7 +413,6 @@ public class FinalBoss : MonoBehaviour
 
     IEnumerator BulletHellBegin()
     {
-        enemyController.movementSpeed = 0.0f;
         for(int i = 0; i < Bullet.timesToFire; ++i)
         {
             int amount = Random.Range(1, Bullet.maxBullets);
@@ -355,7 +420,6 @@ public class FinalBoss : MonoBehaviour
             Bullet.shootSFX.Play();
             yield return new WaitForSeconds(Bullet.attackSpeed);
         }
-        enemyController.movementSpeed = originalMS;
         isAttacking = false;
         lastAttack = Time.time;
     }
@@ -374,11 +438,6 @@ public class FinalBoss : MonoBehaviour
                 bulletrigid.AddForce(b.transform.up * Bullet.bulletForce, ForceMode2D.Impulse);
             }
         }
-    }
-
-    private void missileAttack()
-    {
-
     }
 
     public enum Attacks

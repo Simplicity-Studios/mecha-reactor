@@ -43,6 +43,7 @@ public class RoomManager : MonoBehaviour
 
         rooms[currentRoom].SetActive(true);
         rooms[currentRoom].GetComponent<Room>().InitializeWithEnemies();
+        rooms[currentRoom].GetComponent<Room>().InitializeBossRoomHazards();
     }
 
     public void goBack()
@@ -74,10 +75,13 @@ public class RoomManager : MonoBehaviour
             Destroy(child.gameObject);
         }
         cleanUpPickups();
+
         gameManager.setPlayerTransform(rooms[currentRoom].GetComponent<Room>().spawnLocation);
         gameManager.moveCameraToPosition(gameManager.player.GetComponent<Transform>());
         gameManager.setCameraSize(rooms[currentRoom].GetComponent<Room>().cameraDistance);
+
         rooms[currentRoom].GetComponent<Room>().InitializeWithEnemies();
+        rooms[currentRoom].GetComponent<Room>().InitializeBossRoomHazards();
         
         if (gameManager.isPaused)
             gameManager.Unpause();

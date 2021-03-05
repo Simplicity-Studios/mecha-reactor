@@ -16,6 +16,9 @@ public class Room : MonoBehaviour
 
     public RoomManager roomManager;
 
+    public bool isBossRoom = false;
+    public GameObject bossRoomHazards;
+
     //These have to be the same size
     //I would've used a tuple if I could've gotten it to work :(
     public GameObject[] enemiesToSpawn;
@@ -41,6 +44,19 @@ public class Room : MonoBehaviour
     public void InitializeWithoutEnemies()
     {
         currentEnemies = this.transform.Find("CurrentEnemies");
+    }
+
+    public void InitializeBossRoomHazards()
+    {
+        if(isBossRoom)
+        {
+            // Clear out any existing boss hazards because double hazards would be bad
+            GameObject hazards = GameObject.Find("BossRoomHazards");
+            foreach(Transform child in hazards.transform)
+                Destroy(child.gameObject);
+            // Spawn boss hazards from field prefab
+            Instantiate(bossRoomHazards, transform.position, Quaternion.identity, hazards.transform);
+        }        
     }
 
     void Update()
