@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+using System.IO;
 
 public class RoomManager : MonoBehaviour
 {
@@ -34,6 +32,7 @@ public class RoomManager : MonoBehaviour
         //we reached the last room
         if(currentRoom >= rooms.Length)
         {
+            File.WriteAllText("savegame.txt", gameManager.timeValue.ToString());
             gameManager.quitGame();
         }
         //Tell the game manager to set the player's position to the next room's spawn point

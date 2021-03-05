@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using System.Threading.Tasks;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,6 +30,8 @@ public class GameManager : MonoBehaviour
 
     private AudioSource[] allAudioSources;
 
+    [HideInInspector]
+    public float timeValue;
 
     void Start()
     {
@@ -44,6 +48,7 @@ public class GameManager : MonoBehaviour
         Physics2D.IgnoreLayerCollision(10, 12, true);
         loopingMusic.Play();
         loopingMusicVolume = loopingMusic.volume;
+        timeValue = 0;
     }
 
     void Update()
@@ -76,6 +81,11 @@ public class GameManager : MonoBehaviour
             AddPoints("attackSpeed", deltaPoints);
         if (Input.GetKeyDown(KeyCode.Alpha5))
             AddPoints("special", deltaPoints);
+    }
+
+    void FixedUpdate()
+    {
+        timeValue += Time.fixedDeltaTime;
     }
 
     public void AddPoints(string statName, int points)
