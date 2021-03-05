@@ -119,6 +119,12 @@ public class FinalBoss : MonoBehaviour
 
     void Update()
     {
+        if(enemyController.currentHealth <= 0.0f)
+        {
+            cinematicDeath();
+            return; 
+        }
+
         if(enemyController.currentHealth < enemyController.maxHealth / 3 && !isAngry)
         {
             isAngry = true;
@@ -242,6 +248,11 @@ public class FinalBoss : MonoBehaviour
                 missileAttack();
                 break;
         }
+    }
+
+    private void cinematicDeath()
+    {
+        return;
     }
 
     /*

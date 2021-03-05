@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3834bf0be87424c90fc1f746093e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropRate: 20
+  dropRate: 10
   electricityPrefab: {fileID: 6930399925783180233, guid: b2a3b3e68e3ea5044b9a174267697ba8,
     type: 3}
   NoElectricitySprite: {fileID: 21300000, guid: 20ee53b216818d2468f379098afd3fd5,

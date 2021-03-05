@@ -5287,7 +5287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1944640405}
   smoothFactor: 3.5
-  mouseBounds: {x: 6, y: 6}
+  mouseBounds: {x: 7, y: 7}
 --- !u!1001 &527603479
 PrefabInstance:
   m_ObjectHideFlags: 0
