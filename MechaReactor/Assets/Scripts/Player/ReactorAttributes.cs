@@ -153,4 +153,10 @@ public class ReactorAttributes : MonoBehaviour
     {
         m_electricity = Mathf.Min(m_electricity + add, maxElectricity);
     }
+
+    public void ResetPoints()
+    {
+        foreach (Attribute attr in m_attributes.Values)
+            attr.pointsAllocated = 0;
+    }
 }

@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public float timeValue;
 
+    public GameObject deathSplash;
+
     void Start()
     {
         deallocSound.playOnAwake = false;
@@ -92,7 +94,6 @@ public class GameManager : MonoBehaviour
     {
         int pointsRemaining = player.GetComponent<ReactorAttributes>().GetMaxPoints() - 
                               player.GetComponent<ReactorAttributes>().GetTotalPointsAllocated() - 1;
-        print(points);
         if (points > 0 && pointsRemaining > 0)
         {
             player.GetComponent<ReactorAttributes>()[statName].pointsAllocated += 1;
@@ -211,6 +212,7 @@ public class GameManager : MonoBehaviour
     IEnumerator PlayerDeath()
     {
         isDying = true;
+        deathSplash.SetActive(true);
         Camera cam = mainCamera.GetComponent<Camera>();
         playerController.enabled = false;
         SpriteRenderer playerRender = player.GetComponent<SpriteRenderer>();
@@ -223,6 +225,7 @@ public class GameManager : MonoBehaviour
             playerRender.color = new Color(1, 1, 1, 1);
             yield return new WaitForSeconds(0.2f);
         }
+        player.GetComponent<ReactorAttributes>().ResetPoints();
         GameObject fx = Instantiate(playerDeathEffect, player.GetComponent<Transform>().position, Quaternion.identity);
         Destroy(fx, 1);
         player.SetActive(false);
