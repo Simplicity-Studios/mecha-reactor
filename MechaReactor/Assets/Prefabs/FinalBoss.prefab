@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 3078533016247707759}
   - component: {fileID: 3167584816538654776}
   - component: {fileID: 3775881220410921880}
+  - component: {fileID: 2697012975456583800}
   m_Layer: 2
   m_Name: EnemySprite
   m_TagString: Boss
@@ -324,7 +325,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3078533016247707757}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0.54, z: 0}
   m_LocalScale: {x: 5.6, y: 5.5, z: 1}
   m_Children:
@@ -336,7 +337,7 @@ Transform:
   - {fileID: 4134420582267290727}
   m_Father: {fileID: 3078533016793803903}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &3078533016247707759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -444,8 +445,9 @@ PolygonCollider2D:
       - {x: 0.64, y: 0.60499996}
       - {x: 0.45999998, y: 0.775}
       - {x: 0.26, y: 0.775}
-      - {x: 0.16, y: 0.72499996}
-      - {x: -0.13, y: 0.73499995}
+      - {x: 0.048598617, y: 0.8006179}
+      - {x: -0.005268123, y: 1.1640115}
+      - {x: -0.027881835, y: 0.81061786}
       - {x: -0.21, y: 0.775}
       - {x: -0.47, y: 0.775}
       - {x: -0.64, y: 0.59499997}
@@ -465,6 +467,19 @@ PolygonCollider2D:
       - {x: 0.37, y: -0.635}
       - {x: 0.59, y: -0.635}
       - {x: 0.72999996, y: -0.755}
+--- !u!114 &2697012975456583800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078533016247707757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e515c357a6ba54d850ee29081f0bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalboss: {fileID: 7264364434711333164}
 --- !u!1 &3078533016759459023
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +567,7 @@ GameObject:
   - component: {fileID: 7264364434711333164}
   - component: {fileID: -9186428038753566984}
   - component: {fileID: 3078533016793803901}
+  - component: {fileID: -2725551180618058581}
   m_Layer: 2
   m_Name: FinalBoss
   m_TagString: Boss
@@ -585,13 +601,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3078533016793803891}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e117723b8d2bd81e7b70bc8906181624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isBoss: 1
-  maxHealth: 5500
+  maxHealth: 6100
   currentHealth: 1
   healthBar: {fileID: 3078533015917692479}
   movementSpeed: 1
@@ -618,7 +634,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3078533016793803891}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ff3f3def66669d4da068a561c288c82, type: 3}
   m_Name: 
@@ -678,7 +694,8 @@ MonoBehaviour:
     missileFirePoints:
     - {fileID: 5788950842068741845}
     - {fileID: 4134420582267290727}
-  attackIntervals: 4
+  attackIntervals: 3
+  hurtboxDamage: 50
   anim: {fileID: 3167584816538654776}
   angryRoar: {fileID: 8076345734604925606}
   deathSound: {fileID: 1565311522096304310}
@@ -687,6 +704,8 @@ MonoBehaviour:
     type: 3}
   spriteRender: {fileID: 3078533016247707757}
   healthBar: {fileID: 3078533017131457704}
+  finalExplosion: {fileID: 6474113384701687219, guid: ed42493d97a386a48bafe67f4f73166d,
+    type: 3}
 --- !u!195 &-9186428038753566984
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -730,6 +749,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-2725551180618058581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078533016793803891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df308cd8a006b247b2590c22ed958aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossMusic: {fileID: 8300000, guid: ea4f939c05647fa479a3649897191747, type: 3}
+  BossRoar: {fileID: 8076345734604925606}
 --- !u!1 &3078533017131457704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,15 +2090,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39a5e3d51c7d133418afca41494bdc5e, type: 3}
---- !u!1 &5687814915494529476 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4121382065287859223, guid: 39a5e3d51c7d133418afca41494bdc5e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8637124122509198803}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4177455573347729976 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5630756367158495211, guid: 39a5e3d51c7d133418afca41494bdc5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8637124122509198803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5687814915494529476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4121382065287859223, guid: 39a5e3d51c7d133418afca41494bdc5e,
     type: 3}
   m_PrefabInstance: {fileID: 8637124122509198803}
   m_PrefabAsset: {fileID: 0}

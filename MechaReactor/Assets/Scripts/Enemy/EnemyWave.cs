@@ -14,6 +14,8 @@ public class EnemyWave : MonoBehaviour
     private float timeCreated;
     private float maxLifetime = 10f;
 
+    public bool willIgnoreHitstop = false;
+
     void Start()
     {
         collider = GetComponent<Collider2D>();
@@ -37,7 +39,10 @@ public class EnemyWave : MonoBehaviour
         // Collisions with the Player 
         if(col.transform.CompareTag("Player"))
         {
-            col.gameObject.GetComponent<PlayerController>().TakeDamage(dmg);
+            if(willIgnoreHitstop)
+                col.gameObject.GetComponent<PlayerController>().TakeDamageIgnoreHitstop(dmg);
+            else
+                col.gameObject.GetComponent<PlayerController>().TakeDamage(dmg);
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, 1f);
             Destroy(gameObject);

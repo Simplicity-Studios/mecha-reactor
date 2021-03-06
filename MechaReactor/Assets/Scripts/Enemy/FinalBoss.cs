@@ -10,6 +10,7 @@ public class FinalBoss : MonoBehaviour
     public MissilesClass Missile;
 
     public float attackIntervals;
+    public float hurtboxDamage;
  
     public Animator anim;
     public AudioSource angryRoar;
@@ -18,6 +19,7 @@ public class FinalBoss : MonoBehaviour
     public GameObject deathEffect;
     public GameObject spriteRender;
     public GameObject healthBar;
+    public GameObject finalExplosion;
 
     private EnemyController enemyController;
 
@@ -40,6 +42,7 @@ public class FinalBoss : MonoBehaviour
         public GameObject absorbEffect;
         public float absorbingTime = 2.0f;
         public float waveSpeed = 8f;
+        public float waveDamageDivision = 3.0f;
         public Transform waveReleasePoint;
         public GameObject wavePrefab;
         public AudioSource absorbSFX;
@@ -116,8 +119,6 @@ public class FinalBoss : MonoBehaviour
         public Transform[] missileFirePoints;
     }
 
-    
-
     void Start()
     {
         enemyController = GetComponent<EnemyController>();
@@ -147,6 +148,7 @@ public class FinalBoss : MonoBehaviour
         {
             enemyController.isDying = true;
             gm.PauseAllSFX();
+            gm.GetComponents<AudioSource>()[0].Stop();
             cinematicDeath();
             return; 
         }
@@ -202,16 +204,20 @@ public class FinalBoss : MonoBehaviour
         Bullet.timesToFire += 2;
         Bullet.maxBullets += 1;
         Bullet.bulletSize = 1.5f;
+
         Laser.laserPower += 30;
         Laser.flashesToAttack = 3;
-        Laser.chargeDuration = 1.9f;
+        Laser.chargeDuration = 1.8f;
+
         Absorb.waveSpeed += 3;
+        Absorb.waveDamageDivision = 1.8f;
+        
         Missile.missileSpread += 6f;
         Missile.missilesToSpawnMin += 2;
         Missile.missileFireRate -= 0.08f;
 
         attackIntervals = 1.9f;
-
+        hurtboxDamage += 50f;
         originalMS += 0.68f;
     }
     
@@ -279,10 +285,12 @@ public class FinalBoss : MonoBehaviour
     {
         StopAllCoroutines();
         Laser.laser.enabled = false;
+        Absorb.absorbEffect.SetActive(false);
         enemyController.movementSpeed = 0.0f;
         anim.SetFloat("movementSpeed", enemyController.movementSpeed);
         enemyController.player.GetComponent<PlayerController>().isInvulnerable = true;
         enemyController.player.GetComponent<PlayerController>().enabled = false;
+        enemyController.player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         enemyController.player.GetComponent<GunRotating>().enabled = false;
         enemyController.player.GetComponent<MaxReactor>().enabled = false;
         StartCoroutine(BossDeathExplosions());
@@ -301,12 +309,13 @@ public class FinalBoss : MonoBehaviour
             gm.StartCameraShake();
             yield return new WaitForSeconds(0.2f);
         }
-        Instantiate(deathEffect, location, Quaternion.identity);
+        Instantiate(finalExplosion, location, Quaternion.identity);
         spriteRender.SetActive(false);
         healthBar.SetActive(false);
         yield return new WaitForSeconds(6.5f);
         enemyController.player.GetComponent<PlayerController>().isInvulnerable = false;
         enemyController.player.GetComponent<PlayerController>().enabled = true;
+        enemyController.player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         enemyController.player.GetComponent<GunRotating>().enabled = true;
         enemyController.player.GetComponent<MaxReactor>().enabled = true;
         Destroy(gameObject);
@@ -461,7 +470,9 @@ public class FinalBoss : MonoBehaviour
         {
             Absorb.releaseSFX.Play();
             GameObject wave = Instantiate(Absorb.wavePrefab, Absorb.waveReleasePoint.position, Absorb.waveReleasePoint.rotation);
-            wave.GetComponent<EnemyWave>().setDamage(totalDmg / 3);
+            wave.GetComponent<EnemyWave>().setDamage(totalDmg / Absorb.waveDamageDivision);
+            if(isAngry)
+                wave.GetComponent<EnemyWave>().willIgnoreHitstop = true;
             Rigidbody2D bulletrigid = wave.GetComponent<Rigidbody2D>();
             bulletrigid.AddForce(Absorb.waveReleasePoint.up * Absorb.waveSpeed, ForceMode2D.Impulse);
             Absorb.absorbedDmg = 0.0f;

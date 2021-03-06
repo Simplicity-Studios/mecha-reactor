@@ -243,13 +243,11 @@ public class PlayerController : MonoBehaviour
     {
         isInvulnerable = true;
         SpriteRenderer s = GetComponent<SpriteRenderer>();
-        Color normal = new Color(1, 1, 1, 1);
-        Color transparent = new Color(1, 1, 1, 0);
         for(float i = 0; i < invincibilityDuration; i += invicinibilityDelta)
         {
-            s.color = transparent;
+            s.enabled = false;
             yield return new WaitForSeconds(invicinibilityDelta / 2);
-            s.color = normal;
+            s.enabled = true;
             yield return new WaitForSeconds(invicinibilityDelta / 2);
         }
         isInvulnerable = false;

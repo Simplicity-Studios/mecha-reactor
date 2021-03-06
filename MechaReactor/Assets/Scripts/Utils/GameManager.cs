@@ -139,7 +139,14 @@ public class GameManager : MonoBehaviour
         allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
         foreach( AudioSource audioS in allAudioSources) 
         {
-            audioS.Pause();
+            if(audioS.clip.name == "mecha_reactor_dungeon_crawl" || audioS.clip.name == "mecha_boss")
+            {
+                audioS.volume /= 2f;
+            } 
+            else
+            {
+                audioS.Pause();
+            }
         }
     }
 
@@ -148,7 +155,14 @@ public class GameManager : MonoBehaviour
         allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
         foreach( AudioSource audioS in allAudioSources) 
         {
-            audioS.UnPause();
+            if(audioS.clip.name == "mecha_reactor_dungeon_crawl" || audioS.clip.name == "mecha_boss")
+            {
+                audioS.volume = 1f;
+            } 
+            else
+            {
+                audioS.UnPause();
+            }
         }
     }
 
@@ -191,17 +205,28 @@ public class GameManager : MonoBehaviour
 
     public void killPlayer()
     {
+        foreach(Transform child in roomManager.rooms[roomManager.currentRoom].transform.Find("CurrentEnemies"))
+        {
+            // This is to prevent a quirky bug where the game doesn't like if an enemy and the player
+            // kill each other at the same time :)
+            child.GetComponent<EnemyController>().enabled = false;
+        }
         StartCoroutine(PlayerDeath());
     }
 
     public void GoBackToPreviousRoom()
     {
+        if(roomManager.rooms[roomManager.currentRoom].GetComponent<Room>().isBossRoom)
+        {
+            loopingMusic.Stop();
+        }
         roomManager.goBack();
         
         float maxElec = player.GetComponent<ReactorAttributes>().GetMaxElectricity();
         player.GetComponent<ReactorAttributes>().AddElectricity(maxElec);
 
         playerController.setHealth(playerController.GetMaxHealth());
+        player.GetComponent<SpriteRenderer>().enabled = true;
         
         isDying = false;
         playerController.enabled = true;
