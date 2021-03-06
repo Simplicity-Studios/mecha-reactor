@@ -206,6 +206,7 @@ public class GameManager : MonoBehaviour
         isDying = false;
         playerController.enabled = true;
         playerController.isInvulnerable = false;
+        deathSplash.SetActive(false);
         player.SetActive(true);
     }
 
@@ -217,18 +218,18 @@ public class GameManager : MonoBehaviour
         playerController.enabled = false;
         SpriteRenderer playerRender = player.GetComponent<SpriteRenderer>();
 
-        yield return new WaitForSeconds(0.5f);
-        for(int i = 0; i < 10; ++i)
-        {
-            playerRender.color = new Color(1, 0, 0, 1);
-            yield return new WaitForSeconds(0.2f);
-            playerRender.color = new Color(1, 1, 1, 1);
-            yield return new WaitForSeconds(0.2f);
-        }
+        // yield return new WaitForSeconds(0.5f);
+        // for(int i = 0; i < 10; ++i)
+        // {
+        //     playerRender.color = new Color(1, 0, 0, 1);
+        //     yield return new WaitForSeconds(0.2f);
+        //     playerRender.color = new Color(1, 1, 1, 1);
+        //     yield return new WaitForSeconds(0.2f);
+        // }
         player.GetComponent<ReactorAttributes>().ResetPoints();
         GameObject fx = Instantiate(playerDeathEffect, player.GetComponent<Transform>().position, Quaternion.identity);
-        Destroy(fx, 1);
         player.SetActive(false);
+        Destroy(fx, 1);
         yield return new WaitForSeconds(2.0f);
         GoBackToPreviousRoom();
     }
