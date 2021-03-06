@@ -5,7 +5,7 @@ public class Special : MonoBehaviour
     private GameObject playerPrefab;
     [Range(0.01f, 0.05f)]
     public float changeRate = 0.05f;
-    public float damage = 20.0f;
+    public float damage = 50.0f;
     private float maxSize = 5.0f;
 
     void Start()
@@ -29,8 +29,12 @@ public class Special : MonoBehaviour
     {
         if (other.transform.CompareTag("Enemy"))
         {
-            print("enemy entered special");
             other.transform.GetComponent<EnemyController>().TakeDamage(damage * 
+                playerPrefab.GetComponent<ReactorAttributes>()["special"].GetValue());
+        }
+        else if (other.transform.CompareTag("Boss"))
+        {
+            other.transform.parent.GetComponent<EnemyController>().TakeDamage(damage * 
                 playerPrefab.GetComponent<ReactorAttributes>()["special"].GetValue());
         }
         else if(other.transform.CompareTag("EnemyBullet"))

@@ -292,7 +292,8 @@ MonoBehaviour:
   shootSound: {fileID: 850650035681344151}
   specialPrefab: {fileID: 5940129621328437739, guid: 9f510fd07b0d7bb42b0704518a309431,
     type: 3}
-  baseSpecialTime: 5
+  baseSpecialTime: 15
+  lastSpecialUse: 0
   maxHealth: 200
   invincibilityDuration: 1.8
   invicinibilityDelta: 0.2

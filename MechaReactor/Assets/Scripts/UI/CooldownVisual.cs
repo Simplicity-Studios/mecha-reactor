@@ -16,7 +16,7 @@ public class CooldownVisual : MonoBehaviour
     void Update()
     {
         Color temp = img.color;
-        temp.a = (player.GetComponent<PlayerController>().lastSpecialUse + baseTime - Time.time) / baseTime;
+        temp.a = (player.GetComponent<PlayerController>().lastSpecialUse + baseTime - Time.time);
         img.color = temp;
     }
 }
