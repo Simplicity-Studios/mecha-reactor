@@ -10523,6 +10523,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 100313207}
     m_Modifications:
+    - target: {fileID: 4112296066414302318, guid: c6e8954d5b93bde41b5d40837ab6be4d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4112296066886775760, guid: c6e8954d5b93bde41b5d40837ab6be4d,
         type: 3}
       propertyPath: m_ColliderPaths.Array.size
