@@ -76,6 +76,8 @@ public class RoomManager : MonoBehaviour
         }
         cleanUpPickups();
 
+        gameManager.player.GetComponent<PlayerController>().isInvulnerable = false;
+
         gameManager.setPlayerTransform(rooms[currentRoom].GetComponent<Room>().spawnLocation);
         gameManager.moveCameraToPosition(gameManager.player.GetComponent<Transform>());
         gameManager.setCameraSize(rooms[currentRoom].GetComponent<Room>().cameraDistance);

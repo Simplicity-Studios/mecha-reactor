@@ -13,6 +13,11 @@ public class FinalBoss : MonoBehaviour
  
     public Animator anim;
     public AudioSource angryRoar;
+    public AudioSource deathSound;
+    public int numOfExplosions;
+    public GameObject deathEffect;
+    public GameObject spriteRender;
+    public GameObject healthBar;
 
     private EnemyController enemyController;
 
@@ -23,6 +28,10 @@ public class FinalBoss : MonoBehaviour
     private bool isAngry = false;
     private bool isAttacking = false;
     private Attacks currentAttack;
+    private GameManager gm;
+
+    private float strayMissileAttackRate = 1.5f;
+    private float lastMissileAttack;
 
     // ABSORPTION PARAMETERS
     [System.Serializable]
@@ -115,12 +124,29 @@ public class FinalBoss : MonoBehaviour
         originalMS = GetComponent<EnemyController>().movementSpeed;
         currentAttack = Attacks.NoAttack;
         Laser.mask = LayerMask.GetMask("Player") | LayerMask.GetMask("Obstacles");
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void Update()
     {
-        if(enemyController.currentHealth <= 0.0f)
+        if(enemyController.isDying)
         {
+            return;
+        }
+
+        if(Laser.hasFired) // This check needs to occur before the death check otherwise if the boss dies with a laser out it doesnt go away
+        {
+            Laser.laserWidth -= Time.deltaTime*2;
+            Laser.laser.startWidth = Mathf.Clamp(Laser.laserWidth, 0.0f, 1.0f);
+            float capsuleWidth = Laser.capsule.size.x;
+            capsuleWidth -= Time.deltaTime*2;
+            Laser.capsule.size = new Vector2(Mathf.Clamp(capsuleWidth, 0.0f, 1.0f), Laser.capsule.size.y);
+        }
+
+        if(enemyController.currentHealth <= 0.0f && !enemyController.isDying)
+        {
+            enemyController.isDying = true;
+            gm.PauseAllSFX();
             cinematicDeath();
             return; 
         }
@@ -136,15 +162,6 @@ public class FinalBoss : MonoBehaviour
         {
             drawLaser();
         }
-
-        if(Laser.hasFired)
-        {
-            Laser.laserWidth -= Time.deltaTime*2;
-            Laser.laser.startWidth = Mathf.Clamp(Laser.laserWidth, 0.0f, 1.0f);
-            float capsuleWidth = Laser.capsule.size.x;
-            capsuleWidth -= Time.deltaTime*2;
-            Laser.capsule.size = new Vector2(Mathf.Clamp(capsuleWidth, 0.0f, 1.0f), Laser.capsule.size.y);
-        }
             
         if(isAttacking && !isAngry)
         {
@@ -153,6 +170,14 @@ public class FinalBoss : MonoBehaviour
         else
         {
             enemyController.movementSpeed = originalMS;
+        }
+
+        Vector3 directionToPlayer = GetComponent<EnemyController>().player.transform.position - transform.position;
+        RaycastHit2D laserSeek = Physics2D.Raycast(transform.position + directionToPlayer.normalized, directionToPlayer, 400, Laser.mask);
+        if(isAngry && !laserSeek.collider.CompareTag("Player") && Time.time > strayMissileAttackRate + lastMissileAttack)
+        {
+            fireMissile(Missile.missileFirePoints[Random.Range(0, 2)]);
+            lastMissileAttack = Time.time;
         }
     
         anim.SetFloat("movementSpeed", enemyController.movementSpeed);
@@ -173,21 +198,21 @@ public class FinalBoss : MonoBehaviour
     public void activateAngerBuff()
     {
         angryRoar.Play();
-        Bullet.attackSpeed -= 0.15f;
+        Bullet.attackSpeed -= 0.10f;
         Bullet.timesToFire += 2;
         Bullet.maxBullets += 1;
         Bullet.bulletSize = 1.5f;
-        Laser.laserPower += 20;
+        Laser.laserPower += 30;
         Laser.flashesToAttack = 3;
         Laser.chargeDuration = 1.9f;
         Absorb.waveSpeed += 3;
         Missile.missileSpread += 6f;
         Missile.missilesToSpawnMin += 2;
-        Missile.missileFireRate -= 0.1f;
+        Missile.missileFireRate -= 0.08f;
 
-        attackIntervals = 1.8f;
+        attackIntervals = 1.9f;
 
-        originalMS += 0.6f;
+        originalMS += 0.68f;
     }
     
     public void ProcessDamage(float dmg)
@@ -252,7 +277,39 @@ public class FinalBoss : MonoBehaviour
 
     private void cinematicDeath()
     {
-        return;
+        StopAllCoroutines();
+        Laser.laser.enabled = false;
+        enemyController.movementSpeed = 0.0f;
+        anim.SetFloat("movementSpeed", enemyController.movementSpeed);
+        enemyController.player.GetComponent<PlayerController>().isInvulnerable = true;
+        enemyController.player.GetComponent<PlayerController>().enabled = false;
+        enemyController.player.GetComponent<GunRotating>().enabled = false;
+        enemyController.player.GetComponent<MaxReactor>().enabled = false;
+        StartCoroutine(BossDeathExplosions());
+    }
+
+    IEnumerator BossDeathExplosions()
+    {
+        deathSound.Play();
+        yield return new WaitForSeconds(1.0f);
+        Vector2 location = transform.position;
+        for(int i = 0; i < numOfExplosions; ++i)
+        {
+            Vector2 particleSpawn = new Vector2(location.x + Random.Range(-4f, 4f), location.y + Random.Range(-1f, 2f));
+            GameObject particle = Instantiate(deathEffect, particleSpawn, Quaternion.identity);
+            Destroy(particle, 2.0f);
+            gm.StartCameraShake();
+            yield return new WaitForSeconds(0.2f);
+        }
+        Instantiate(deathEffect, location, Quaternion.identity);
+        spriteRender.SetActive(false);
+        healthBar.SetActive(false);
+        yield return new WaitForSeconds(6.5f);
+        enemyController.player.GetComponent<PlayerController>().isInvulnerable = false;
+        enemyController.player.GetComponent<PlayerController>().enabled = true;
+        enemyController.player.GetComponent<GunRotating>().enabled = true;
+        enemyController.player.GetComponent<MaxReactor>().enabled = true;
+        Destroy(gameObject);
     }
 
     /*
