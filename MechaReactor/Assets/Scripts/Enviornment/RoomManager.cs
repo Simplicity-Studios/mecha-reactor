@@ -9,7 +9,7 @@ public class RoomManager : MonoBehaviour
     public GameManager gameManager;
     public AudioClip doorOpening;
     private AudioSource audio;
-
+    public GameSceneManager sceneManager;
 
     void Start()
     {
@@ -32,8 +32,8 @@ public class RoomManager : MonoBehaviour
         //we reached the last room
         if(currentRoom >= rooms.Length)
         {
-            File.WriteAllText("savegame.txt", gameManager.timeValue.ToString());
-            gameManager.quitGame();
+            File.AppendAllText("savegame.txt", gameManager.timeValue.ToString() + "\n");
+            sceneManager.LoadEndScreen();
         }
         //Tell the game manager to set the player's position to the next room's spawn point
         gameManager.setPlayerTransform(rooms[currentRoom].GetComponent<Room>().spawnLocation);

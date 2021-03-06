@@ -1518,6 +1518,7 @@ MonoBehaviour:
   currentRoom: 0
   gameManager: {fileID: 700420476}
   doorOpening: {fileID: 8300000, guid: 4ff23327de21b7045a229d888b686eb6, type: 3}
+  sceneManager: {fileID: 0}
 --- !u!4 &100313207
 Transform:
   m_ObjectHideFlags: 0
@@ -10757,11 +10758,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6447998740629227341, guid: 7088455ec26740d4cb3edf243dab2c0b,
-        type: 3}
-      propertyPath: maxHealth
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7088455ec26740d4cb3edf243dab2c0b, type: 3}

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameSceneManager : MonoBehaviour
@@ -24,5 +25,10 @@ public class GameSceneManager : MonoBehaviour
     public void LoadCredits()
     {
         SceneManager.LoadScene("Credits");
+    }
+
+    public void LoadEndScreen()
+    {
+        SceneManager.LoadScene("End Screen");
     }
 }
