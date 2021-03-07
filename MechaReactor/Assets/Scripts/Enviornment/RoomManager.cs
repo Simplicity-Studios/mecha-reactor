@@ -22,6 +22,7 @@ public class RoomManager : MonoBehaviour
         gameManager.setPlayerTransform(rooms[currentRoom].GetComponent<Room>().spawnLocation);
         gameManager.moveCameraToPosition(gameManager.player.GetComponent<Transform>());
         gameManager.setCameraSize(rooms[currentRoom].GetComponent<Room>().cameraDistance);
+        sceneManager = new GameSceneManager();
     }
 
     public void nextRoom()
