@@ -11,6 +11,10 @@ public class Hurtbox : MonoBehaviour
         if(col.transform.CompareTag("Player"))
         {
             float dmg = finalboss.hurtboxDamage;
+            if(!col.transform.GetComponent<PlayerController>().isInvulnerable)
+            {
+                finalboss.angryRoar.Play();
+            }
             col.transform.GetComponent<PlayerController>().TakeDamage(dmg);
         }
     }

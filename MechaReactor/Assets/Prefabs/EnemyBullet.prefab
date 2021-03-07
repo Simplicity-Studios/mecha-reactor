@@ -133,6 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1e3e0d052c771faae2c2e6ed4c5301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEffect: {fileID: 3826018541912329631, guid: 27b4d00c28f3e6a299771c2204d954c0,
+  hitEffect: {fileID: 7943203142305227298, guid: f97b89a97c83f9c4e8a43d1e33d1343d,
     type: 3}
   collider: {fileID: 0}

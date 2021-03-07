@@ -643,6 +643,7 @@ MonoBehaviour:
     absorbEffect: {fileID: 5687814915494529476}
     absorbingTime: 3
     waveSpeed: 12
+    waveDamageDivision: 3
     waveReleasePoint: {fileID: 8857817453050873864}
     wavePrefab: {fileID: 8286431971111198340, guid: 232b7c1098762654894d5a7e873b1837,
       type: 3}
@@ -663,13 +664,16 @@ MonoBehaviour:
     - {fileID: 4284399565286276978}
     bulletPrefab: {fileID: 3462380549372543098, guid: af6551301a0461070bb2ce3ade0cf7f1,
       type: 3}
+    bulletHellActive: 0
   Laser:
-    laserPower: 30
+    laserPower: 50
     chargeDuration: 3
     flashesToAttack: 10
     ChargeSource: {fileID: 6311684509493220490}
     FireSource: {fileID: 963179556274680351}
     lockedOnSource: {fileID: 4855567394459462367}
+    impactEffect: {fileID: 5071288984479277958, guid: 97946298e2c7af844983af9a0a778c6e,
+      type: 3}
     laserMat: {fileID: 2100000, guid: f1b43db268b2997469f5d641819d929f, type: 2}
     laser: {fileID: 3065823337437926001}
     capsule: {fileID: 7615289061758554996}

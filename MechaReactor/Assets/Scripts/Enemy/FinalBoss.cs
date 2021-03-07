@@ -71,6 +71,9 @@ public class FinalBoss : MonoBehaviour
 
         public Transform[] bulletSpawnLocations;
         public GameObject bulletPrefab;
+
+        [HideInInspector]
+        public bool bulletHellActive;
     }
 
     // LASER PARAMETERS
@@ -84,6 +87,8 @@ public class FinalBoss : MonoBehaviour
         public AudioSource ChargeSource;
         public AudioSource FireSource;
         public AudioSource lockedOnSource;
+
+        public GameObject impactEffect;
 
         public Material laserMat;
         public LineRenderer laser;
@@ -147,6 +152,7 @@ public class FinalBoss : MonoBehaviour
         if(enemyController.currentHealth <= 0.0f && !enemyController.isDying)
         {
             enemyController.isDying = true;
+            StopAllCoroutines();
             gm.PauseAllSFX();
             gm.GetComponents<AudioSource>()[0].Stop();
             cinematicDeath();
@@ -216,7 +222,7 @@ public class FinalBoss : MonoBehaviour
         Missile.missilesToSpawnMin += 2;
         Missile.missileFireRate -= 0.08f;
 
-        attackIntervals = 1.9f;
+        attackIntervals = 2.0f;
         hurtboxDamage += 50f;
         originalMS += 0.68f;
     }
@@ -238,7 +244,7 @@ public class FinalBoss : MonoBehaviour
         while(true)
         {
             float roll = Random.Range(0f, 1f);
-            if(roll < 0.25f && currentAttack != Attacks.Laser)
+            if(roll < 0.25f  && currentAttack != Attacks.Laser)
             {
                 currentAttack = Attacks.Laser;
                 break;
@@ -248,7 +254,7 @@ public class FinalBoss : MonoBehaviour
                 currentAttack = Attacks.Absorb;
                 break;
             }
-            else if(roll >= 0.50f && roll < 0.75f && currentAttack != Attacks.BulletHell)
+            else if(roll >= 0.50f && roll < 0.75f && currentAttack != Attacks.BulletHell && !Bullet.bulletHellActive)
             {
                 currentAttack = Attacks.BulletHell;
                 break;
@@ -283,7 +289,7 @@ public class FinalBoss : MonoBehaviour
 
     private void cinematicDeath()
     {
-        StopAllCoroutines();
+        CancelInvoke();
         Laser.laser.enabled = false;
         Absorb.absorbEffect.SetActive(false);
         enemyController.movementSpeed = 0.0f;
@@ -431,6 +437,12 @@ public class FinalBoss : MonoBehaviour
         float angle = Mathf.Atan2(transform.position.y - hit.point.y, transform.position.x - hit.point.x) *180/Mathf.PI - 90f;
         Laser.capsule.transform.rotation = Quaternion.Euler(0.0f, 0.0f, angle);
         Laser.capsule.enabled = true;
+
+        Debug.Log(angle);
+        GameObject particleEffect = Instantiate(Laser.impactEffect, hit.point, Quaternion.identity);
+        particleEffect.transform.Rotate(new Vector3(angle-90f, -90f, 0.0f));
+        Destroy(particleEffect, 1.5f);
+        gm.StartCameraShake();
     }
 
     /*
@@ -492,6 +504,7 @@ public class FinalBoss : MonoBehaviour
 
     IEnumerator BulletHellBegin()
     {
+        Bullet.bulletHellActive = true;
         for(int i = 0; i < Bullet.timesToFire; ++i)
         {
             int amount = Random.Range(1, Bullet.maxBullets);
@@ -501,6 +514,7 @@ public class FinalBoss : MonoBehaviour
         }
         isAttacking = false;
         lastAttack = Time.time;
+        Bullet.bulletHellActive = false;
     }
 
     private void sprayBullets(int amount)

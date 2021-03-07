@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d20cc5088c9ede4e82dfd9ac3afd7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionEffect: {fileID: 243762578110593780, guid: d6a2a613b33dc2a4295210291203286a,
+  explosionEffect: {fileID: 3489482895489734544, guid: aa236b5ccde51e8409c49328ca8ba2b6,
     type: 3}
 --- !u!70 &525664322579335780
 CapsuleCollider2D:
