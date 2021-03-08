@@ -5,7 +5,7 @@ public class Special : MonoBehaviour
     private GameObject playerPrefab;
     [Range(0.01f, 0.05f)]
     public float changeRate = 0.05f;
-    public float damage = 50.0f;
+    public float damage = 100.0f;
     private float maxSize = 5.0f;
 
     void Start()
