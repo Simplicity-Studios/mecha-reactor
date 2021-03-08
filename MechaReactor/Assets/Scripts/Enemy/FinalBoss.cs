@@ -206,14 +206,15 @@ public class FinalBoss : MonoBehaviour
     public void activateAngerBuff()
     {
         angryRoar.Play();
-        Bullet.attackSpeed -= 0.10f;
-        Bullet.timesToFire += 2;
-        Bullet.maxBullets += 1;
+        Bullet.attackSpeed -= 0.11f;
+        Bullet.timesToFire += 4;
+        Bullet.maxBullets += 4;
         Bullet.bulletSize = 1.5f;
+        Bullet.bulletDamage += 2f;
 
-        Laser.laserPower += 30;
-        Laser.flashesToAttack = 3;
-        Laser.chargeDuration = 1.8f;
+        Laser.laserPower += 15;
+        Laser.flashesToAttack = 2;
+        Laser.chargeDuration = 1.7f;
 
         Absorb.waveSpeed += 3;
         Absorb.waveDamageDivision = 1.8f;
@@ -221,8 +222,9 @@ public class FinalBoss : MonoBehaviour
         Missile.missileSpread += 6f;
         Missile.missilesToSpawnMin += 2;
         Missile.missileFireRate -= 0.08f;
+        Missile.missileImpactDamage += 2f;
 
-        attackIntervals = 2.0f;
+        attackIntervals = 2.1f;
         hurtboxDamage += 50f;
         originalMS += 0.68f;
     }

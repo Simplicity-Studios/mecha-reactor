@@ -7389,7 +7389,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 972db3102f8d56e45a4be2ff58803f08, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 833b793c495977d4c934277fe2745ad1, type: 2}
 --- !u!1 &8244483616549128961
 GameObject:
   m_ObjectHideFlags: 0
@@ -45522,6 +45522,8 @@ MonoBehaviour:
   spawnLocation: {fileID: 8244483616549128960}
   cameraDistance: 8
   roomManager: {fileID: 0}
+  isBossRoom: 0
+  bossRoomHazards: {fileID: 0}
   enemiesToSpawn:
   - {fileID: 4343953099511740131, guid: 5cd407ec2af788e4c903d12b6bd1d600, type: 3}
   - {fileID: 4343953099511740131, guid: 5cd407ec2af788e4c903d12b6bd1d600, type: 3}
@@ -45534,6 +45536,7 @@ MonoBehaviour:
   - {fileID: 3000755256817612142}
   - {fileID: 4106063152886231319}
   - {fileID: 4138948084944166070}
+  currentEnemies: {fileID: 0}
 --- !u!1 &8956625974060853692
 GameObject:
   m_ObjectHideFlags: 0
