@@ -23,7 +23,7 @@ public class EnemyWave : MonoBehaviour
         maxLifetime += timeCreated;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(Time.time > maxLifetime)
             Destroy(gameObject);

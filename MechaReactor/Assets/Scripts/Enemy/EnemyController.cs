@@ -152,7 +152,7 @@ public class EnemyController : MonoBehaviour
         if (transform.localScale.x > 0 && transform.localScale.y > 0)
         {   
             // Continue to shrink enemy
-            transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f) * originalScale.x;
+            transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f) * originalScale.x * 25 * Time.fixedDeltaTime;
         }
         // Shrinking animation finished
         else

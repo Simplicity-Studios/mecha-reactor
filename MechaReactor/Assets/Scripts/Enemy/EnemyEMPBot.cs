@@ -15,7 +15,7 @@ public class EnemyEMPBot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > (lastEMP + empActivationRate))
+        if(Time.time > (lastEMP + empActivationRate) && !GetComponent<EnemyController>().isDying)
         {
             activateEMP();
             lastEMP = Time.time;
