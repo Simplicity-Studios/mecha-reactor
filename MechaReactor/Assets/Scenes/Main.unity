@@ -5679,7 +5679,7 @@ PrefabInstance:
     - target: {fileID: 6255304489381823884, guid: 99f962f4008ce4e438848cc1155e08ac,
         type: 3}
       propertyPath: m_ColliderPaths.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6255304490154303380, guid: 99f962f4008ce4e438848cc1155e08ac,
         type: 3}
@@ -5689,7 +5689,7 @@ PrefabInstance:
     - target: {fileID: 6255304490154303380, guid: 99f962f4008ce4e438848cc1155e08ac,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6255304490154303382, guid: 99f962f4008ce4e438848cc1155e08ac,
         type: 3}
@@ -5754,7 +5754,7 @@ PrefabInstance:
     - target: {fileID: 6255304490401296244, guid: 99f962f4008ce4e438848cc1155e08ac,
         type: 3}
       propertyPath: m_ColliderPaths.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99f962f4008ce4e438848cc1155e08ac, type: 3}
@@ -9026,6 +9026,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 100313207}
     m_Modifications:
+    - target: {fileID: 141818922280028124, guid: e97f2c7f872b0a143a305e133403b982,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787985839476968993, guid: e97f2c7f872b0a143a305e133403b982,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9200359082564781068, guid: e97f2c7f872b0a143a305e133403b982,
         type: 3}
       propertyPath: roomManager

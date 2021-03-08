@@ -237,6 +237,11 @@ public class FinalBoss : MonoBehaviour
         else   //Otherwise add the damage to the amount absorbed and take a sixth of the damage
         {
             Absorb.absorbedDmg += dmg;
+            var emi = Absorb.absorbEffect.GetComponent<ParticleSystem>().emission;
+            var shape = Absorb.absorbEffect.GetComponent<ParticleSystem>().shape;
+            shape.radius = Absorb.absorbedDmg / 30;
+            emi.rateOverTime = Absorb.absorbedDmg / 2;
+            Absorb.absorbEffect.transform.localScale += new Vector3(0.027f, 0.027f, 0.0f);
             GetComponent<EnemyController>().TakeDamage(dmg/6);
         }   
     }
@@ -460,6 +465,7 @@ public class FinalBoss : MonoBehaviour
 
     IEnumerator BeginAbsorb()
     {
+        Absorb.absorbEffect.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
         Absorb.isAbsorbing = true;
         Absorb.absorbEffect.SetActive(true);
         Absorb.absorbSFX.Play();
