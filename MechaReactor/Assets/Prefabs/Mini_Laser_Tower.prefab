@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e117723b8d2bd81e7b70bc8906181624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBoss: 0
   maxHealth: 120
   currentHealth: 0
   healthBar: {fileID: 4343953099564874006}
@@ -215,6 +216,7 @@ MonoBehaviour:
   pathFindMoveDuration: 0.5
   infrontPoint: {fileID: 0}
   canRotate: 0
+  doesPathfinding: 1
   player: {fileID: 0}
   agent: {fileID: 0}
   source: {fileID: 0}
@@ -609,7 +611,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
