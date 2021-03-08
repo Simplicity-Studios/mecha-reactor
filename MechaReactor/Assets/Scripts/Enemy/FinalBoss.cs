@@ -213,7 +213,7 @@ public class FinalBoss : MonoBehaviour
         Bullet.bulletDamage += 2f;
 
         Laser.laserPower += 15;
-        Laser.flashesToAttack = 2;
+        Laser.flashesToAttack = 3;
         Laser.chargeDuration = 1.7f;
 
         Absorb.waveSpeed += 3;
@@ -435,7 +435,7 @@ public class FinalBoss : MonoBehaviour
         Laser.laser.startWidth = 1.5f;
 
         Laser.capsule.transform.position = (hit.point + new Vector2(transform.position.x, transform.position.y)) / 2;
-        Laser.capsule.size = new Vector2(0.6f, hit.distance + 3.0f);
+        Laser.capsule.size = new Vector2(0.5f, hit.distance + 3.0f);
         float angle = Mathf.Atan2(transform.position.y - hit.point.y, transform.position.x - hit.point.x) *180/Mathf.PI - 90f;
         Laser.capsule.transform.rotation = Quaternion.Euler(0.0f, 0.0f, angle);
         Laser.capsule.enabled = true;
