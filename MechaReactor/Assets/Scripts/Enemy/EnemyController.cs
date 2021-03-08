@@ -137,6 +137,7 @@ public class EnemyController : MonoBehaviour
     // i.e sound fxs, particles, whatever
     public void die()
     {
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;   
         // if dying script just started
         if (!isDying)
         {
@@ -152,7 +153,7 @@ public class EnemyController : MonoBehaviour
         if (transform.localScale.x > 0 && transform.localScale.y > 0)
         {   
             // Continue to shrink enemy
-            transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f) * originalScale.x * 25 * Time.fixedDeltaTime;
+            transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f) * originalScale.x * 70 * Time.fixedDeltaTime;
         }
         // Shrinking animation finished
         else
