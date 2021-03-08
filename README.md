@@ -1,3 +1,4 @@
+![TitleCard](https://i.imgur.com/DrWefiX.png)
 # CSCI 475: Mecha Reactor
 Utilize your various reactors to fight your way through rooms of enemies and reach the end of this 2D top down shooter style game.
 
