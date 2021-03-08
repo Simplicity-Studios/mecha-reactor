@@ -64,7 +64,7 @@ public class Attribute
 public class ReactorAttributes : MonoBehaviour
 {
     public int maxElectricity;
-    [Range(1, 10)]
+    [Range(1, 50)]
     public int electricityDecreaseRate = 1;
     public AudioSource electricityPenalty;
     public AudioSource electricityBackOnline;
@@ -97,8 +97,11 @@ public class ReactorAttributes : MonoBehaviour
         int points = 0;
         foreach (Attribute attr in m_attributes.Values)
             points += attr.pointsAllocated + attr.GetHiddenPoints();
-        m_points = points;
+        m_points = points; 
+    }
 
+    void FixedUpdate()
+    {
         if(!gameManager.isPaused)
         {
             m_electricity -= m_points * electricityDecreaseRate * 0.005f;
@@ -119,8 +122,9 @@ public class ReactorAttributes : MonoBehaviour
             foreach (Attribute attr in initialAttributes)
                 m_attributes[attr.name].Enable();
         }
-            
+           
     }
+    
 
     // Operator [] overload to get a specific attribute from the m_attributes Dictionary.
     public Attribute this[string attribute] 

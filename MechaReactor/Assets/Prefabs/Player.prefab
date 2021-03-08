@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxElectricity: 300
-  electricityDecreaseRate: 1
+  electricityDecreaseRate: 11
   electricityPenalty: {fileID: 8092860996566586866}
   electricityBackOnline: {fileID: 1747685782603190346}
   initialAttributes:
