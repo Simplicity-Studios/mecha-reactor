@@ -465,6 +465,10 @@ public class FinalBoss : MonoBehaviour
 
     IEnumerator BeginAbsorb()
     {
+        var emi = Absorb.absorbEffect.GetComponent<ParticleSystem>().emission;
+        var shape = Absorb.absorbEffect.GetComponent<ParticleSystem>().shape;
+        shape.radius = 3.0f;
+        emi.rateOverTime = 44.0f;
         Absorb.absorbEffect.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
         Absorb.isAbsorbing = true;
         Absorb.absorbEffect.SetActive(true);
