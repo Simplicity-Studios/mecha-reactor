@@ -157,6 +157,10 @@ public class ReactorAttributes : MonoBehaviour
     public void ResetPoints()
     {
         foreach (Attribute attr in m_attributes.Values)
+        {
+            attr.Enable();
             attr.pointsAllocated = 0;
+        }
     }
 }
+
