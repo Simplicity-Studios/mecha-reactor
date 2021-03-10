@@ -3,8 +3,9 @@
 Utilize your various reactors to fight your way through rooms of enemies and reach the end of this 2D top down shooter style game.
 
 ## Download links
-- [Google Drive](https://drive.google.com/file/d/1rxWSu4rZZpmG96_ur3_pNFwPr-USxkzo/view?usp=sharing)
-- [Dropbox](https://www.dl.dropboxusercontent.com/s/wpir4f5wt9c2kyr/MechaReactor_Final.zip?dl=0)
+- [Google Drive (Windows)](https://drive.google.com/file/d/1rxWSu4rZZpmG96_ur3_pNFwPr-USxkzo/view?usp=sharing)
+- [Dropbox (Windows)](https://www.dl.dropboxusercontent.com/s/wpir4f5wt9c2kyr/MechaReactor_Final.zip?dl=0)
+- [Google Drive (Mac)](https://drive.google.com/file/d/1DqcifxCbl7UXNVrMNOswQI1c7iC3waej/view?usp=sharing) (Disclaimer: we have no idea if the Mac Build works fully. Use at own risk ¯\_(ツ)_/¯) 
 
 ## Instructions for Running
 1. Download the ZIP file from either link above.
